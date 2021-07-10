@@ -3,6 +3,8 @@ Comandos Linux
 
 <img src = "https://logosmarcas.net/wp-content/uploads/2020/09/Linux-Logo.png" alt = "Linux">
 
++ obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre linux. 😁
+
 Se voce gosta de usar o terminal para tudo, tem um comando que você pode usar para baixar as coisas que você quiser, basta digitar:
 
 ```
@@ -68,7 +70,7 @@ Ele vai rodar o comando update primeiro, e depois que ele terminar vai rodar o c
 
 # Agora vamos colocar aqui uma lista de alguns programas que você possa se interessar:
 
-## Playonlinux
+## <p id = "playonlinux"> Playonlinux
 <img src = "img/playonlinux-no-linux.webp" alt = "Gufw">
 
 O playonlinux é um programa para instalar programas do Windows no Linux, ele é bastante famoso, pois da pra usar alguns programas do windows no próprio linux, mas as vezes o programa que você ques instalar pode não funcionar, então não fique bravo caso não funcione, porque não é um programa que funciona e instalar qualquer programa do Windows perfeitamente como se fosse no próprio Windows. Para instalar o playonlinux digite:
@@ -78,15 +80,19 @@ sudo apt-get install playonlinux wine winbind p7zip-full
 ```
 
 Ele vai instalar o playonlinux junto com o wine, que é o o programa que simula a virtualização do Windows no Linux.
+</p>
 
-## Codecs Multimídia
+
+## <p id = "codecs"> Codecs Multimídia
 <img src = "img/codecs.jpg" alt = "Codecs Multimídia">
+
 
 Por questões de legislação, o Ubuntu não pode incluir determinados codecs multimídia, como os de MP3, para poder ser distribuído em alguns países, entre outros formatos. Qualquer pessoa que já formatou o computador com Windows sabe que tem que instalar alguns codecs para que todos os tipos de arquivos rodem no sistema, no Windows é bem comum utilizar o pack “K-Lite”, no Ubuntu, temos o Ubuntu Restricted Extras, ele está na Central de Programas, mas também pode ser baixado pelo terminal:
 
 ```
 sudo apt install ubuntu-restricted-extra
 ```
+</p>
 
 ## Unity Tweak Tool
 
@@ -201,4 +207,189 @@ Para instalá-lo basta digitar:
 
 ```
 sudo apt install inkscape
+```
+
+## Winff
+
+<img src = "img/winff-screenshot.jpg" alt = "Winff">
+
+WinFF possibilita que os usuários interajam com FFmpeg utilizando os botões , menus, campos de formulários e listas em vez de usar a linha de comando. A tela padrão permite aos usuários criar uma lista de arquivos para a conversão e para especificar configurações diferentes para cada arquivo. WinFF pode reproduzir arquivos em fila e visualizar as configurações de conversão diferentes , lançando ffplay , um media player baseado em FFmpeg que vem com o programa. WinFF pode transcodificar entre qualquer um dos formatos de vídeo na biblioteca libavformat multimídia, incluindo MPEG, H.261 cru, H.263 e H.264 , PMP , AVI e MOV. WinFF está disponível para Windows e Linux.
+
+Para instalá-lo basta digitar:
+
+```
+sudo apt install winff
+```
+
+## Ranger
+
+<img src = "img/ranger_code.png" alt = "Ranger">
+
+O Ranger é um gestor de arquivos de linha de comando (CLI), escrito em Python. O programa possui todas as funções presentes nos gestores mais usados, como o Nautilus, no Ubuntu.
+
+```
+sudo apt install ranger
+```
+
+## NCDU
+
+<img src = "img/ncdu2.png" alt = "NCDU">
+
+Ncdu é uma utilitário de comando de linha, que ajudará a avaliar o espaço em disco no UNIX e distribuições LINUX. Ncdu é um analisador de uso de disco com uma interface ncurses que pode ser utilizada principalmente em terminais texto.
+
+Para instalá-lo basta digitar:
+
+```
+sudo apt install ncdu
+```
+
+## Neofetch
+
+<img src = "img/neofetch1.jpg" alt = "Neofetch">
+
+Neofetch é uma ferramenta desenvolvida para criar protetores de tela de console que mostram informações sobre o sistema, hardware e software.
+
+Para instalá-lo basta digitar:
+
+```
+sudo apt install neofetch
+```
+
+## Screenfetch
+
+<img src = "img/screenfetch.png" alt = "Screenfetch">
+
+screenFetch: Informações do sistema e algumas firulas via terminal. screenFetch é um script que desenha a logo da sua distribuição em formato ASCII no terminal, trazendo também as informações básicas do computador, como por exemplo, sistema operacional, Kernel, processador, memoria ram e etc.
+
+Para instalá-lo basta digitar:
+
+```
+sudo apt install screenfetch
+```
+
+## LibreOffice
+
+<img src = "img/libreoffice-2.png" alt = "LibreOffice">
+
+
+O LibreOffice é um pacote de programas para uso profissional ou pessoal. O serviço traz opções para criar e editar textos, tabelas, apresentações, desenhos, fórmulas matemáticas e até organizar um banco de dados. Ele é uma alternativa do Microsoft Office, e é gratuito.
+
+Se você fez a instalação mínima no Ubuntu e você quer instalar todo o pacote LibreOffice, basta digitar:
+
+```
+sudo apt-get install libreoffice
+```
+
+Se você quiser instalar apenas algum em específico como o LibreOffice Writer(Parecido com o Word), ou o LibreOffice Calc(Parecido com o Excel), ou o LibreOffice Impres(Parecido com o PowerPoint), basta digitar:
+
+LibreOffice Writer:
+
+```
+sudo apt-get install libreoffice-writer
+```
+
+LibreOffice Calc:
+
+```
+sudo apt-get install libreoffice-calc
+```
+
+LibreOffice Impress:
+
+```
+sudo apt-get install libreoffice-impress
+```
+
+Caso deseja remvoer algum dos LibreOffice, como por exemplo o LibreOffice Impress, basta digitar:
+
+```
+sudo apt-get --purge remove libreoffice-impress
+```
+
+Ou basta colocar o nome de qual você quer remover no lugar do "impress".
+
+## Mudar o Terminal
+
+Se você instalou algum outro terminal no linux e quer mudar o terminal, ou quer voltar para o terminal padrão(gnome-terminal), caso o que tenha sido instalado mudou para ele automaticamente, basta digitar:
+
+
+```
+sudo update-alternatives --config x-terminal-emulator
+```
+
+Vai aparecer uma lista com todos os terminais instalados, e basta selecionar qual você quer.
+
+## Instalando linguagens de programação
+
+### Java
+Para instalar o Java no Ubuntu e derivados basta digitar:
+
+```
+sudo apt-get install openjdk-11-jdk
+```
+
+Caso você queira instalar outra versão do Java, basta substituir o "11" pelo número da versão que deseja, exemplo:
+
+```
+sudo apt-get install openjdk-8-jdk
+```
+
+### php
+
+Para instalar o php no Ubuntu é mais simples ainda do que o Java, basta apenas digitar:
+
+```
+sudo apt-get install php
+```
+
+### Python 3
+
+Caso o python 3 não venha como padrão no Ubuntu e sim o Python 2, para instalá-lo é bem simples também, basta digitar:
+
+```
+sudo apt-get install python3
+```
+
+E para colocar ele como padrão para debugar o código, basta digitar:
+
+```
+sudo rm /usr/bin/python
+```
+
+Que ele vai remover o python 2 do link do Path, e depois digitar:
+
+```
+sudo ln -s python3 /usr/bin/python
+```
+
+Que ele vai criar um novo link no Path apontando para o Pythn 3.
+
+### NodeJs
+
+Para instalar o node no Ubuntu ou Fedora basta seguir o link para a instalação do  <a href="https://github.com/nodesource/distributions/blob/master/README.md"> NodeJs</a>, que vai ter um README no github com todas as distros e como instalar via package manager.
+
+### TypeScript
+
+Se você está aprendendo TypeScript e quer instlar ele, depois de ter instalado o NodeJs, basta digitar:
+
+```
+sudo npm install -g typescript 
+```
+
+O "-g" serve para instalar ele de forma global no seu Sistema, sendo assim, não vai precisar ficar instlando ele toda vez que for criar uma pasta nova.
+
+Para rodar o TypeScritp para saber se o código está funcionando corretamente, tem uma forma que é pelo Node igual com o JavaScript, só que não diretamente com o mesmo Node que o JavaScript usa, e sim com o Typescript Node, para instalá-lo é bem simples:
+
+```
+sudo npm install -g ts-node
+```
+
+Para importar bibiliotecas do TypeScript basta instalar o typescript-require:
+
+```
+sudo npm install -g typescript-require
+```
+e
+```
+sudo npm install -g @types/node 
 ```
