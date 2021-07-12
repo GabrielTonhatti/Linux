@@ -5,6 +5,12 @@ Comandos Linux
 
 + obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre linux. 😁
 
+<a href = "#ubuntu"> Ubuntu </a>
+<a href = "#fedora"> Fedora </a>
+<a href = "#arch"> Arch Linux </a>
+<a href = "#snap"> Snap </a>
+<a href = "#flatpak"> Flatpak </a>
+***
 Se voce gosta de usar o terminal para tudo, tem um comando que você pode usar para baixar as coisas que você quiser, basta digitar:
 
 ```
@@ -40,13 +46,15 @@ sudo passwd -u root
 ```
 ****
 
+<p id = "ubuntu">
+
 <img src = "img/Ubuntu_logoib.svg" width = "200" alt = "Ubuntu"> <img src = "img/logo-mint.png" width = "200" alt = "Linux Mint"> <img src = "img/logo-debian.png" width = "200" alt = "Debian"> 
 
 ### Obs: Os comandos citados aqui serve tanto para o Ubuntu, quanto para o Linux Mint e o Debian, ou qualquer outra distro baseada no Debian ou Ubuntu.
 
 Aqui vamos passar alguns comando do Ubuntu(a distro linux mais famosa), mas oque vamos mais passar aqui vai ser alguns programas para instalar no Ubuntu.
 
-Caso você seja iniciante no linux, quando você acaba de instalar o Ubuntu(ou qualquer outra distro linux), primeiramente antes de instalar qualquer coisa, devemos atualizar o sistema, e para isso é bem simples, basta digitar:
+Caso você seja iniciante no linux, quando você acaba de instalar o Ubuntu(ou qualquer outra distro linux), primeiramente antes de instalar qualquer coisa, devemos atualizar o sistema, o apt é o gerenciador de pacotes do Ubuntu, Debian, Linux Mint e outras distros baseadas no Ubuntu ou Debian, e para atualizar o sistema é bem simples, basta digitar:
 
 ```
 sudo apt-get update
@@ -68,6 +76,13 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 Ele vai rodar o comando update primeiro, e depois que ele terminar vai rodar o comando upgrade em seguida, o "-y" serve para ele responder "yes(sim)" para todas as perguntas automaticamente.
 
+Se você deseja ver se tem mais alguma atualização no Ubuntu, basta digitar:
+
+```
+apt list --upgradable
+```
+
+E ele vai listar os programas que precisam ser atualizados, se aparecer apenas "Listining...Done", é porque não tem atualização, mas se aparecer um tanto de programas(provávelmente escritos em verde), é so rodar o comandos citados anteriormente para atualizar o sistema.
 # Agora vamos colocar aqui uma lista de alguns programas que você possa se interessar:
 
 ## <p id = "playonlinux"> Playonlinux
@@ -94,7 +109,7 @@ sudo apt install ubuntu-restricted-extra
 ```
 </p>
 
-## Unity Tweak Tool
+## <p id = "unity-tweak"> Unity Tweak Tool
 
 <img src = "img/unity+tweak+tool.png" alt = "Unity Tweak Tool">
 
@@ -103,8 +118,9 @@ O Unity Tweak Tool é uma das melhores ferramentas para fazer ajustes na interfa
 ```
 sudo apt install unity-tweak-tool
 ```
+</p>
 
-## Gufw
+## <p id = "gufw"> Gufw
 <img src = "img/informe-gufw.jpg" alt = "Gufw">
 
 Gufw é o firewall padrão do Ubuntu, Linux. Atua com interface gráfica para o Uncomplicated Firewall (ufw), que roda nas camadas mais básicas do Linux. Sem muitos mistérios e de fácil configuração, o Gufw permite que usuários criem regras, gerenciem perfis de uso para a ferramenta, liguem ou desliguem o firewall, tenham acessos a logs e monitorem o comportamento de aplicativos em tempo real, observando que portas cada um deles acessam para se comunicar com a Internet.
@@ -116,8 +132,9 @@ Para instalar o gufw basta digitar:
 ```
 sudo apt install gufw
 ```
+</p>
 
-## Synaptic
+## <p id = "synaptic"> Synaptic
 <img src = "img/synaptic-no-ubuntu.webp" alt = "Synaptic">
 
 O Synaptic é um programa de computador com uma interface gráfica amigável desenvolvido em GTK+ para o sistema de gerenciamento de pacotes APT, utilizado no Debian GNU/Linux e em outras distribuições que utilizam o APT.
@@ -128,9 +145,12 @@ Para instalá-lo basta digitar:
 sudo apt install synaptic
 ```
 
-## VLC
+</p>
+
+## <p id = "vlc"> VLC
 
 <img src = "img/vlc-header.jpg" alt = "VLC">
+
 O VLC é um reprodutor de Vídeo e Áudio, sendo usado tanto para reproduzir músicas quanto vídeos.
 
 Para instalar ele, basta digitar:
@@ -139,7 +159,68 @@ Para instalar ele, basta digitar:
 sudo apt install vlc
 ```
 
-## GParted
+</p>
+
+## <p id = "audacious"> Audacious
+
+<img src = "img/audacious.jpg" alt = "audacious">
+
+Audacious é um tocador de mídia livre com foco em baixa utilização de recursos, alta qualidade de áudio e suporte a uma ampla variedade de formatos. É desenvolvido primariamente para sistemas POSIX como Linux e unix-like, com suporte limitado ao Microsoft Windows.
+
+Para instalar ele, basta digitar:
+
+```
+sudo apt install audacious
+```
+
+</p>
+
+## <p id = "qbittorrent"> qBittorrent
+
+<img src = "img/qbittorrent.jpg" alt = "qbittorrent">
+
+qBittorrent é um aplicativo cliente P2P multiplataforma, gratuito e de código aberto para a rede BitTorrent. O programa utiliza a biblioteca libtorrent-rasterbar para comunicação em rede. qBittorrent está escrito na linguagem de programação C++, também utiliza a biblioteca Qt.
+
+Para quem usa o utorrent mesmo no linux, pode usar o qBittorrent no linux. 
+Para instalar ele, basta digitar:
+
+```
+sudo apt install qbittorrent
+```
+</p>
+
+## <p id = "flameshot"> Flameshot
+
+<img src = "img/flameshot.webp" alt = "Flameshot">
+
+Conheça o melhor app de captura de telas para Linux. Acredite, capturar telas no Linux vai ser uma tarefa simples com esta ferramenta open source. Flameshot possui um conjunto útil de ferramentas de marcação e seleção, incluindo desenho à mão livre, linhas, setas, caixas, círculos, realces, desfoque.
+
+Para instalar ele, basta digitar:
+
+```
+sudo apt install flameshot
+``` 
+
+É bem provável que após instalá-lo, você vai procurar e clicar no ícone do aplicativo, e bem provável também que não vai acontecer nada, mas não fique chateado, pois para ele funcionar digite o seguinte comando no terminal:
+
+```
+flameshot gui
+``` 
+
+Se aparecer uma tela meio escura e uma mensagem explicando como usar o flameshot, é porque funcionou, ele é bem parecido com o lighshot pra quem usa o Windows, e ainda tem algumas ferramentas a mais, você pode adicionar um atalho de teclado para ele simplesmende indo em configurações > teclado > atalhos personalizados, e depois so clicar em "+", e colocar um nome para saber o atalho que é, e o comando colocar "flameshot gui", sem as aspas, igual colocou no terminal e depois colocar um atalho, se quiser pode colocar o botão PRTSC e substituir o salvamento padrão dos prints do linux.
+
+Se você quiser também entrar nas configurações do flameshot, basta digitar:
+
+```
+flameshot config
+```
+<img src = "img/flameshot-config.png" alt = "Flameshot">
+
+Ele vai abrir essa tela de configurção do flameshot.
+
+</p>
+
+## <p id = "gParted"> GParted
 
 <img src = "img/gparted-interface-grafica.png" alt = "GParted">
 
@@ -148,8 +229,9 @@ GParted (ou Gnome Partition Editor) é o aplicativo GNOME para edição de parti
 ```
 sudo apt install gparted
 ```
+</p>
 
-## Obs Studio
+## <p id = "obs-studio"> Obs Studio
 <img src = "img/obs.jpg" alt = "Obs Studio">
 
 O OBS é uma suíte de software gratuita e de código aberto para gravação e transmissão ao vivo. Escrito em C e C ++, o OBS fornece captura de fonte e dispositivo em tempo real, composição de cena, codificação, gravação e transmissão. ... O áudio pode ser codificado usando os codecs MP3 ou AAC.
@@ -159,8 +241,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install obs-studio
 ```
+</p>
 
-## Alacarte
+## <p id = "alacarte"> Alacarte
 <img src = "img/alacarte.png" alt = "Alacarte">
 
 Talvez você não conhece o nome Alacarte ( que é o nome real do programa ) mas conheça descrição dele, editor de Menu Principal.
@@ -172,8 +255,9 @@ Para instalar basta digitar:
 ```
 sudo apt install alacarte
 ```
+</p>
 
-## Gimp
+## <p id = "gimp"> Gimp
 
 <img src = "img/gimp.jpg" alt = "Gimp">
 
@@ -184,8 +268,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install gimp
 ```
+</p>
 
-## Krita
+## <p id = "krita"> Krita
 
 <img src = "img/krita.jpg" alt = "Krita">
 
@@ -196,8 +281,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install krita
 ```
+</p>
 
-## Inkscape
+## <p id = "inkscape"> Inkscape
 
 <img src = "img/inkscape.png" alt = "Inkscape">
 
@@ -208,8 +294,51 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install inkscape
 ```
+</p>
 
-## Winff
+## <p id = "steam"> Steam
+
+<img src = "img/steam.png" alt = "Steam">
+
+Steam é um software de gestão de direitos digitais criado pela Valve Corporation ou Valve L.L.C., de plataformas digitais como jogos e aplicativos de programação e fornece serviços facilitados como atualização automática de jogos, e preços acessíveis aos usuários.
+
+Sabia que tem Steam para Linux? Isso mesmo. A famosa Steam também está neste sistema. Para quem dizia que não haviam jogos para Linux, estavam enganados. 
+
+Para instalá-lo basta digitar:
+
+```
+sudo apt install steam
+```
+
+Mas infelizmente tem poucos jogos nativos para Linux comparado com o que tem para o Windows
+
+</p>
+
+## <p id = "lutris"> Lutris
+
+<img src = "img/lutris.png" alt = "lutris">
+
+Lutris é um gestor de jogos livre e de código aberto para sistemas operacionais baseados em Linux, desenvolvido e mantido por Mathieu Comandon e pela comunidade,listado sob a Licença Pública Geral GNU. O Lutris possibilita a instalação de diversos jogos a partir de seu site, com um único clique, e também se integra ao site do Steam. Scripts de instalação estão disponíveis para alguns jogos difíceis de ser executados na plataforma, que rodam por meio da camada WINE, como o popular League of Legends. Jogos adquiridos por meio da GOG e da Humble Bundle podem ser adicionados por meio de seus próprios lançadores no Lutris. Os jogos são executados em suas respectivas plataformas, como WINE, Steam e emuladores, e podem ser iniciados com a mediação do aplicativo Lutris. Mais de 20 emuladores são suportados, incluindo DOSbox, ScummVM, Atari 800, Snes9x, Dolphin, PCSX2 e PPSSPP.
+
+Para instalá-lo primeiramente adicione o PPA do Lutris no seu Ubuntu com o comando abaixo:
+
+```
+sudo add-apt-repository ppa:lutris-team/lutris
+```
+Agora atualize os repositórios da sua distro com o comando abaixo:
+
+```
+sudo apt-get update
+```
+E por último, instale o Lutris com o comando:
+
+```
+sudo apt-get install lutris
+```
+
+</p>
+
+## <p id = "winff"> Winff
 
 <img src = "img/winff-screenshot.jpg" alt = "Winff">
 
@@ -220,8 +349,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install winff
 ```
+</p>
 
-## Ranger
+## <p id = "ranger"> Ranger
 
 <img src = "img/ranger_code.png" alt = "Ranger">
 
@@ -230,8 +360,9 @@ O Ranger é um gestor de arquivos de linha de comando (CLI), escrito em Python. 
 ```
 sudo apt install ranger
 ```
+</p>
 
-## NCDU
+## <p id = "ncdu"> NCDU
 
 <img src = "img/ncdu2.png" alt = "NCDU">
 
@@ -242,8 +373,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install ncdu
 ```
+</p>
 
-## Neofetch
+## <p id = "neofetch"> Neofetch
 
 <img src = "img/neofetch1.jpg" alt = "Neofetch">
 
@@ -254,8 +386,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install neofetch
 ```
+</p>
 
-## Screenfetch
+## <p id = "screenfetch"> Screenfetch
 
 <img src = "img/screenfetch.png" alt = "Screenfetch">
 
@@ -266,8 +399,9 @@ Para instalá-lo basta digitar:
 ```
 sudo apt install screenfetch
 ```
+</p>
 
-## LibreOffice
+## <p id = "libreoffice"> LibreOffice
 
 <img src = "img/libreoffice-2.png" alt = "LibreOffice">
 
@@ -308,17 +442,62 @@ sudo apt-get --purge remove libreoffice-impress
 
 Ou basta colocar o nome de qual você quer remover no lugar do "impress".
 
+</p>
+
+## Remover programas
+
+Para remover qualquer um dos programas que listamos anteriormente(exceto o LibreOffice que já está explicado como remover algum dos pacotes offices), é bem simples também, basta digitar:
+
+```
+sudo apt remove nomedoprograma
+```
+
+Exemplo:
+
+```
+sudo apt remove gimp
+```
+
+Ele vai remover o editor de imagens Gimp. Bem fácil não é?
+
 ## Mudar o Terminal
 
 Se você instalou algum outro terminal no linux e quer mudar o terminal, ou quer voltar para o terminal padrão(gnome-terminal), caso o que tenha sido instalado mudou para ele automaticamente, basta digitar:
-
 
 ```
 sudo update-alternatives --config x-terminal-emulator
 ```
 
 Vai aparecer uma lista com todos os terminais instalados, e basta selecionar qual você quer.
+</p>
 
+***
+
+<p id = "fedora">
+
+<img src = "img/fedora.png" width = "300" alt = "fedora">
+
+Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Fedora basta digitar:
+
+```
+sudo dnf update -y
+```
+
+Assim como o "apt" é o gerenciador de pacotes do Ubuntu, o "dnf" é o gerenciador de pacotes do Fedora. Se deseja verificar se tem mais alguma atualização no Fedora, basta digitar:
+
+```
+dnf check-update
+```
+ou
+
+```
+dnf list updates
+```
+
+
+</p>
+
+***
 ## Instalando linguagens de programação
 
 ### Java
