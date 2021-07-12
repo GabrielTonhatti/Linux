@@ -31,6 +31,44 @@ wget -c https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/andro
 
 Bastando apenas você colocar o mesmo comando novamente, caso tenha tido algum problema no download que ele vai continuar de onde parou.
 
+E se você também quer compactar ou descompactar arquivos ou pastas pelo terminal é bem simples, vou colocar uma lista com todos os formatos de arquivos que o Linux suporta e como compactar e descompactar cada um.
+
+# Compactar e Descompactar arquivos e pastas:
+
+## Formato .zip
+
+Todos conhecem o formato .zip né? Ele é padrão em todos os Sistemas Operacionais, e aqui vai como compactar e descompactar pelo terminal arquivos .zip:
+
+### Compactar:
+
+Para compactar é bem simples basta digitar:
+
+```
+zip -r nomedoarquivo.zip nomedapasta/
+```
+
+Sendo o "nomedoarquivo.zip" o arquivo .zip que sera gerado, e o "nomedapasta/" é a pasta que será compactada. Por exemplo:
+
+```
+zip -r fontes.zip Fontes/
+```
+
+O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar oque é aquele arquivo ".zip". Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
+
+```
+zip -P senha -r nomedoarquivo.zip pasta/
+```
+
+Exemplo:
+
+```
+zip -P zipando -r  fontes.zip Fontes/
+```
+
+E na hora que você ou outra pessoa for descompactar, vai pedir essa senha que você colocou, no meu caso a senha foi "zipando".
+### Descompactar:
+
+
 
 ## Mudar a senha do root:
 Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
