@@ -53,7 +53,23 @@ Sendo o "nomedoarquivo.zip" o arquivo .zip que sera gerado, e o "nomedapasta/" �
 zip -r fontes.zip Fontes/
 ```
 
-O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar oque é aquele arquivo ".zip". Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
+O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar oque é aquele arquivo ".zip". 
+
+Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .zip, basta digitar:
+
+```
+zip -r nomedoarquivo.zip arquivo1 arquivo2 arquivo3
+```
+
+Exemplo:
+
+```
+zip -r fontes.zip Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
+```
+
+Ele vai gerar um arquivo .zip com todos os arquivos que você escolheu ou com todas as pastas escolhidas sem precisar criar uma nova pasta e colocar tudo dentro de apenas uma pasta para compactar todos juntos.
+
+Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
 
 ```
 zip -P senha -r nomedoarquivo.zip pasta/
@@ -68,7 +84,472 @@ zip -P zipando -r  fontes.zip Fontes/
 E na hora que você ou outra pessoa for descompactar, vai pedir essa senha que você colocou, no meu caso a senha foi "zipando".
 ### Descompactar:
 
+Para descompactar um arquivo ".zip" é mais simples ainda do que compactar, basta digitar:
 
+```
+unzip nomedoarquivo.zip
+```
+
+Exemplo:
+
+```
+unzip fontes.zip
+```
+
+Se você quer descompactar para outra pasta, basta digitar:
+
+```
+unzip nomedoarquivo.zip -d caminho/da/pasta
+```
+
+Exemplo:
+
+```
+unzip fontes.zip -d /home/gabriel/Downloads
+```
+
+E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.zip, basta digitar:
+
+```
+unzip -l nomedoarquivo.zip
+```
+
+Exemplo:
+
+```
+unzip -l fontes.zip
+```
+
+E ele vai mostrar todos os arquivos que tem dentro do arquivo.zip.
+
+## Formato .rar
+
+Assim como o formato ".zip" é bastante conhecido, o formato ".rar" provávelmente é mais conhecido ainda, pois a maioria das pessoas usam o famoso Winrar.
+### Compactar:
+
+Para compactar é bem simples, basta digitar:
+
+```
+rar a nomedoarquivo.rar pasta/
+```
+
+Exemplo:
+
+```
+rar fontes.rar Fontes/
+```
+
+Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .rar, basta digitar:
+
+```
+rar a nomedoarquivo.rar arquivo1 arquivo2 arquivo3
+```
+
+Exemplo:
+
+```
+rar a fontes.rar Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
+```
+
+Ele vai gerar um arquivo .rar com todos os arquivos que você escolheu ou com todas as pastas escolhidas sem precisar criar uma nova pasta e colocar tudo dentro de apenas uma pasta para compactar todos juntos.
+
+Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
+
+```
+rar a nomedoarquivo.rar pasta/ -p
+```
+
+Exemplo:
+
+```
+rar a fontes.rar Fontes/ -p
+```
+
+E ele vai pedir para você digitar uma senha para o arquivo.
+
+### Descompactar:
+
+Para descompactar é bem simples também, basta digitar:
+
+```
+unrar x nomedoarquivo.rar
+```
+
+Exemplo:
+
+```
+unrar x fontes.rar
+```
+
+Para descompactar em outra pasta basta digitar:
+
+```
+unrar x nomedoarquivo.rar caminho/
+```
+
+Exemplo:
+
+```
+unrar x fontes.rar /home/gabriel/Downloads
+```
+
+E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.rar, basta digitar:
+
+```
+unrar l nomedoarquivo.rar
+```
+
+Exemplo:
+
+```
+unrar l fontes.rar
+```
+
+E ele vai mostrar todos os arquivos que tem dentro do arquivo.rar.
+
+## Formato .tar
+
+TAR ou tar (abreviatura de Tape ARchive), é um formato de arquivamento de arquivos (ficheiros). Apesar do nome "tar" ser derivado de "tape archive", o seu uso não se restringe a fitas magnéticas. Ele se tornou largamente usado para armazenar vários arquivos em um único, preservando informações como datas e permissões. Normalmente é produzido pelo comando "tar". Apesar de ser mais comum em sistemas Unix-Like, este formato é suportado pela maioria dos descompactadores para Windows, como por exemplo o 7-zip.
+
+tar também é o nome de um programa de arquivamento desenvolvido para armazenar e extrair arquivos de um arquivo tar (que contém os demais) conhecido como tarfile ou tarball. O primeiro argumento para tar deve ser uma das seguintes opções: Acdrtux, seguido por uma das seguintes funções adicionais. Os argumento finais do tar são os nomes dos arquivos ou diretórios nos quais eles podem ser arquivados. O uso de um nome de diretório, implica sempre que os subdiretórios sob ele, serão incluídos no arquivo.
+
+### Compactar:
+
+Para compactar é bem simples, basta digitar:
+
+```
+tar -cvf nomedoarquivo.tar pasta/
+```
+
+Exemplo:
+
+```
+tar -cvf fontes.tar Fontes/
+```
+
+Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar, basta digitar:
+
+```
+tar -cvf nomedoarquivo.tar arquivo1 arquivo2 arquivo3
+```
+
+Exemplo:
+
+```
+tar -cvf fontes.tar Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
+```
+
+Ele vai gerar um arquivo .tar com todos os arquivos que você escolheu ou com todas as pastas escolhidas sem precisar criar uma nova pasta e colocar tudo dentro de apenas uma pasta para compactar todos juntos.
+
+### Descompactar:
+
+Para descompactar um arquivo ".tar", basta digitar:
+
+```
+tar -xvf nomedoarquivo.tar
+```
+
+Exemplo:
+
+```
+tar -xvf fontes.tar
+```
+
+Para descompactar em outro pasta:
+
+```
+tar -xvf nomedoarquivo.tar -C caminho/da/pasta/
+```
+
+Exemplo:
+
+```
+tar -xvf fontes.tar -C /home/gabriel/Downloads
+```
+
+E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar, basta digitar:
+
+```
+tar -tvf nomedoarquivo.tar
+```
+
+Exemplo:
+
+```
+tar tvf fontes.tar
+```
+
+ou
+
+```
+tar tf fontes.tar
+```
+
+E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.
+
+## Formato .tar.gz
+
+Os formatos TGZ e TBZ (ou tar.gz e tar.bz2, respectivamente) são usados para a compressão e descompressão de arquivos em sistemas Unix. No Linux, esses formatos são reconhecidos de forma nativa e os arquivos podem ser facilmente extraídos - como acontece com o .ZIP, no Windows.
+
+### Compactar:
+
+Para compactar um arquivo para ".tar.gz", basta digitar:
+
+```
+tar -cz nomedapasta > arquivo.tar.gz
+```
+
+Exemplo
+
+```
+tar -cz Fontes/ > fontes.tar.gz
+```
+
+ou
+
+```
+tar -zcvf arquivo.tar.gz nomedapasta/ 
+```
+
+Exemplo
+
+```
+tar -zcvf fontes.tar.gz  Fontes/
+```
+
+Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar.gz, basta digitar:
+
+```
+tar -zcvf nomedoarquivo.tar.gz arquivo1 arquivo2 arquivo3
+```
+
+Exemplo:
+
+```
+tar -zcvf fontes.tar.gz Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
+```
+
+Ele vai gerar um arquivo .tar.gz com todos os arquivos que você escolheu ou com todas as pastas escolhidas sem precisar criar uma nova pasta e colocar tudo dentro de apenas uma pasta para compactar todos juntos.
+
+### Descompactar:
+
+Para descompactar um arquivo ".tar", basta digitar:
+
+```
+tar -zxvf nomedoarquivo.tar.gz
+```
+
+Exemplo:
+
+```
+tar -zxvf fontes.tar.gz
+```
+
+Ou
+
+```
+tar -vzxf fontes.tar.gz
+```
+
+Ou
+
+```
+tar -xz Fontes/ < fontes.tar.gz
+```
+
+Aqui o "Fontes/" sendo o nome da pasta que será gerado após descompactar.
+
+Ou
+
+```
+tar -czf fontes.tar.gz Fontes/
+```
+
+Como no exemplo anterior, "Fontes/" é o nome da pasta que será gerado após descompactar o arquivo.
+
+Ou
+
+```
+tar -xzf fontes.tar.gz
+```
+
+Ou
+
+```
+tar -xf fontes.tar.gz
+```
+
+Ou
+
+```
+tar -vczf fontes.tar.gz Fontes/
+```
+
+Como em outros exemplos, "Fontes/" é o nome da pasta que será gerado após descompactar o arquivo.
+
+Ou
+
+```
+tar -vxf fontes.tar.gz
+```
+
+Para descompactar em outro pasta:
+
+```
+tar -zxvf nomedoarquivo.tar.gz -C caminho/da/pasta/
+```
+
+Exemplo:
+
+```
+tar -zxvf fontes.tar.gz -C /home/gabriel/Downloads
+```
+
+E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar.gz, basta digitar:
+
+```
+tar -ztvf nomedoarquivo.tar.gz
+```
+
+Ou
+
+```
+tar -tvf nomedoarquivo.tar.gz
+```
+
+Ou
+
+```
+tar -tf nomedoarquivo.tar.gz
+```
+
+E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.gz.
+
+## Formato .bz2
+
+O formato de arquivo BZ2 é compatível com o software que pode ser instalado na plataforma do sistema Linux, Mac OS, Windows. Arquivos com extensão BZ2 são categorizados como arquivos Arquivos comprimidos. O subconjunto Arquivos comprimidos compreende 230 vários formatos de arquivo.
+
+### Compactar:
+
+Para compactar um arquivo para .bz2, tem quer ser so arquivos com alguma extensão mesmo, como por exemplo: "arquivo.tar", que ficará: "arquivo.tar.bz2", e para adicionar essa extensão ".bz2", basta digitar:
+
+```
+bzip2 -z nomedoarquivo.extensao
+```
+
+Exemplo:
+
+```
+bzip2 -z fontes.tar
+```
+
+Que se tornará um arquivo "fontes.tar.bz2".
+
+### Descompactar:
+
+Para descompactar um arquivo .bz2 é bem simples, basta digitar:
+
+```
+bunzip nomedoarquivo.bz2
+```
+
+Ou 
+
+```
+bunzip2 nomedoarquivo.bz2
+```
+
+Exemplo:
+
+```
+bunzip2 fontes.bz2
+```
+
+Ou qualquer arquivo que termine com ".bz2", no caso ele so vai remover a extensão ".bz2".
+
+## Formato .tar.bz2
+
+Os formatos TGZ e TBZ (ou tar.gz e tar.bz2, respectivamente) são usados para a compressão e descompressão de arquivos em sistemas Unix. No Linux, esses formatos são reconhecidos de forma nativa e os arquivos podem ser facilmente extraídos - como acontece com o .ZIP, no Windows.
+
+### Compactar:
+
+Para compactar um arquivo ou pasta para ".tar.bz2", basta digitar:
+
+```
+tar -jcvf nomedoarquivo.tar.bz2 pasta/
+```
+
+Exemplo:
+
+```
+tar -jcvf fontes.tar.bz2 Fontes/
+```
+
+Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar.bz2, basta digitar:
+
+```
+tar -jcvf nomedoarquivo.tar.bz2 arquivo1 arquivo2 arquivo3
+```
+
+Exemplo:
+
+```
+tar -jcvf fontes.tar.bz2 Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
+```
+
+Ele vai gerar um arquivo ".tar.bz2" com todos os arquivos que você escolheu ou com todas as pastas escolhidas sem precisar criar uma nova pasta e colocar tudo dentro de apenas uma pasta para compactar todos juntos.
+
+### Descompactar:
+
+Para descompactar um arquivo ".tar.bz2", basta digitar:
+
+```
+tar -jxvf nomedoarquivo.tar.bz2
+```
+
+Exemplo:
+
+```
+tar -jxvf fontes.tar.bz2
+```
+
+Para descompactar em outra pasta, basta digitar:
+
+```
+tar -jxvf nomedoarquivo.tar.bz2 -C caminho/da/pasta
+```
+
+Exemplo:
+
+```
+tar -jxvf fontes.tar.bz2 -C /home/gabriel/Downloads
+```
+
+E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar.bz2, basta digitar:
+
+```
+tar -jtvf nomedoarquivo.tar.bz2
+```
+
+Exemplo:
+
+```
+tar -jtvf fontes.tar.bz2
+```
+
+Ou
+
+```
+tar -tvf fontes.tar.bz2
+```
+
+Ou
+
+```
+tar -tf fontes.tar.bz2
+```
+
+E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.bz2.
 
 ## Mudar a senha do root:
 Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
