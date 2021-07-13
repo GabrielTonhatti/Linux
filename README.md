@@ -7,7 +7,7 @@ Comandos Linux
 
 <a href = "#ubuntu"> Ubuntu </a>
 <a href = "#fedora"> Fedora </a>
-<a href = "#arch"> Arch Linux </a>
+<a href = "#arch-linux"> Arch Linux </a>
 <a href = "#snap"> Snap </a>
 <a href = "#flatpak"> Flatpak </a>
 
@@ -693,6 +693,12 @@ A desvantagem de descompactar usando o 7-Zip, é que ele não vai descompactar d
 
 <img src = "img/Ubuntu_logoib.svg" width = "200" alt = "Ubuntu"> <img src = "img/logo-mint.png" width = "200" alt = "Linux Mint"> <img src = "img/logo-debian.png" width = "200" alt = "Debian"> 
 
+Ubuntu é um sistema operacional (pt-BR) ou sistema operativo (pt-PT) de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo (LTS). É desenvolvido pela Canonical Ltd.
+
+Geralmente é executado em computadores pessoais e também é popular em servidores de rede, geralmente executando a versão Ubuntu Server, com recursos de classe empresarial. Até 2017, o Ubuntu também estava disponível para tablets e smartphones, com a edição Ubuntu Touch.
+
+A proposta do Ubuntu é oferecer um sistema que qualquer pessoa possa utilizar sem dificuldades, independentemente de nacionalidade, nível de conhecimento ou limitações físicas. O sistema deve ser constituído principalmente por software livre e deve também ser isento de qualquer taxa.
+
 ### Obs: Os comandos citados aqui serve tanto para o Ubuntu, quanto para o Linux Mint e o Debian, ou qualquer outra distro baseada no Debian ou Ubuntu.
 
 Aqui vamos passar alguns comando do Ubuntu(a distro linux mais famosa), mas oque vamos mais passar aqui vai ser alguns programas para instalar no Ubuntu.
@@ -1120,6 +1126,12 @@ Vai aparecer uma lista com todos os terminais instalados, e basta selecionar qua
 
 <img src = "img/fedora.png" width = "300" alt = "fedora">
 
+Fedora (conhecido como Fedora Core antes da versão 7) é um sistema operacional (pt-BR) ou sistema operativo (pt-PT) Linux. O sistema operacional Fedora Linux é software livre e de código aberto, e os programas disponíveis dentro de seu repositório de programas também são programas livres que aderem a uma licença livre.
+
+O Fedora Linux existe desde 2003, e seu desenvolvimento e suporte é oferecido pela comunidade do Projeto Fedora. Após ter descontinuado o sistema operacional Red Hat Linux, a Red Hat patrocina o desenvolvimento do sistema operacional Fedora, se envolvendo no desenvolvimento de vários programas disponíveis para o Fedora, que são eventualmente adicionados para o repositório do Red Hat Enterprise Linux, que é a distribuição Linux atual da empresa.
+
+Desde a versão Fedora 21, há três edições disponíveis: Fedora Workstation, focado para computadores pessoais, Fedora Server para servidores, e o Fedora Cloud para servidores com foco em computação em nuvem. Também existem outras edições, chamadas de "spins", com ambientes gráficos diferentes do ambiente gráfico GNOME que acompanha o sistema operacional. Ambientes gráficos como o KDE, Xfce, LXDE, entre outros, estão disponíveis. Também existem edições para usos específicos, como o uso para computação científica, astronomia, robótica, segurança e para jogos. Novas versões do Fedora são lançadas aproximadamente a cada 6 meses.
+
 Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Fedora basta digitar:
 
 ```
@@ -1136,6 +1148,83 @@ ou
 ```
 dnf list updates
 ```
+
+
+</p>
+
+***
+<p id = "arch-linux">
+
+<img src = "img/arch-linux.png" width = "250" alt = "Arch Linux"> <img src = "img/manjaro.png" width = "250" alt = "Manjaro">
+
+Arch Linux, ou Arch é uma distribuição Linux para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, como Windows e MacOS. Além de ser composto predominantemente por software livre e de código aberto, ele envolve contribuições da comunidade.
+
+O desenvolvimento é focado na elegância, minimalismo e simplicidade no código, e espera que o usuário faça alguns esforços para compreender o modo de funcionamento do sistema. O gerenciador de pacotes, Pacman, foi escrito especialmente para o Arch Linux e é usado para instalar, remover, pesquisar e atualizar os pacotes do sistema.
+
+O Arch Linux usa o modelo rolling release. Com esse sistema, os usuários podem ter acesso às últimas atualizações estáveis dos pacotes e também evita atualizações muito grandes que podem gerar erros nos componentes do sistema. As imagens de instalação lançadas pela equipe do Arch são apenas capturas instantâneas de imagens de disco atualizadas dos principais componentes do sistema.
+
+Usuários da distribuição podem criar facilmente seus próprios pacotes compatíveis com o pacman usando ferramentas como o "Arch Build System", funcionalidade esta que ajudou a sustentar o AUR, um repositório de pacotes criados por usuários que complementam os repositórios oficiais.
+
+O Arch seria uma distro Linux mais "Hardcore" digamos, pois para você instalar ele, você mesmo tem que "criar" o sitema, instalar tudo por linhas de comando, não é que nem outras distros como o Ubuntu ou Fedora ou muitas outras que tem uns instalador pronto, que você apenas define coisas básicas do sistema como região, idioma, teclado, nome de usuário e so clicar em instalar, você mesmo tem que reparticionar o disco até mesmo chegara instalar a interface gráfica dele. No caso do Manjaro Linux que tem umas instalação simples como as outras distros, e é baseado no kernel do Arch, usando o mesmo gerenciador de pacotes o "pacman", então se você quer instalar o Arch Linux, o recomendado  é que você tenha um pouco de conhecimento em Linux, pode começar por qualquer distro como o Ubuntu, Linux Mint, Debian, Fedora, popOS, entre outros. O mais recomendado para quem está entrando no mundo Linux é que comece pela distro Ubuntu ou Linux Mint, ou qualquer outra distro baseada no Ubuntu, pois terá uma interface mais "amigável", com fácil aprendizado.
+
+E se você quer ir por mundo do Arch, mas não quer ir sem saber nada de como funciona, pode tentar primeiro o Manjaro, já que o mesmo tem uma instalação bem simples.
+
+Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Arch Linux/Manjaro basta digitar:
+
+
+```
+sudo pacman -Sy
+```
+
+ou
+
+```
+sudo pacman -Syyu
+```
+
+Para fazer sincronização total com os pacotes e fontes do Arch, e atualizar tudo que precisar.
+
+
+O "pacman" é o gerenciador de pacotes do Arch/Manjaro, e o "-S" é para instalar algum pacote, e o "-Sy" para sincronizar com as fontes de instalação do Arch e verificar se tem alguma atualização, se tiver atualização, ele vai perguntar se você deseja atualizar ou não o sistema como no Ubuntu ou Fedora.
+
+Para verificar se tem alguma atualização no Arch, basta digitar:
+
+```
+sudo pacman -Qu
+```
+
+
+</p>
+
+***
+<p id = "snap">
+
+<img src = "img/snapcraft.png" width = "600" alt = "Snap">
+
+Site do <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>.
+
+Snappy é um software de implantação e um sistema de gerenciamento de pacotes originalmente projetado e construído pela Canonical para o sistema operacional Ubuntu phone. Os pacotes, chamados de 'snaps' e a ferramenta para usá-los, 'snapd', funcionam por toda uma gama de distribuições Linux e, portanto, permitem implantação de software upstream de forma distro-agnostic. O sistema é projetado para funcionar em smartphones, nuvem, internet das coisas e ambiente de desktop.
+
+Pacotes de software "snap" são auto-contidos e o funcionam por toda uma gama de distribuições Linux. Essa é uma abordagem diferente do pacote Linux tradicional, como o APT ou o RPM, que exigem pacotes especificamente adaptados para cada distribuição de Linux. Isso adiciona atraso entre o desenvolvimento de aplicações e de sua implementação para os usuários finais.
+
+Snaps não possuem dependências de nenhuma loja de aplicativos, podem ser obtidos a partir de qualquer fonte e pode ser utilizado para implantação de software upstream. Quando snaps são implantados no Ubuntu e em outras versões de Linux, a loja de aplicativos do Ubuntu é utilizada como padrão de back-end, mas outras lojas podem ser ativados.
+
+</p>
+
+***
+<p id = "flatpak">
+
+<img src = "img/flathub-logo.png" width = "400" alt = "Flatpak">
+
+Site do <a href = "https://flathub.org/home" target = "_blank"> Flathub</a>.
+
+O Flathub tem como objetivo ser o lugar para obter e distribuir aplicativos para Linux. Ele é desenvolvido por Flatpak, que permite que aplicativos Flathub sejam executados em quase todas as distribuições Linux.
+
+Flatpak, anteriormente conhecido como xdg-app, é um utilitário para implantação de software, gestão de pacote e virtualização para Linux. Uma aplicação empacotada no formato Flatpak provê um ambiente sandbox onde o usuário pode executar programas em isolamento do resto do sistema, ou seja, onde cada aplicação empacotada possui apenas as bibliotecas necessárias para a execução do programa.
+
+Aplicações usando Flatpak necessitam de autorização prévia do usuário para usar o hardware ou acessar arquivos do sistema, semelhante aos aplicativos para o sistema operacional Android.
+
+Diferente do Snappy, o Flatpak foi desenvolvido para ser descentralizado, permitindo adicionar diferentes fontes de programas. Uma fonte popular de aplicativos no formato Flatpak é o Flathub. Atualmente, alguns programas populares disponíveis inclui Mozilla Firefox, GIMP, Inkscape, LibreOffice, Pitivi, KDE Applications, e alguns não oficiais como Chromium, Blender, Spotify, Skype, Discord, e Steam.
 
 
 </p>
