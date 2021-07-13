@@ -10,6 +10,20 @@ Comandos Linux
 <a href = "#arch"> Arch Linux </a>
 <a href = "#snap"> Snap </a>
 <a href = "#flatpak"> Flatpak </a>
+
+***
+## Mudar a senha do root:
+Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
+
+```
+sudo passwd root
+```
+
+Depois de digitar e confirmar a nova senha, temos que desbloquear o uso dela:
+
+```
+sudo passwd -u root
+```
 ***
 Se voce gosta de usar o terminal para tudo, tem um comando que você pode usar para baixar as coisas que você quiser, basta digitar:
 
@@ -34,6 +48,66 @@ Bastando apenas você colocar o mesmo comando novamente, caso tenha tido algum p
 E se você também quer compactar ou descompactar arquivos ou pastas pelo terminal é bem simples, vou colocar uma lista com todos os formatos de arquivos que o Linux suporta e como compactar e descompactar cada um.
 
 # Compactar e Descompactar arquivos e pastas:
+
+Antes de ensinar como compactar e descompactar, vamos ensinar como instalar alguns formatos de compactação que não vem padrão no Linux.
+
+## 7-Zip:
+
+Para instalar o 7-Zip no Ubuntu basta digitar:
+
+```
+sudo apt install p7zip-full
+```
+
+No Fedora basta digitar:
+
+```
+sudo dnf install p7zip
+```
+
+No Arch Linux basta digitar:
+
+```
+sudo pacman -S p7zip
+```
+
+## RAR:
+
+Para instalar o formato rar no Ubuntu, basta digitar:
+
+```
+sudo apt install rar unrar
+```
+
+## Gzip e Bzip:
+
+Para instalar o formato .gz e .bz2 no Arch Linux, basta digitar:
+
+```
+sudo pacman -S gzip bzip2
+```
+
+Ele vai instalar  os dois pacotes juntos, o gzip e o bzip já vem como padrão no Ubuntu e Fedora, e para qualquer outro programa que você queira instalar, você pode instalar vários de uma vez só, basta digitar o comando de gerenciador de pacotes da distro, no caso do Ubuntu o apt, o Fedora o dnf, e o Arch Linux o pacman, e install com o nome dos pacotes separados por espaço, no caso do Arch é um pouco diferente, no lugar de "install", é "-S", que seria referente a "install", das outras distros,  exemnplos:
+
+Ubuntu:
+
+```
+sudo apt install gimp krita inkscape obs-studio
+```
+
+Fedora:
+
+```
+sudo dnf install gimp krita inkscape obs-studio
+```
+
+Arch Linhx:
+
+```
+sudo pacman -S gimp krita inkscape obs-studio
+```
+
+Nos três exemplos será instalado o Gimp, o Krita, o Inkscape e o Obs Studio.
 
 ## Formato .zip
 
@@ -613,18 +687,6 @@ Ou
 
 A desvantagem de descompactar usando o 7-Zip, é que ele não vai descompactar da mesma forma que os outros comandos, criando uma pasta com o mesmo nome da pasta que tinha sido compactada ou o mesmo nome do arquivo so que sem o ".extensao", ele vai descompactar tudo que tem dentro do arquivo na pasta atual que você está. Mesmo que você compacte uma pasta ou arquivo com o 7-Zip, se você usar o formato de decompactação padrão da extensão que você escolheu, ele vai descompactar normal criando uma pasta para descompactar tudo, diferente do 7-Zip.
 
-## Mudar a senha do root:
-Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
-
-```
-sudo passwd root
-```
-
-Depois de digitar e confirmar a nova senha, temos que desbloquear o uso dela:
-
-```
-sudo passwd -u root
-```
 ****
 
 <p id = "ubuntu">
