@@ -551,6 +551,68 @@ tar -tf fontes.tar.bz2
 
 E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.bz2.
 
+## 7-Zip
+
+7-Zip é um compactador de arquivos open-source para o sistema operacional Microsoft Windows e Linux. O programa, desenvolvido por Igor Pavlov, é distribuído sobre a licença GNU LGPL, e compete diretamente com os programas de código-fechado WinZip e WinRAR. 
+
+Com ele você pode usar para compactar para qualquer formato listado anteriormente, e até mesmo para o formato .7z.
+
+### Compactar:
+
+Para compactar é bem simples, basta digitar:
+
+```
+7z a nomedoarquivo.extensao pasta/
+```
+
+Exemplo:
+
+```
+7z a fontes.7z Fontes/
+```
+
+Ou
+
+```
+7z a fontes.tar Fontes/
+```
+
+Ou
+
+```
+7z a fontes.zip Fontes/
+```
+
+Ou qualquer outro formato que você queira.
+
+### Descompactar:
+
+Para descompactar um arquivo com o 7-Zip, basta digitar:
+
+```
+7z e arquivo.extensao
+```
+
+Exemplo:
+
+```
+7z a fontes.7z
+```
+
+Ou
+
+```
+7z a fontes.tar
+```
+
+Ou
+
+```
+7z a fontes.zip
+```
+
+A desvantagem de descompactar usando o 7-Zip, é que ele não vai descompactar da mesma forma que os outros comandos, criando uma pasta com o mesmo nome da pasta que tinha sido compactada ou o mesmo nome do arquivo so que sem o ".extensao", ele vai descompactar tudo que tem dentro do arquivo na pasta atual que você está. Mesmo que você compacte uma pasta ou arquivo com o 7-Zip, se você usar o formato de decompactação padrão da extensão que você escolheu, ele vai descompactar normal criando uma pasta para descompactar tudo, diferente do 7-Zip.
+
 ## Mudar a senha do root:
 Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
 
