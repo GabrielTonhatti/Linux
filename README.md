@@ -25,6 +25,235 @@ Depois de digitar e confirmar a nova senha, temos que desbloquear o uso dela:
 sudo passwd -u root
 ```
 ***
+
+# Comandos básicos do Linux:
+
+## CD
+
+O comando "cd" serve para você navegar dentro dos diretórios pelo terminal, o comando "cd nomedapasta" é para você entrar na pasta que você quer, e "cd .." para voltar uma pasta, exemplo:
+
+```
+cd Documentos
+```
+
+Ele vai entrar no diretório "Documentos", e caso você queira voltar uma pasta, basta digitar:
+
+```
+cd ..
+```
+
+Que ele vai voltar para a pasta anterior da pasta "Documentos", que normalmente é a pasta principal, que fica o usuário, que seria a pasta "/home/nomedousuario".
+
+## PWD
+
+O comando pwd vai mostar em qual diretório você está, passando o caminho completo, por exemplo digamos que você esteja na pasta Fontes, que está dentro da pasta Downloads, se você digitar o comando:
+
+```
+pwd
+```
+
+Ele vai mostrar "/home/nomedousuario/Downloads/Fontes", sendo "/" o diretório principal do Linux, e "/home" onde fica os usuários.
+
+## LS
+
+O comando "ls", serve para você listar os arquivos dentro de um diretório(pastas) em que você está, ou outro diretório, passando o caminho completo. Por exemplo, digamos que você está na pasta "Documentos", se você digitar um "ls" e der Enter, ele vai mostrar todos os arquivos que tem na pasta "Documentos", exemplo:
+
+```
+ls
+```
+
+Se você quer ver todos os arquivos do diretório, incluindo os arquivos ocultos(que começam com ".", exemplo: ".git"), basta digitar:
+
+```
+ls -a
+```
+
+Se você quer ver os arquivos em formato de lista, e com as data de modificação e tamaho de cada pasta/arquivo, basta digitar:
+
+```
+ls -l
+```
+
+E se você quer ver das duas últimas formas juntas, basta digitar:
+
+```
+ls -la
+```
+
+Ele vai mostrar todos os arquivos em formato de lista, incluindo os arquivos ocultos.
+
+E se você quer ver oque tem em outro diretório sem ter que entrar nele, basta digitar o "ls" seguido do caminho do diretório, exemplo:
+
+```
+ls /home/gabriel/Downloads
+```
+
+Ele vai listar todos os arquivos dentro do diretório Downloads, e "gabriel" é o nome de usuário.
+
+## MKDIR
+
+O comando "mkdir" serve para você criar um novo diretório, basta digitar:
+
+```
+mkdir nomedapasta
+```
+
+Exemplo:
+
+```
+mkdir Pasta-de-Exemplo
+```
+
+Se você quer separar o nome da pasta por espaço, basta digitar usando "\" para separar os nomes, por exemplo:
+
+```
+mkdir nome\ da\ pasta
+```
+
+Exemplo:
+
+```
+mkdir Pasta\ de\ Exemplo
+```
+
+Se você não colocar a "\", ele vai criar várias pastas cada uma com um nome que foi separado pelo espaço. Caso você queira criar uma pasta em outro diretório basta passar o caminho completo de onde você quer criar a pasta:
+
+```
+mkdir nome\ da\ pasta /home/nomedeusuario/Documentos
+```
+
+Exemplo:
+
+```
+mkdir Pasta\ de\ Exemplo /home/gabriel/Documentos
+```
+
+## Touch
+
+O comando "touch" é parecido com o "mkdir", so que ele é para criar arquivos e não diretórios, por exemplo para criar um arquivo de bloco de notas, basta digitar:
+
+```
+touch arquivo.txt
+```
+
+Exemplo:
+
+```
+touch comandos-linux.txt
+```
+
+Depois do "." você sempre coloca a extensão do arquivo que você quer criar, .txt para arquivos de texto comum, que é os de bloco de notas, .js para arquivos JavaScript e etc.
+
+## RMDIR
+
+O comando "rmdir" server para você excluir permanentemente diretórios vazios, ele não exclui diretórios que contenham arquivos dentro. Para usá-lo basta digitar:
+
+```
+rmdir nomedapasta
+```
+
+Exemplo:
+
+```
+rmdir Pasta\ de\ Exemplo
+```
+
+## RM
+
+O comando "rm" é parecido com o "rmdir", ele também exclui permanentemente, ele é mais usado para excluir arquivos, mas também tem como usá-lo para excluir diretórios que estejam cheios, então TOME BASTANTE CUIDADO quando for usá-lo. Para usá-lo para excluir algum arquivo basta digitar:
+
+```
+rm nomedoarquivo
+```
+
+Exemplo
+
+```
+rm comandos-linux.txt
+```
+
+Para excluir um diretório usando o "rm", basta adicionar um "-r" depois do "rm", por exemplo:
+
+```
+rm -r nomedapasta
+```
+
+Exemplo
+
+```
+rm -r Pasta\ de\ Exemplo
+```
+
+Ele vai excluir permanentemente o arquivo/pasta, então tome cuidado quando for usá-lo para não apagar algum arquivo ou diretório que não queira.
+
+## NANO
+
+O comando "nano" é um editor de arquivos pelo terminal, ele serve para você editar o arquivo pelo próprio terminal sem ter que abrir algum outro programa de edição de texto, exemplo:
+
+
+```
+nano nomedoarquivo.extensao
+```
+
+Exemplo
+
+```
+nano comandos-linux.txt
+```
+
+Para salvar oque foi editado pelo "nano", basta apertar as teclas "Crtl + S", e para sair basta apertar "Ctrl + X".
+
+## MV
+
+O comando "mv" serve para você mover arquivos ou pastas para outro diretório, mas tome cuidado ao usar, pois se você não passar o caminho corretamente você pode perder o arquivo ou pasta, ou se mover para algum diretório que tenha algum arquivo/pasta com o mesmo nome, ele vai sobrescrever o arquivo. Para usá-lo basta digitar:
+
+```
+mv nomedoarquivo caminhoparaondequermover
+```
+
+Exemplo:
+
+```
+mv comandos-linux.txt /home/gabriel/Imagens
+```
+
+Se você quer mover vários arquivos ou pasta de uma vez, basta digitar o nome de todos os arquivos ou pastas antes do caminho, separados por espaço. Exemplo:
+
+```
+mv comandos-linux.txt Estudos/ fontes.zip /home/gabriel/Imagens
+```
+
+Ele vai mover todos os arquivos e pastas digitados para o diretório "Imagens".
+
+## CP
+
+O comando "cp" é parecido com o comando "mv", a diferença que ele é para copiar e não para mover, mas caso você copie para um diretório que tenha algum arquivo/pasta com o mesmo nome, ele também vai sobrescrever com o "mv" faz. Para usá-lo basta digitar:
+
+
+```
+cp nomedoarquivo caminhoparaondequermover
+```
+
+Exemplo:
+
+```
+cp comandos-linux.txt /home/gabriel/Imagens
+```
+
+Se você quer copiar vários arquivos de uma vez, basta digitar o nome de todos os arquivos ou pastas antes do caminho, separados por espaço. Exemplo:
+
+```
+cp comandos-linux.txt fontes.zip /home/gabriel/Imagens
+```
+
+Ele vai copiar todos os arquivos digitados para o diretório "Imagens". Para copiar alguma pasta com o comando "cp", basta colocar um "-r" depois do "cp" para ele copiar o diretório. Exemplo:
+
+```
+cp -r Linux/ Estudos/ fontes/ /home/gabriel/Imagens
+```
+
+## Wget
+
 Se voce gosta de usar o terminal para tudo, tem um comando que você pode usar para baixar as coisas que você quiser, basta digitar:
 
 ```
@@ -1108,6 +1337,153 @@ sudo apt remove gimp
 ```
 
 Ele vai remover o editor de imagens Gimp. Bem fácil não é?
+
+<p id = "arquivos.">
+E caso você tenha se perguntado, "E para instalar o Google Chrome?" ou o Discord, ou qualquer outro programa famoso que não está nessa lista, é bem simples, porque alguns programas não fica junto de outros programas do gerenciador de pacotes do Ubuntu/Debian, e para instalar esse programas é bem simples, digamos que você queira instalar o Google Chrome, o mais querido navegador de todos(e ao mesmo tempo "odiado" por usar muita memória RAM), para isso basta você pesquisar no navegador que veio como padrão no Ubuntu/Debian(normalmente é o FireFox), "download Chrome" ou "Download Google Chrome", e vai aparecer alguns links de opções para você entrar e baixar, assim como você faria no Windows.
+
+<img src = "img/google.png" alt = "Google Chrome">
+
+Clicando na página "Navegador da Web Google Chrome", vai entrar na seguinte tela:
+
+<img src = "img/chrome.jpeg" alt = "Google Chrome">
+
+Igual no Windows mesmo, clicando no botão de "Fazer o download do Google Chrome", vai aparcer outra janela pedindo pra você escolher o formato da extensão do arquivo:
+
+<img src = "img/download-chrome.png" alt = "Google Chrome">
+
+Se você estiver usando o Ubuntu, Debian, Linux Mint ou qualquer outra distro baseada no Ubuntu ou Debian, sempre baixe o formato ".deb", que é o padrão de extensão para distros baseadas no Debian, depois de ter baixado, ele vai gerar um arquivo como esse:
+
+<img src = "img/instalacao-chrome.png" alt = "Terminal">
+
+Os arquivos ".rpm" são para as distros que usam o RPMFusion como gerenciador de arquivos e programas, como o Fedora, RedHat, OpenSuse, etc.
+
+Para instalá-lo é bem simples, ou você pode dar um duplo clique no arquivo que ele vai abrir a lojinha do Linux e é so você clicar em "instalar", ou pode fazer isso pelo terminal. Para instalar pelo terminal é bem simples, basta digitar:
+
+```
+sudo dpkg -i nomedoarquivo.deb
+```
+
+Exemplo:
+
+```
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+O "-i" é o "install" do gerenciador de pacotes ".deb" do dpkg, assim como o "install" para o "apt".
+
+Ou
+
+```
+sudo apt install ./nomedoarquivo.deb
+```
+
+Exemplo:
+
+```
+sudo apt install ./google-chrome-stable_current_amd64.deb
+```
+
+E depois que o comando terminar de rodar, ele vai ter instalado o Google Chrome, depois disso é so abrir e usar ele como qualquer outro programa, e você pode fazer isso pra instalar o Discord, ou qualquer outro programa com a extensão ".deb".
+
+
+E se você quiser remover algum programa com a extensão ".deb" que você tenha instalado, basta digitar:
+
+```
+sudo dpkg -r nomedoprograma
+```
+
+Exemplo:
+
+```
+sudo dpkg -r google-chrome
+```
+
+O "-r" é referente ao "remove" do apt, e colocando apenas o nome que o sistema reconhece o programa já vai remove-lo, eu prefiro usar o "sudo apt install ./nomedoarquivo.deb", pois além de ser mais fácil de lembrar quando se está iniciando, ele da menos problemas de pacotes quebrados comparado ao "dpkg -i".
+
+</p>
+
+Caso você tenha algum problema com pacotes quebrados, tem como resolver essas dependencias. Para fazer isso, é necessário listar os pacotes quebrados no Ubuntu e, em seguida, os usuários do Ubuntu podem consertar os pacotes quebrados via linha de comando. Se uma instalação de pacote falhar no Linux Ubuntu, isso pode causar alguns problemas.
+
+Por exemplo, o gerenciador de pacotes congela ou fica bloqueado. É um problema usar o Ubuntu corretamente enquanto os pacotes do sistema estão quebrados. Felizmente, existem algumas maneiras de resolver o problema.
+
+Se você souber o nome do pacote quebrado, poderá removê-lo manualmente usando o seguinte comando.
+
+```
+sudo dpkg –remove -force –force-remove-reinstreq NOME_DO_PACOTE_VAI_AQUI
+```
+
+Exemplo:
+
+```
+sudo dpkg –remove -force –force-remove-reinstreq google-chrome
+```
+
+Se você não tiver certeza sobre o nome do pacote quebrado, siga os comandos abaixo:
+
+### Comando 1
+
+```
+sudo apt-get –fix-broken install
+```
+
+### Comando 2
+
+Se uma instalação do pacote do Ubuntu falhar (devido às dependências), execute os seguintes comando:
+
+```
+sudo apt-get clean
+```
+
+```
+sudo apt-get install -f
+```
+
+```
+sudo dpkg –configure -a
+```
+
+### Comando 3
+
+```
+sudo rm /var/lib/apt/lists/* -vf
+```
+
+```
+sudo apt-get update
+```
+
+### Comando 4
+
+```
+sudo apt-get clean
+```
+
+```
+sudo apt-get autoclean
+```
+
+```
+sudo apt-get autoremove
+```
+
+### Comando 5
+
+```
+sudo dpkg –configure -a
+```
+
+```
+sudo apt-get update
+```
+### Conclusão
+
+Espero que uma dessas correções tenham funcionado para você e que o sistema volte a trabalhar normalmente. Lembre-se que a melhor maneira de lidar com uma situação totalmente é tentar voltar ao que era antes.
+
+## OBS:. Tente não instalar novos pacotes pensando em resolver uma quebra no Ubuntu, a menos que você saiba exatamente o que está fazendo. É provável que você acabe com um emaranhado de coisas quebradas que serão mais difíceis de resolver.
+
+Agora basta aproveitar e usufruir o Ubuntu da melhor maneira que você puder. Caso, venha acontecer novamente este problema, basta recorrer novamente aos comandos aqui listados.
+
+Essas informações foram tiradas do site <a href = "https://sempreupdate.com.br/como-corrigir-pacotes-quebrados-no-ubuntu/"> SempreUpdate</a>.
 
 ## Mudar o Terminal
 
