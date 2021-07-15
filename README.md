@@ -1651,7 +1651,7 @@ sudo dnf install steam
 
 ## <p id = "discord" > Discord
 
-<img src = "img/discord.jpg">
+<img src = "img/discord.jpg" alt = "discord">
 
 Discord é um aplicativo de voz sobre IP proprietário e gratuito, projetado inicialmente para comunidades de jogos. O aplicativo Discord está disponível para os sistemas operacionais Microsoft Windows, MacOS, Android, iOS, Linux e em navegadores da Web.
 
@@ -1714,7 +1714,7 @@ Depois de ter substituído o conteúdo, clique em salvar, ou aperte "Ctrl + S" p
 
 ## <p id = "blender" > Blender
 
-<img src = "img/blender.webp">
+<img src = "img/blender.webp" alt = "blender">
 
 Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
 
@@ -2022,17 +2022,31 @@ sudo pacman -U google-chrome-91.0.4472.114-1-x86_64.pkg.tar.zst
 
 Feito isso, o Google Chrome vai ter sido instalado, e você pode fazer isso para qualquer outro pacote AUR que você quiser instalar.
 
-## VS Code
+## <p id = "vscode"> VS Code
 
-O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
+<img src = "img/vs-code.png" alt = "VS Code">
+
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código
+
+<video src="img/vs-code.mp4" type="video/mp4" autoplay loop controls muted>
+  Your browser does not support the video tag.
+</video>
+
+Site oficial <a href = "https://code.visualstudio.com/"> VS Code</a>.
 
 Para quem é desenvolvedor ele é um dos melhores editores de código, e para instalar ele no Arch basta entrar no AUR do <a href = "https://aur.archlinux.org/packages/visual-studio-code-bin/">VS Code</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
 
-## Microsoft Teams
+</p>
+
+## <p id = "teams"> Microsoft Teams
+
+<img src = "img/teams.png" alt = "Microsoft Teams">
 
 Microsoft Teams é uma plataforma unificada de comunicação e colaboração que combina bate-papo, videoconferências, armazenamento de arquivos e integração de aplicativos no local de trabalho.
 
 Para instalar ele no Arch Linux, basta  entrar no AUR do <a href = "https://aur.archlinux.org/packages/teams/">Teams</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
+
+</p>
 
 </p>
 
@@ -2110,13 +2124,166 @@ Para ativar o suporte de snap clássico, digite o seguinte para criar um link si
 
 Faça logout e login novamente ou reinicie o sistema para garantir que os caminhos do snap sejam atualizados corretamente.
 
+## Arch Linux
+
+Para instalar o Snap no Arch, você tem que fazer igual para instalar o Google Chrome, ou outro pacote, primeiramente precisamos clonar o repósitorio do GitHub:
+
+```bash
+git clone https://aur.archlinux.org/snapd.git
+```
+
+Depois vamos entrar na pasta "snapd":
+
+```bash
+cd snapd
+```
+
+Depois vamos criar o pacote:
+
+```bash
+makepkg -si
+```
+
+Depos disso vamos instalar o snap:
+
+```bash
+sudo pacman -U snapd-2.51.1-1-x86_64.pkg.tar.zst
+```
+
+Depois de ter instalado o snap, vamos habilitar ele:
+
+```bash
+sudo systemctl enable --now snapd.socket
+```
+
+E por último vamos criar um link simbólico nas pasta "snap", para todos os aplicativos que forem instalados pelo snap:
+
+```bash
+ sudo ln -s /var/lib/snapd/snap /snap
+```
+
+Depois disso reinicie o seu computador, e faça o mesmo teste que fizemos no Linux Mint, para ver se está funcionando perfeitamente:
+
+```bash
+ snap install hello-world
+```
+
+```bash
+ hello-world
+```
+
+Se tiver retornado "Hello World!", é porque está funcionando perfeitamente.
+
 Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, mas caso você queira conhecer mais aplicativos, basta acessar o <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>, e escolher os aplicativos que deseja instalar, junto vai ter a opção de instalar pelo terminal ou pelo própria lojinha do Linux.
+
+# Aplicativos Snap
+
+## Bashtop
+
+<img src = "img/bashtop-menu-config.webp" alt = "Bashtop">
+
+<img src = "img/bashtop.png" alt = "Bashtop">
+
+O [Bashtop](https://github.com/aristocratos/bashtop) é um monitor de recursos escrito em **Bash** para Linux. Ele mostra o **uso** e **estatísticas da CPU** (incluindo temperatura), **memória**, **discos**, **rede** e **processos**.
+
+Essa ferramenta é bastante nova, mas já ganhou muita popularidade. Devido a pedidos para torná-lo multiplataforma, seu desenvolvedor está reescrevendo-o para usar a biblioteca **psutil** do **Python3** para coleta de dados, em vez de ferramentas específicas do [Linux](https://sempreupdate.com.br/tag/linux/).
+
+Com o Bashtop, você pode mostrar **informações detalhadas de um processo** e finalizar, eliminar ou interromper um processo selecionado.
+
+Embora muitas TUIs (interface de usuário com base em texto ou terminal) possuam a capacidade de usar o mouse para executar várias operações, não tente isso com o Bashtop, pois ele não oferece suporte ao mouse. Isso não o torna menos legal, especialmente quando você dá uma olhada no **menu inspirado em jogos** (que você pode abrir pressionando **m**):
+
+A interface do usuário é responsiva, mas não mostra a mesma quantidade de informações em todos os tamanhos. Dependendo do tamanho do terminal, você verá mais/menos processos na lista de processos e mais/menos informações sobre CPU, memória e discos.
+
+Para instalá-lo via snap, basta digitar:
+
+```bash
+sudo snap install bashtop
+```
+
+E para abri-ló basta digitar no terminal "bashtop", e ele vai abrir a interface de monitoramento como nas imagens.
+
+```bash
+bashtop
+```
+
+Para sair dele basta apertar a tecla "q", ou apertar "Esc" ou "m" que vai abrir o menu, e só ir em "Exit".
+
+## HTOP
+
+<img src = "img/htop.png" alt = "Htop">
+
+O **Htop** é um avançado sistema interativo visualizador de processos. Escrito para **Linux**, o **Htop** mostra uma lista frequentemente atualizada de processos que rodam no computador, e utiliza-se de cores para facilitar a leitura de informações sobre o processador, swap, status da memória entre outros.
+
+Para instalá-lo via snap, basta digitar:
+
+```bash
+sudo snap install htop
+```
+
+E para abri-ló basta digitar no terminal "htop", e ele vai abrir a interface de monitoramento como nas imagens.
+
+```bash
+htop
+```
+
+Para sair dele basta apertar a tecla "q".
+
+## GitKraken
+
+<img src = "img/gitkraken.png" alt = "GitKraken">
+
+Site oficial <a href = "https://www.gitkraken.com/">gitkraken.com </a>.
+
+A empresa Axosoft apresenta dois produtos: Axosoft, software ágil de gerenciamento de projetos, e GitKraken, um cliente Git de plataforma cruzada. O produto Axosoft é um sistema proprietário de gerenciamento de projetos e rastreamento de erros, desenvolvido pela Axosoft, LLC.
+
+A interface de usuário de plataforma cruzada do GitKraken ajuda a entender o Git. Você pode abrir facilmente repositórios, definir favoritos e organizá-los em grupos de projetos. O GitKraken integra-se perfeitamente aos seus controles remotos GitHub, Bitbucket e GitLab e suporta arrastar e soltar para simplificar comandos complicados como mesclar, refazer e empurrar.
+
+O GitKraken é uma ótima ferramenta para desenvolvedores, ajuda muito a entender o branch do git, e principalmente quando estamos trabalhando em equipe.
+
+Para intalá-lo via snap, basta digitar:
+
+```bash
+sudo snap install gitkraken --classic
+```
+
+## <a href = "#discord"> Discord </a>
+
+O Discord também tem a sua versão no snap, e para instalá-lo basta digitar:
+
+```bash
+sudo snap install discord --classic
+```
+
+## <a href = "#blender"> Blender </a>
+
+Assim como o Discord, o Blender também tem a sua versão via snap, e para instalá-lo basta digitar:
+
+```bash
+sudo snap install blender --classic
+```
+
+## <a href = "#teams"> Teams </a>
+
+Para instalar o Microsoft Teams via snap, basta digitar:
+
+```bash
+sudo snap install teams
+```
+
+## <a href = "#vscode"> VS Code </a>
+
+Para instalar o Visual Studio Code via snap, basta digitar:
+
+```bash
+sudo snap install code --classic
+```
+
+
 
 </p>
 
 ***
 <p id = "flatpak">
-
 <img src = "img/flathub-logo.png" width = "400" alt = "Flatpak">
 
 Site do <a href = "https://flathub.org/home" target = "_blank"> Flathub</a>.
