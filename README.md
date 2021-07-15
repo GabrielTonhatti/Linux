@@ -1,7 +1,7 @@
 Comandos Linux
 ==============
 
-<img src = "https://logosmarcas.net/wp-content/uploads/2020/09/Linux-Logo.png" alt = "Linux">
+<img src = "img/Linux-Logo.png" alt = "Linux">
 
 + obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre Linux. 😁
 
@@ -1615,7 +1615,7 @@ sudo dnf install gparted
 ## <a href = "#obs-stido"> Obs Studio </a>
 
 ```bash
-sudo dnf install obs-stido
+sudo dnf install obs-studio
 ```
 
 ## <a href = "#alacarte"> Alacarte </a>
@@ -1659,6 +1659,61 @@ Diferente do Ubuntu que precisa baixar o Discord do site oficial com a extensão
 ``` bash
 sudo dnf install discord
 ```
+
+Caso você tente compartilhar a tela no Discord ou qualquer outro programa/site de reunião, e ficar apenas uma tela preta com o mouse, sem mostrar nenhum programa aberto ou mesmo a área de trabalho, vamo editar o arquivo "/etc/gdm/custom.conf":
+
+```bash
+sudo gedit /etc/gdm/custom.conf
+```
+
+Ele vai abrir o editor de texto padrão do Linux o Gedit, e dentro do arquivo vai ter o seguinte conteúdo:
+
+```bash
+# GDM configuration storage
+
+[daemon]
+# Uncomment the line below to force the login screen to use Xorg
+#WaylandEnable=false
+
+[security]
+
+[xdmcp]
+
+[chooser]
+
+[debug]
+# Uncomment the line below to turn on debugging
+#Enable=true
+```
+
+Substitua pelo seguinte conteúdo:
+
+```bash
+# GDM configuration storage
+
+[daemon]
+# Uncomment the line below to force the login screen to use Xorg
+WaylandEnable=false
+DefaultSession=gnome-xorg.desktop
+
+[security]
+
+[xdmcp]
+
+[chooser]
+
+[debug]
+# Uncomment the line below to turn on debugging
+#Enable=true
+```
+
+Depois de ter substituído o conteúdo, clique em salvar, ou aperte "Ctrl + S" para salvar o arquivo, de pode fechar o gedit, depois disso basta reiniciar o computador e já vai estar funcionando o compartilhamento de tela perfeitamente.
+
+## Blender
+
+<img src = "img/blender.webp">
+
+Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
 
 ## <a href = "#lutris"> Lutris </a>
 
