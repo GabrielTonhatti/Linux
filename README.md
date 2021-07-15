@@ -3,7 +3,7 @@ Comandos Linux
 
 <img src = "https://logosmarcas.net/wp-content/uploads/2020/09/Linux-Logo.png" alt = "Linux">
 
-+ obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre linux. 😁
++ obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre Linux. 😁
 
 <a href = "#ubuntu"> Ubuntu </a>
 <a href = "#fedora"> Fedora </a>
@@ -15,16 +15,15 @@ Comandos Linux
 ## Mudar a senha do root:
 Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
 
-```
+```bash
 sudo passwd root
 ```
 
 Depois de digitar e confirmar a nova senha, temos que desbloquear o uso dela:
 
-```
+```bash
 sudo passwd -u root
 ```
-***
 
 # Comandos básicos do Linux:
 
@@ -32,13 +31,13 @@ sudo passwd -u root
 
 O comando "cd" serve para você navegar dentro dos diretórios pelo terminal, o comando "cd nomedapasta" é para você entrar na pasta que você quer, e "cd .." para voltar uma pasta, exemplo:
 
-```
+```bash
 cd Documentos
 ```
 
 Ele vai entrar no diretório "Documentos", e caso você queira voltar uma pasta, basta digitar:
 
-```
+```bash
 cd ..
 ```
 
@@ -48,7 +47,7 @@ Que ele vai voltar para a pasta anterior da pasta "Documentos", que normalmente 
 
 O comando pwd vai mostar em qual diretório você está, passando o caminho completo, por exemplo digamos que você esteja na pasta Fontes, que está dentro da pasta Downloads, se você digitar o comando:
 
-```
+```bash
 pwd
 ```
 
@@ -58,25 +57,25 @@ Ele vai mostrar "/home/nomedousuario/Downloads/Fontes", sendo "/" o diretório p
 
 O comando "ls", serve para você listar os arquivos dentro de um diretório(pastas) em que você está, ou outro diretório, passando o caminho completo. Por exemplo, digamos que você está na pasta "Documentos", se você digitar um "ls" e der Enter, ele vai mostrar todos os arquivos que tem na pasta "Documentos", exemplo:
 
-```
+```bash
 ls
 ```
 
 Se você quer ver todos os arquivos do diretório, incluindo os arquivos ocultos(que começam com ".", exemplo: ".git"), basta digitar:
 
-```
+```bash
 ls -a
 ```
 
 Se você quer ver os arquivos em formato de lista, e com as data de modificação e tamaho de cada pasta/arquivo, basta digitar:
 
-```
+```bash
 ls -l
 ```
 
 E se você quer ver das duas últimas formas juntas, basta digitar:
 
-```
+```bash
 ls -la
 ```
 
@@ -84,7 +83,7 @@ Ele vai mostrar todos os arquivos em formato de lista, incluindo os arquivos ocu
 
 E se você quer ver oque tem em outro diretório sem ter que entrar nele, basta digitar o "ls" seguido do caminho do diretório, exemplo:
 
-```
+```bash
 ls /home/gabriel/Downloads
 ```
 
@@ -94,37 +93,37 @@ Ele vai listar todos os arquivos dentro do diretório Downloads, e "gabriel" é 
 
 O comando "mkdir" serve para você criar um novo diretório, basta digitar:
 
-```
+```bash
 mkdir nomedapasta
 ```
 
 Exemplo:
 
-```
+```bash
 mkdir Pasta-de-Exemplo
 ```
 
 Se você quer separar o nome da pasta por espaço, basta digitar usando "\" para separar os nomes, por exemplo:
 
-```
+```bash
 mkdir nome\ da\ pasta
 ```
 
 Exemplo:
 
-```
+```bash
 mkdir Pasta\ de\ Exemplo
 ```
 
 Se você não colocar a "\", ele vai criar várias pastas cada uma com um nome que foi separado pelo espaço. Caso você queira criar uma pasta em outro diretório basta passar o caminho completo de onde você quer criar a pasta:
 
-```
+```bash
 mkdir nome\ da\ pasta /home/nomedeusuario/Documentos
 ```
 
 Exemplo:
 
-```
+```bash
 mkdir Pasta\ de\ Exemplo /home/gabriel/Documentos
 ```
 
@@ -132,13 +131,13 @@ mkdir Pasta\ de\ Exemplo /home/gabriel/Documentos
 
 O comando "touch" é parecido com o "mkdir", so que ele é para criar arquivos e não diretórios, por exemplo para criar um arquivo de bloco de notas, basta digitar:
 
-```
+```bash
 touch arquivo.txt
 ```
 
 Exemplo:
 
-```
+```bash
 touch comandos-linux.txt
 ```
 
@@ -148,13 +147,13 @@ Depois do "." você sempre coloca a extensão do arquivo que você quer criar, .
 
 O comando "rmdir" server para você excluir permanentemente diretórios vazios, ele não exclui diretórios que contenham arquivos dentro. Para usá-lo basta digitar:
 
-```
+```bash
 rmdir nomedapasta
 ```
 
 Exemplo:
 
-```
+```bash
 rmdir Pasta\ de\ Exemplo
 ```
 
@@ -162,25 +161,25 @@ rmdir Pasta\ de\ Exemplo
 
 O comando "rm" é parecido com o "rmdir", ele também exclui permanentemente, ele é mais usado para excluir arquivos, mas também tem como usá-lo para excluir diretórios que estejam cheios, então TOME BASTANTE CUIDADO quando for usá-lo. Para usá-lo para excluir algum arquivo basta digitar:
 
-```
+```bash
 rm nomedoarquivo
 ```
 
 Exemplo
 
-```
+```bash
 rm comandos-linux.txt
 ```
 
 Para excluir um diretório usando o "rm", basta adicionar um "-r" depois do "rm", por exemplo:
 
-```
+```bash
 rm -r nomedapasta
 ```
 
 Exemplo
 
-```
+```bash
 rm -r Pasta\ de\ Exemplo
 ```
 
@@ -191,13 +190,13 @@ Ele vai excluir permanentemente o arquivo/pasta, então tome cuidado quando for 
 O comando "nano" é um editor de arquivos pelo terminal, ele serve para você editar o arquivo pelo próprio terminal sem ter que abrir algum outro programa de edição de texto, exemplo:
 
 
-```
+```bash
 nano nomedoarquivo.extensao
 ```
 
 Exemplo
 
-```
+```bash
 nano comandos-linux.txt
 ```
 
@@ -207,19 +206,19 @@ Para salvar oque foi editado pelo "nano", basta apertar as teclas "Crtl + S", e 
 
 O comando "mv" serve para você mover arquivos ou pastas para outro diretório, mas tome cuidado ao usar, pois se você não passar o caminho corretamente você pode perder o arquivo ou pasta, ou se mover para algum diretório que tenha algum arquivo/pasta com o mesmo nome, ele vai sobrescrever o arquivo. Para usá-lo basta digitar:
 
-```
+```bash
 mv nomedoarquivo caminhoparaondequermover
 ```
 
 Exemplo:
 
-```
+```bash
 mv comandos-linux.txt /home/gabriel/Imagens
 ```
 
 Se você quer mover vários arquivos ou pasta de uma vez, basta digitar o nome de todos os arquivos ou pastas antes do caminho, separados por espaço. Exemplo:
 
-```
+```bash
 mv comandos-linux.txt Estudos/ fontes.zip /home/gabriel/Imagens
 ```
 
@@ -230,25 +229,25 @@ Ele vai mover todos os arquivos e pastas digitados para o diretório "Imagens".
 O comando "cp" é parecido com o comando "mv", a diferença que ele é para copiar e não para mover, mas caso você copie para um diretório que tenha algum arquivo/pasta com o mesmo nome, ele também vai sobrescrever com o "mv" faz. Para usá-lo basta digitar:
 
 
-```
+```bash
 cp nomedoarquivo caminhoparaondequermover
 ```
 
 Exemplo:
 
-```
+```bash
 cp comandos-linux.txt /home/gabriel/Imagens
 ```
 
 Se você quer copiar vários arquivos de uma vez, basta digitar o nome de todos os arquivos ou pastas antes do caminho, separados por espaço. Exemplo:
 
-```
+```bash
 cp comandos-linux.txt fontes.zip /home/gabriel/Imagens
 ```
 
 Ele vai copiar todos os arquivos digitados para o diretório "Imagens". Para copiar alguma pasta com o comando "cp", basta colocar um "-r" depois do "cp" para ele copiar o diretório. Exemplo:
 
-```
+```bash
 cp -r Linux/ Estudos/ fontes/ /home/gabriel/Imagens
 ```
 
@@ -256,19 +255,19 @@ cp -r Linux/ Estudos/ fontes/ /home/gabriel/Imagens
 
 Se voce gosta de usar o terminal para tudo, tem um comando que você pode usar para baixar as coisas que você quiser, basta digitar:
 
-```
+```bash
 wget urlexemplo
 ```
 
 Exemplo:
 
-```
+```bash
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-linux.tar.gz
 ```
 
 Neste link de exemplo estaremos baixando o Android Studio. Se você estiver baixando um arquivo grande, e tiver medo de dar algum problema como a energia acabar, ou a internet dar algum problema, basta usar um "-c" para fazer com que caso o download pare, ele continue de onde parou, por exemplo:
 
-```
+```bash
 wget -c https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-linux.tar.gz
 ```
 
@@ -284,19 +283,19 @@ Antes de ensinar como compactar e descompactar, vamos ensinar como instalar algu
 
 Para instalar o 7-Zip no Ubuntu basta digitar:
 
-```
+```bash
 sudo apt install p7zip-full
 ```
 
 No Fedora basta digitar:
 
-```
+```bash
 sudo dnf install p7zip
 ```
 
 No Arch Linux basta digitar:
 
-```
+```bash
 sudo pacman -S p7zip
 ```
 
@@ -304,7 +303,7 @@ sudo pacman -S p7zip
 
 Para instalar o formato rar no Ubuntu, basta digitar:
 
-```
+```bash
 sudo apt install rar unrar
 ```
 
@@ -312,7 +311,7 @@ sudo apt install rar unrar
 
 Para instalar o formato .gz e .bz2 no Arch Linux, basta digitar:
 
-```
+```bash
 sudo pacman -S gzip bzip2
 ```
 
@@ -320,19 +319,19 @@ Ele vai instalar  os dois pacotes juntos, o gzip e o bzip já vem como padrão n
 
 Ubuntu:
 
-```
+```bash
 sudo apt install gimp krita inkscape obs-studio
 ```
 
 Fedora:
 
-```
+```bash
 sudo dnf install gimp krita inkscape obs-studio
 ```
 
 Arch Linhx:
 
-```
+```bash
 sudo pacman -S gimp krita inkscape obs-studio
 ```
 
@@ -346,13 +345,13 @@ Todos conhecem o formato .zip né? Ele é padrão em todos os Sistemas Operacion
 
 Para compactar é bem simples basta digitar:
 
-```
+```bash
 zip -r nomedoarquivo.zip nomedapasta/
 ```
 
 Sendo o "nomedoarquivo.zip" o arquivo .zip que sera gerado, e o "nomedapasta/" é a pasta que será compactada. Por exemplo:
 
-```
+```bash
 zip -r fontes.zip Fontes/
 ```
 
@@ -360,13 +359,13 @@ O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar o
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .zip, basta digitar:
 
-```
+```bash
 zip -r nomedoarquivo.zip arquivo1 arquivo2 arquivo3
 ```
 
 Exemplo:
 
-```
+```bash
 zip -r fontes.zip Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
 ```
 
@@ -374,13 +373,13 @@ Ele vai gerar um arquivo .zip com todos os arquivos que você escolheu ou com to
 
 Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
 
-```
+```bash
 zip -P senha -r nomedoarquivo.zip pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 zip -P zipando -r  fontes.zip Fontes/
 ```
 
@@ -389,37 +388,37 @@ E na hora que você ou outra pessoa for descompactar, vai pedir essa senha que v
 
 Para descompactar um arquivo ".zip" é mais simples ainda do que compactar, basta digitar:
 
-```
+```bash
 unzip nomedoarquivo.zip
 ```
 
 Exemplo:
 
-```
+```bash
 unzip fontes.zip
 ```
 
 Se você quer descompactar para outra pasta, basta digitar:
 
-```
+```bash
 unzip nomedoarquivo.zip -d caminho/da/pasta
 ```
 
 Exemplo:
 
-```
+```bash
 unzip fontes.zip -d /home/gabriel/Downloads
 ```
 
 E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.zip, basta digitar:
 
-```
+```bash
 unzip -l nomedoarquivo.zip
 ```
 
 Exemplo:
 
-```
+```bash
 unzip -l fontes.zip
 ```
 
@@ -432,25 +431,25 @@ Assim como o formato ".zip" é bastante conhecido, o formato ".rar" provávelmen
 
 Para compactar é bem simples, basta digitar:
 
-```
+```bash
 rar a nomedoarquivo.rar pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 rar fontes.rar Fontes/
 ```
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .rar, basta digitar:
 
-```
+```bash
 rar a nomedoarquivo.rar arquivo1 arquivo2 arquivo3
 ```
 
 Exemplo:
 
-```
+```bash
 rar a fontes.rar Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
 ```
 
@@ -458,13 +457,13 @@ Ele vai gerar um arquivo .rar com todos os arquivos que você escolheu ou com to
 
 Se você quer compactar alguma pasta e colocar uma senha, também é bem simples, basta digitar:
 
-```
+```bash
 rar a nomedoarquivo.rar pasta/ -p
 ```
 
 Exemplo:
 
-```
+```bash
 rar a fontes.rar Fontes/ -p
 ```
 
@@ -474,37 +473,37 @@ E ele vai pedir para você digitar uma senha para o arquivo.
 
 Para descompactar é bem simples também, basta digitar:
 
-```
+```bash
 unrar x nomedoarquivo.rar
 ```
 
 Exemplo:
 
-```
+```bash
 unrar x fontes.rar
 ```
 
 Para descompactar em outra pasta basta digitar:
 
-```
+```bash
 unrar x nomedoarquivo.rar caminho/
 ```
 
 Exemplo:
 
-```
+```bash
 unrar x fontes.rar /home/gabriel/Downloads
 ```
 
 E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.rar, basta digitar:
 
-```
+```bash
 unrar l nomedoarquivo.rar
 ```
 
 Exemplo:
 
-```
+```bash
 unrar l fontes.rar
 ```
 
@@ -520,25 +519,25 @@ tar também é o nome de um programa de arquivamento desenvolvido para armazenar
 
 Para compactar é bem simples, basta digitar:
 
-```
+```bash
 tar -cvf nomedoarquivo.tar pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 tar -cvf fontes.tar Fontes/
 ```
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar, basta digitar:
 
-```
+```bash
 tar -cvf nomedoarquivo.tar arquivo1 arquivo2 arquivo3
 ```
 
 Exemplo:
 
-```
+```bash
 tar -cvf fontes.tar Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
 ```
 
@@ -548,44 +547,44 @@ Ele vai gerar um arquivo .tar com todos os arquivos que você escolheu ou com to
 
 Para descompactar um arquivo ".tar", basta digitar:
 
-```
+```bash
 tar -xvf nomedoarquivo.tar
 ```
 
 Exemplo:
 
-```
+```bash
 tar -xvf fontes.tar
 ```
 
 Para descompactar em outro pasta:
 
-```
+```bash
 tar -xvf nomedoarquivo.tar -C caminho/da/pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 tar -xvf fontes.tar -C /home/gabriel/Downloads
 ```
 
 E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar, basta digitar:
 
-```
+```bash
 tar -tvf nomedoarquivo.tar
 ```
 
 Exemplo:
 
-```
-tar tvf fontes.tar
+```bash
+tar -tvf fontes.tar
 ```
 
 ou
 
-```
-tar tf fontes.tar
+```bash
+tar -tf fontes.tar
 ```
 
 E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.
@@ -598,37 +597,37 @@ Os formatos TGZ e TBZ (ou tar.gz e tar.bz2, respectivamente) são usados para a 
 
 Para compactar um arquivo para ".tar.gz", basta digitar:
 
-```
+```bash
 tar -cz nomedapasta > arquivo.tar.gz
 ```
 
 Exemplo
 
-```
+```bash
 tar -cz Fontes/ > fontes.tar.gz
 ```
 
 ou
 
-```
+```bash
 tar -zcvf arquivo.tar.gz nomedapasta/ 
 ```
 
 Exemplo
 
-```
+```bash
 tar -zcvf fontes.tar.gz  Fontes/
 ```
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar.gz, basta digitar:
 
-```
+```bash
 tar -zcvf nomedoarquivo.tar.gz arquivo1 arquivo2 arquivo3
 ```
 
 Exemplo:
 
-```
+```bash
 tar -zcvf fontes.tar.gz Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
 ```
 
@@ -638,25 +637,25 @@ Ele vai gerar um arquivo .tar.gz com todos os arquivos que você escolheu ou com
 
 Para descompactar um arquivo ".tar", basta digitar:
 
-```
+```bash
 tar -zxvf nomedoarquivo.tar.gz
 ```
 
 Exemplo:
 
-```
+```bash
 tar -zxvf fontes.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -vzxf fontes.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -xz Fontes/ < fontes.tar.gz
 ```
 
@@ -664,7 +663,7 @@ Aqui o "Fontes/" sendo o nome da pasta que será gerado após descompactar.
 
 Ou
 
-```
+```bash
 tar -czf fontes.tar.gz Fontes/
 ```
 
@@ -672,19 +671,19 @@ Como no exemplo anterior, "Fontes/" é o nome da pasta que será gerado após de
 
 Ou
 
-```
+```bash
 tar -xzf fontes.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -xf fontes.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -vczf fontes.tar.gz Fontes/
 ```
 
@@ -692,37 +691,37 @@ Como em outros exemplos, "Fontes/" é o nome da pasta que será gerado após des
 
 Ou
 
-```
+```bash
 tar -vxf fontes.tar.gz
 ```
 
 Para descompactar em outro pasta:
 
-```
+```bash
 tar -zxvf nomedoarquivo.tar.gz -C caminho/da/pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 tar -zxvf fontes.tar.gz -C /home/gabriel/Downloads
 ```
 
 E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar.gz, basta digitar:
 
-```
+```bash
 tar -ztvf nomedoarquivo.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -tvf nomedoarquivo.tar.gz
 ```
 
 Ou
 
-```
+```bash
 tar -tf nomedoarquivo.tar.gz
 ```
 
@@ -736,13 +735,13 @@ O formato de arquivo BZ2 é compatível com o software que pode ser instalado na
 
 Para compactar um arquivo para .bz2, tem quer ser so arquivos com alguma extensão mesmo, como por exemplo: "arquivo.tar", que ficará: "arquivo.tar.bz2", e para adicionar essa extensão ".bz2", basta digitar:
 
-```
+```bash
 bzip2 -z nomedoarquivo.extensao
 ```
 
 Exemplo:
 
-```
+```bash
 bzip2 -z fontes.tar
 ```
 
@@ -752,19 +751,19 @@ Que se tornará um arquivo "fontes.tar.bz2".
 
 Para descompactar um arquivo .bz2 é bem simples, basta digitar:
 
-```
+```bash
 bunzip nomedoarquivo.bz2
 ```
 
 Ou 
 
-```
+```bash
 bunzip2 nomedoarquivo.bz2
 ```
 
 Exemplo:
 
-```
+```bash
 bunzip2 fontes.bz2
 ```
 
@@ -778,25 +777,25 @@ Os formatos TGZ e TBZ (ou tar.gz e tar.bz2, respectivamente) são usados para a 
 
 Para compactar um arquivo ou pasta para ".tar.bz2", basta digitar:
 
-```
+```bash
 tar -jcvf nomedoarquivo.tar.bz2 pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 tar -jcvf fontes.tar.bz2 Fontes/
 ```
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .tar.bz2, basta digitar:
 
-```
+```bash
 tar -jcvf nomedoarquivo.tar.bz2 arquivo1 arquivo2 arquivo3
 ```
 
 Exemplo:
 
-```
+```bash
 tar -jcvf fontes.tar.bz2 Fontes/ Fontes-Sans-serifas/ Fontes-Personalizadas
 ```
 
@@ -806,49 +805,49 @@ Ele vai gerar um arquivo ".tar.bz2" com todos os arquivos que você escolheu ou 
 
 Para descompactar um arquivo ".tar.bz2", basta digitar:
 
-```
+```bash
 tar -jxvf nomedoarquivo.tar.bz2
 ```
 
 Exemplo:
 
-```
+```bash
 tar -jxvf fontes.tar.bz2
 ```
 
 Para descompactar em outra pasta, basta digitar:
 
-```
+```bash
 tar -jxvf nomedoarquivo.tar.bz2 -C caminho/da/pasta
 ```
 
 Exemplo:
 
-```
+```bash
 tar -jxvf fontes.tar.bz2 -C /home/gabriel/Downloads
 ```
 
 E o arquivo será descompactado na pasta Downloads. Se você deseja ver os arquivos que tem dentro do arquivo.tar.bz2, basta digitar:
 
-```
+```bash
 tar -jtvf nomedoarquivo.tar.bz2
 ```
 
 Exemplo:
 
-```
+```bash
 tar -jtvf fontes.tar.bz2
 ```
 
 Ou
 
-```
+```bash
 tar -tvf fontes.tar.bz2
 ```
 
 Ou
 
-```
+```bash
 tar -tf fontes.tar.bz2
 ```
 
@@ -864,25 +863,25 @@ Com ele você pode usar para compactar para qualquer formato listado anteriormen
 
 Para compactar é bem simples, basta digitar:
 
-```
+```bash
 7z a nomedoarquivo.extensao pasta/
 ```
 
 Exemplo:
 
-```
+```bash
 7z a fontes.7z Fontes/
 ```
 
 Ou
 
-```
+```bash
 7z a fontes.tar Fontes/
 ```
 
 Ou
 
-```
+```bash
 7z a fontes.zip Fontes/
 ```
 
@@ -892,25 +891,25 @@ Ou qualquer outro formato que você queira.
 
 Para descompactar um arquivo com o 7-Zip, basta digitar:
 
-```
+```bash
 7z e arquivo.extensao
 ```
 
 Exemplo:
 
-```
+```bash
 7z a fontes.7z
 ```
 
 Ou
 
-```
+```bash
 7z a fontes.tar
 ```
 
 Ou
 
-```
+```bash
 7z a fontes.zip
 ```
 
@@ -934,13 +933,13 @@ Aqui vamos passar alguns comando do Ubuntu(a distro linux mais famosa), mas oque
 
 Caso você seja iniciante no linux, quando você acaba de instalar o Ubuntu(ou qualquer outra distro linux), primeiramente antes de instalar qualquer coisa, devemos atualizar o sistema, o apt é o gerenciador de pacotes do Ubuntu, Debian, Linux Mint e outras distros baseadas no Ubuntu ou Debian, e para atualizar o sistema é bem simples, basta digitar:
 
-```
+```bash
 sudo apt-get update
 ```
 
 Depois que você de enter, ele vai baixar todas as atualizações do Ubuntu, e depois para instalar as atualizações basta digitar:
 
-```
+```bash
 sudo apt-get upgrade
 ```
 
@@ -948,15 +947,15 @@ Depois disso ele vai instalar as atualizações, e ele vai perguntar se você de
 
 Caso você queira fazer os dois de uma vez só, tem como fazer isso, basta digitar:
 
-```
+```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-Ele vai rodar o comando update primeiro, e depois que ele terminar vai rodar o comando upgrade em seguida, o "-y" serve para ele responder "yes(sim)" para todas as perguntas automaticamente.
+Ele vai rodar o comando update primeiro, e depois que ele terminar vai rodar o comando upgrade em seguida, o "-y" serve para ele responder "yes(sim)" para todas as perguntas automaticamente. Depois de atualizar o sistema, você sempre precisar reiniciar o computador.
 
 Se você deseja ver se tem mais alguma atualização no Ubuntu, basta digitar:
 
-```
+```bash
 apt list --upgradable
 ```
 
@@ -968,7 +967,7 @@ E ele vai listar os programas que precisam ser atualizados, se aparecer apenas "
 
 O playonlinux é um programa para instalar programas do Windows no Linux, ele é bastante famoso, pois da pra usar alguns programas do windows no próprio linux, mas as vezes o programa que você ques instalar pode não funcionar, então não fique bravo caso não funcione, porque não é um programa que funciona e instalar qualquer programa do Windows perfeitamente como se fosse no próprio Windows. Para instalar o playonlinux digite:
 
-```
+```bash
 sudo apt-get install playonlinux wine winbind p7zip-full
 ```
 
@@ -982,7 +981,7 @@ Ele vai instalar o playonlinux junto com o wine, que é o o programa que simula 
 
 Por questões de legislação, o Ubuntu não pode incluir determinados codecs multimídia, como os de MP3, para poder ser distribuído em alguns países, entre outros formatos. Qualquer pessoa que já formatou o computador com Windows sabe que tem que instalar alguns codecs para que todos os tipos de arquivos rodem no sistema, no Windows é bem comum utilizar o pack “K-Lite”, no Ubuntu, temos o Ubuntu Restricted Extras, ele está na Central de Programas, mas também pode ser baixado pelo terminal:
 
-```
+```bash
 sudo apt install ubuntu-restricted-extra
 ```
 </p>
@@ -993,7 +992,7 @@ sudo apt install ubuntu-restricted-extra
 
 O Unity Tweak Tool é uma das melhores ferramentas para fazer ajustes na interface Unity (se não for a melhor), com ele você conseguirá, inclusive, mover facilmente a barra lateral do Unity para a parte de baixo da tela, que é uma das novidades dessa versão. Para instalar o Unity Tweak Tool digite o comando:
 
-```
+```bash
 sudo apt install unity-tweak-tool
 ```
 </p>
@@ -1007,7 +1006,7 @@ O Gufw facilita o controle do firewall iptables, embutido nas fundações do Lin
 
 Para instalar o gufw basta digitar:
 
-```
+```bash
 sudo apt install gufw
 ```
 </p>
@@ -1019,7 +1018,7 @@ O Synaptic é um programa de computador com uma interface gráfica amigável des
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install synaptic
 ```
 
@@ -1033,7 +1032,7 @@ O VLC é um reprodutor de Vídeo e Áudio, sendo usado tanto para reproduzir mú
 
 Para instalar ele, basta digitar:
 
-```
+```bash
 sudo apt install vlc
 ```
 
@@ -1047,7 +1046,7 @@ Audacious é um tocador de mídia livre com foco em baixa utilização de recurs
 
 Para instalar ele, basta digitar:
 
-```
+```bash
 sudo apt install audacious
 ```
 
@@ -1062,7 +1061,7 @@ qBittorrent é um aplicativo cliente P2P multiplataforma, gratuito e de código 
 Para quem usa o utorrent mesmo no linux, pode usar o qBittorrent no linux. 
 Para instalar ele, basta digitar:
 
-```
+```bash
 sudo apt install qbittorrent
 ```
 </p>
@@ -1075,21 +1074,21 @@ Conheça o melhor app de captura de telas para Linux. Acredite, capturar telas n
 
 Para instalar ele, basta digitar:
 
-```
+```bash
 sudo apt install flameshot
-``` 
+```
 
 É bem provável que após instalá-lo, você vai procurar e clicar no ícone do aplicativo, e bem provável também que não vai acontecer nada, mas não fique chateado, pois para ele funcionar digite o seguinte comando no terminal:
 
-```
+```bash
 flameshot gui
-``` 
+```
 
 Se aparecer uma tela meio escura e uma mensagem explicando como usar o flameshot, é porque funcionou, ele é bem parecido com o lighshot pra quem usa o Windows, e ainda tem algumas ferramentas a mais, você pode adicionar um atalho de teclado para ele simplesmende indo em configurações > teclado > atalhos personalizados, e depois so clicar em "+", e colocar um nome para saber o atalho que é, e o comando colocar "flameshot gui", sem as aspas, igual colocou no terminal e depois colocar um atalho, se quiser pode colocar o botão PRTSC e substituir o salvamento padrão dos prints do linux.
 
 Se você quiser também entrar nas configurações do flameshot, basta digitar:
 
-```
+```bash
 flameshot config
 ```
 <img src = "img/flameshot-config.png" alt = "Flameshot">
@@ -1104,7 +1103,7 @@ Ele vai abrir essa tela de configurção do flameshot.
 
 GParted (ou Gnome Partition Editor) é o aplicativo GNOME para edição de partições. ... É usado para criar espaço para novos sistemas operacionais (operativos em Portugal), reorganizar o uso do disco rígido, copiar dados e "espelhar" uma partição em outra.
 
-```
+```bash
 sudo apt install gparted
 ```
 </p>
@@ -1116,7 +1115,7 @@ O OBS é uma suíte de software gratuita e de código aberto para gravação e t
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install obs-studio
 ```
 </p>
@@ -1130,7 +1129,7 @@ Com ele você pode editar os menus do Ubuntu e do Linux Mint, o próprio Mint tr
 
 Para instalar basta digitar:
 
-```
+```bash
 sudo apt install alacarte
 ```
 </p>
@@ -1143,7 +1142,7 @@ GIMP é um programa de edição e criação de imagens para Windows, Mac e Linux
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install gimp
 ```
 </p>
@@ -1156,7 +1155,7 @@ Krita é uma ferramenta de criação de ilustrações, concept art, histórias e
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install krita
 ```
 </p>
@@ -1169,7 +1168,7 @@ Inkscape é um software livre para editoração eletrônica de imagens e documen
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install inkscape
 ```
 </p>
@@ -1184,7 +1183,7 @@ Sabia que tem Steam para Linux? Isso mesmo. A famosa Steam também está neste s
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install steam
 ```
 
@@ -1200,17 +1199,17 @@ Lutris é um gestor de jogos livre e de código aberto para sistemas operacionai
 
 Para instalá-lo primeiramente adicione o PPA do Lutris no seu Ubuntu com o comando abaixo:
 
-```
+```bash
 sudo add-apt-repository ppa:lutris-team/lutris
 ```
 Agora atualize os repositórios da sua distro com o comando abaixo:
 
-```
+```bash
 sudo apt-get update
 ```
 E por último, instale o Lutris com o comando:
 
-```
+```bash
 sudo apt-get install lutris
 ```
 
@@ -1224,7 +1223,7 @@ WinFF possibilita que os usuários interajam com FFmpeg utilizando os botões , 
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install winff
 ```
 </p>
@@ -1235,7 +1234,7 @@ sudo apt install winff
 
 O Ranger é um gestor de arquivos de linha de comando (CLI), escrito em Python. O programa possui todas as funções presentes nos gestores mais usados, como o Nautilus, no Ubuntu.
 
-```
+```bash
 sudo apt install ranger
 ```
 </p>
@@ -1248,7 +1247,7 @@ Ncdu é uma utilitário de comando de linha, que ajudará a avaliar o espaço em
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install ncdu
 ```
 </p>
@@ -1261,7 +1260,7 @@ Neofetch é uma ferramenta desenvolvida para criar protetores de tela de console
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install neofetch
 ```
 </p>
@@ -1274,7 +1273,7 @@ screenFetch: Informações do sistema e algumas firulas via terminal. screenFetc
 
 Para instalá-lo basta digitar:
 
-```
+```bash
 sudo apt install screenfetch
 ```
 </p>
@@ -1288,7 +1287,7 @@ O LibreOffice é um pacote de programas para uso profissional ou pessoal. O serv
 
 Se você fez a instalação mínima no Ubuntu e você quer instalar todo o pacote LibreOffice, basta digitar:
 
-```
+```bash
 sudo apt-get install libreoffice
 ```
 
@@ -1296,25 +1295,25 @@ Se você quiser instalar apenas algum em específico como o LibreOffice Writer(P
 
 LibreOffice Writer:
 
-```
+```bash
 sudo apt-get install libreoffice-writer
 ```
 
 LibreOffice Calc:
 
-```
+```bash
 sudo apt-get install libreoffice-calc
 ```
 
 LibreOffice Impress:
 
-```
+```bash
 sudo apt-get install libreoffice-impress
 ```
 
 Caso deseja remvoer algum dos LibreOffice, como por exemplo o LibreOffice Impress, basta digitar:
 
-```
+```bash
 sudo apt-get --purge remove libreoffice-impress
 ```
 
@@ -1326,13 +1325,13 @@ Ou basta colocar o nome de qual você quer remover no lugar do "impress".
 
 Para remover qualquer um dos programas que listamos anteriormente(exceto o LibreOffice que já está explicado como remover algum dos pacotes offices), é bem simples também, basta digitar:
 
-```
+```bash
 sudo apt remove nomedoprograma
 ```
 
 Exemplo:
 
-```
+```bash
 sudo apt remove gimp
 ```
 
@@ -1340,14 +1339,13 @@ Ele vai remover o editor de imagens Gimp. Bem fácil não é?
 
 <p id = "arquivos.">
 E caso você tenha se perguntado, "E para instalar o Google Chrome?" ou o Discord, ou qualquer outro programa famoso que não está nessa lista, é bem simples, porque alguns programas não fica junto de outros programas do gerenciador de pacotes do Ubuntu/Debian, e para instalar esse programas é bem simples, digamos que você queira instalar o Google Chrome, o mais querido navegador de todos(e ao mesmo tempo "odiado" por usar muita memória RAM), para isso basta você pesquisar no navegador que veio como padrão no Ubuntu/Debian(normalmente é o FireFox), "download Chrome" ou "Download Google Chrome", e vai aparecer alguns links de opções para você entrar e baixar, assim como você faria no Windows.
-
 <img src = "img/google.png" alt = "Google Chrome">
 
 Clicando na página "Navegador da Web Google Chrome", vai entrar na seguinte tela:
 
 <img src = "img/chrome.jpeg" alt = "Google Chrome">
 
-Igual no Windows mesmo, clicando no botão de "Fazer o download do Google Chrome", vai aparcer outra janela pedindo pra você escolher o formato da extensão do arquivo:
+Igual no Windows mesmo, clicando no botão de "Fazer o download do Google Chrome", vai aparecer outra janela pedindo pra você escolher o formato da extensão do arquivo:
 
 <img src = "img/download-chrome.png" alt = "Google Chrome">
 
@@ -1359,13 +1357,13 @@ Os arquivos ".rpm" são para as distros que usam o RPMFusion como gerenciador de
 
 Para instalá-lo é bem simples, ou você pode dar um duplo clique no arquivo que ele vai abrir a lojinha do Linux e é so você clicar em "instalar", ou pode fazer isso pelo terminal. Para instalar pelo terminal é bem simples, basta digitar:
 
-```
+```bash
 sudo dpkg -i nomedoarquivo.deb
 ```
 
 Exemplo:
 
-```
+```bash
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
@@ -1373,48 +1371,48 @@ O "-i" é o "install" do gerenciador de pacotes ".deb" do dpkg, assim como o "in
 
 Ou
 
-```
+```bash
 sudo apt install ./nomedoarquivo.deb
 ```
 
 Exemplo:
 
-```
+```bash
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
-E depois que o comando terminar de rodar, ele vai ter instalado o Google Chrome, depois disso é so abrir e usar ele como qualquer outro programa, e você pode fazer isso pra instalar o Discord, ou qualquer outro programa com a extensão ".deb".
+E depois que o comando terminar de rodar, ele vai ter instalado o Google Chrome, depois disso é só abrir e usar ele como qualquer outro programa, e você pode fazer isso pra instalar o Discord, ou qualquer outro programa com a extensão ".deb".
 
 
 E se você quiser remover algum programa com a extensão ".deb" que você tenha instalado, basta digitar:
 
-```
+```bash
 sudo dpkg -r nomedoprograma
 ```
 
 Exemplo:
 
-```
+```bash
 sudo dpkg -r google-chrome
 ```
 
-O "-r" é referente ao "remove" do apt, e colocando apenas o nome que o sistema reconhece o programa já vai remove-lo, eu prefiro usar o "sudo apt install ./nomedoarquivo.deb", pois além de ser mais fácil de lembrar quando se está iniciando, ele da menos problemas de pacotes quebrados comparado ao "dpkg -i".
+O "-r" é referente ao "remove" do apt, e colocando apenas o nome que o sistema reconhece o programa já vai removê-lo, eu prefiro usar o "sudo apt install ./nomedoarquivo.deb", pois além de ser mais fácil de lembrar quando se está iniciando, ele da menos problemas de pacotes quebrados comparado ao "dpkg -i".
 
 </p>
 
-Caso você tenha algum problema com pacotes quebrados, tem como resolver essas dependencias. Para fazer isso, é necessário listar os pacotes quebrados no Ubuntu e, em seguida, os usuários do Ubuntu podem consertar os pacotes quebrados via linha de comando. Se uma instalação de pacote falhar no Linux Ubuntu, isso pode causar alguns problemas.
+Caso você tenha algum problema com pacotes quebrados, tem como resolver essas dependências. Para fazer isso, é necessário listar os pacotes quebrados no Ubuntu e, em seguida, os usuários do Ubuntu podem consertar os pacotes quebrados via linha de comando. Se uma instalação de pacote falhar no Linux Ubuntu, isso pode causar alguns problemas.
 
 Por exemplo, o gerenciador de pacotes congela ou fica bloqueado. É um problema usar o Ubuntu corretamente enquanto os pacotes do sistema estão quebrados. Felizmente, existem algumas maneiras de resolver o problema.
 
 Se você souber o nome do pacote quebrado, poderá removê-lo manualmente usando o seguinte comando.
 
-```
+```bash
 sudo dpkg –remove -force –force-remove-reinstreq NOME_DO_PACOTE_VAI_AQUI
 ```
 
 Exemplo:
 
-```
+```bash
 sudo dpkg –remove -force –force-remove-reinstreq google-chrome
 ```
 
@@ -1422,7 +1420,7 @@ Se você não tiver certeza sobre o nome do pacote quebrado, siga os comandos ab
 
 ### Comando 1
 
-```
+```bash
 sudo apt-get –fix-broken install
 ```
 
@@ -1430,49 +1428,49 @@ sudo apt-get –fix-broken install
 
 Se uma instalação do pacote do Ubuntu falhar (devido às dependências), execute os seguintes comando:
 
-```
+```bash
 sudo apt-get clean
 ```
 
-```
+```bash
 sudo apt-get install -f
 ```
 
-```
+```bash
 sudo dpkg –configure -a
 ```
 
 ### Comando 3
 
-```
+```bash
 sudo rm /var/lib/apt/lists/* -vf
 ```
 
-```
+```bash
 sudo apt-get update
 ```
 
 ### Comando 4
 
-```
+```bash
 sudo apt-get clean
 ```
 
-```
+```bash
 sudo apt-get autoclean
 ```
 
-```
+```bash
 sudo apt-get autoremove
 ```
 
 ### Comando 5
 
-```
+```bash
 sudo dpkg –configure -a
 ```
 
-```
+```bash
 sudo apt-get update
 ```
 ### Conclusão
@@ -1489,7 +1487,7 @@ Essas informações foram tiradas do site <a href = "https://sempreupdate.com.br
 
 Se você instalou algum outro terminal no linux e quer mudar o terminal, ou quer voltar para o terminal padrão(gnome-terminal), caso o que tenha sido instalado mudou para ele automaticamente, basta digitar:
 
-```
+```bash
 sudo update-alternatives --config x-terminal-emulator
 ```
 
@@ -1499,7 +1497,6 @@ Vai aparecer uma lista com todos os terminais instalados, e basta selecionar qua
 ***
 
 <p id = "fedora">
-
 <img src = "img/fedora.png" width = "300" alt = "fedora">
 
 Fedora (conhecido como Fedora Core antes da versão 7) é um sistema operacional (pt-BR) ou sistema operativo (pt-PT) Linux. O sistema operacional Fedora Linux é software livre e de código aberto, e os programas disponíveis dentro de seu repositório de programas também são programas livres que aderem a uma licença livre.
@@ -1510,27 +1507,195 @@ Desde a versão Fedora 21, há três edições disponíveis: Fedora Workstation,
 
 Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Fedora basta digitar:
 
-```
+```bash
 sudo dnf update -y
 ```
 
-Assim como o "apt" é o gerenciador de pacotes do Ubuntu, o "dnf" é o gerenciador de pacotes do Fedora. Se deseja verificar se tem mais alguma atualização no Fedora, basta digitar:
+Assim como o "apt" é o gerenciador de pacotes do Ubuntu, o "dnf" é o gerenciador de pacotes do Fedora. Depois de atualizar o sistema, você sempre precisar reiniciar o computador. Se deseja verificar se tem mais alguma atualização no Fedora, basta digitar:
 
-```
+```bash
 dnf check-update
 ```
 ou
 
-```
+```bash
 dnf list updates
 ```
 
+E ele vai listar os programas que precisam ser atualizados, se aparecer apenas "Ultima verificação dia 14/07/2021 as 16:45:52" por exemplo, é porque não tem atualização, mas se aparecer um tanto de programas(provavelmente escritos em verde), é so rodar o comandos citados anteriormente para atualizar o sistema.
+
+# RPM Fusion
+
+Depois de ter atualizado o sistema, a segunda coisa a se fazer é instalar o RPMFusion Free e NonFree.
+
+RPM Fusion é um repositório de software, que proporciona pacotes adicionais para a distribuição GNU/Linux Fedora. Naseu da fusão dos antigos repositórios Livna, Dribble y Freshrpms. Distribuíam softwares que não são aceitos pelo Fedora, seja por não cumprirem os requisitos de software livre do Fedora, ou porque eles pudessem violar leis nos Estados Unidos.
+
+RPM Fusion se divide em dois repositórios de software separados em termos de licença:
+
+## Free
+
+Softwares de código aberto, que a equipe do Fedora não pode incluir nos repositórios do projeto por questões que não envolvem licenciamento.
+
+## Nonfree
+
+Softwares redistribuíveis que não sejam de código aberto, o que inclui software com código-fonte disponível publicamente e sem restrições similares às de "uso comercial".
+
+Para instalar o RPM Fusion, basta entrar no site oficial do <a href = "https://rpmfusion.org/Configuration"> RPMFusion.org </a> para fazer o download do RMPFUsion Free e NonFree. Basta você baixar os arquivos "RPM Fusion free for Fedora 34" e "RPM Fusion nonfree for Fedora 34", no caso o "34" é a versão atual do Fedora atualmente, então quando for baixar, baixe a versão atual do seu Fedora.
+
+<img src = "img/rpmfusion.png" alt = "RPM Fusion">
+
+Ele vai baixar arquivos como esse:
+
+<img src = "img/RPM-terminal.png" alt = "RPM Fusion">
+
+Para instalar basta digitar:
+
+```  bash
+sudo dnf install rpmfusion-free-release-34.noarch.rpm
+```
+
+ E
+
+```bash
+sudo dnf install rpmfusion-nonfree-release-34.noarch.rpm
+```
+
+Ou pode instalar os dois juntos digitando:
+
+```bash
+sudo dnf install rpmfusion-free-release-34.noarch.rpm install rpmfusion-nonfree-release-34.noarch.rpm
+```
+
+Ele vai instalar os dois juntos o RPM Fusion Free e o RPM Fusion NonFree. Depois de ter instalado o RPM Fusion ele vai ter sincronizado com todos os pacotes do RPM Fusion, e vai facilitar muito para instalar alguns programas no Fedora.
+
+# Agora vamos colocar aqui uma lista de alguns programas que você possa se interessar:
+
+Para não ficar repetitivo a explicações de alguns programas que colocamos no Ubuntu também, vou apenas colocar o nome do programa e o comando para instalar, e depois uma linkagem para se você quiser saber sobre o programa, basta clicar no nome.
+
+## <a href = "#playonlinux">  Playonlinux </a>
+
+Para instalar o playonlinux no Fedora, basta digitar:
+
+```bash
+sudo dnf install playonlinux wine
+```
+
+Ele vai instalar o Playonlinux e o Wine juntos.
+
+## <a href = "#vlc"> VLC </a>
+
+```bash
+sudo dnf install vlc
+```
+
+## <a href = "#audacious"> Audacious </a>
+
+```bash
+sudo dnf install audacious
+```
+
+## <a href = "#qbittorrent"> qBittorrent </a>
+
+```bash
+sudo dnf install qbittorrent
+```
+
+## <a href = "#flameshot"> Flameshot </a>
+
+```bash
+sudo dnf install flameshot
+```
+
+## <a href = "#gParted"> GParted </a>
+
+```bash
+sudo dnf install gparted
+```
+
+## <a href = "#obs-stido"> Obs Studio </a>
+
+```bash
+sudo dnf install obs-stido
+```
+
+## <a href = "#alacarte"> Alacarte </a>
+
+```bash
+sudo dnf install alacarte
+```
+
+## <a href = "#gimp"> Gimp </a>
+
+```bash
+sudo dnf install gimp
+```
+
+## <a href = "#krita"> Krita </a>
+
+```bash
+sudo dnf install krita
+```
+
+## <a href = "#inkscape"> Inkscape </a>
+
+```bash
+sudo dnf install inkscape
+```
+
+## <a href = "#steam"> Steam </a>
+
+```bash
+sudo dnf install steam
+```
+
+## Discord
+
+<img src = "img/discord.jpg">
+
+Discord é um aplicativo de voz sobre IP proprietário e gratuito, projetado inicialmente para comunidades de jogos. O aplicativo Discord está disponível para os sistemas operacionais Microsoft Windows, MacOS, Android, iOS, Linux e em navegadores da Web.
+
+Diferente do Ubuntu que precisa baixar o Discord do site oficial com a extensão ".deb", o Fedora já não tem uma versão ".rpm" do Discord, e para instalar é bem simples, basta digitar:
+
+``` bash
+sudo dnf install discord
+```
+
+## <a href = "#lutris"> Lutris </a>
+
+```bash
+sudo dnf install lutris
+```
+
+## <a href = "#ranger"> Ranger </a>
+
+```bash
+sudo dnf install ranger
+```
+
+## <a href = "#ncdu"> NCDU </a>
+
+```bash
+sudo dnf install ncdu
+```
+
+## <a href = "#neofetch"> Neofetch </a>
+
+```bash
+sudo dnf install neofetch
+```
+
+## <a href = "#screenfetch"> Screenfetch </a>
+
+```bash
+sudo dnf install screenfetch
+```
+
+O pacote Libre Office já vem instalado  por padrão no Fedora.
 
 </p>
 
 ***
 <p id = "arch-linux">
-
 <img src = "img/arch-linux.png" width = "250" alt = "Arch Linux"> <img src = "img/manjaro.png" width = "250" alt = "Manjaro">
 
 Arch Linux, ou Arch é uma distribuição Linux para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, como Windows e MacOS. Além de ser composto predominantemente por software livre e de código aberto, ele envolve contribuições da comunidade.
@@ -1541,20 +1706,20 @@ O Arch Linux usa o modelo rolling release. Com esse sistema, os usuários podem 
 
 Usuários da distribuição podem criar facilmente seus próprios pacotes compatíveis com o pacman usando ferramentas como o "Arch Build System", funcionalidade esta que ajudou a sustentar o AUR, um repositório de pacotes criados por usuários que complementam os repositórios oficiais.
 
-O Arch seria uma distro Linux mais "Hardcore" digamos, pois para você instalar ele, você mesmo tem que "criar" o sitema, instalar tudo por linhas de comando, não é que nem outras distros como o Ubuntu ou Fedora ou muitas outras que tem uns instalador pronto, que você apenas define coisas básicas do sistema como região, idioma, teclado, nome de usuário e so clicar em instalar, você mesmo tem que reparticionar o disco até mesmo chegara instalar a interface gráfica dele. No caso do Manjaro Linux que tem umas instalação simples como as outras distros, e é baseado no kernel do Arch, usando o mesmo gerenciador de pacotes o "pacman", então se você quer instalar o Arch Linux, o recomendado  é que você tenha um pouco de conhecimento em Linux, pode começar por qualquer distro como o Ubuntu, Linux Mint, Debian, Fedora, popOS, entre outros. O mais recomendado para quem está entrando no mundo Linux é que comece pela distro Ubuntu ou Linux Mint, ou qualquer outra distro baseada no Ubuntu, pois terá uma interface mais "amigável", com fácil aprendizado.
+O Arch seria uma distro Linux mais "Hardcore" digamos, pois para você instalar ele, você mesmo tem que "criar" o sistema, instalar tudo por linhas de comando, não é que nem outras distros como o Ubuntu ou Fedora ou muitas outras que tem uns instalador pronto, que você apenas define coisas básicas do sistema como região, idioma, teclado, nome de usuário e so clicar em instalar, você mesmo tem que reparticionar o disco até mesmo chegara instalar a interface gráfica dele. No caso do Manjaro Linux que tem umas instalação simples como as outras distros, e é baseado no kernel do Arch, usando o mesmo gerenciador de pacotes o "pacman", então se você quer instalar o Arch Linux, o recomendado  é que você tenha um pouco de conhecimento em Linux, pode começar por qualquer distro como o Ubuntu, Linux Mint, Debian, Fedora, popOS, entre outros. O mais recomendado para quem está entrando no mundo Linux é que comece pela distro Ubuntu ou Linux Mint, ou qualquer outra distro baseada no Ubuntu, pois terá uma interface mais "amigável", com fácil aprendizado.
 
 E se você quer ir por mundo do Arch, mas não quer ir sem saber nada de como funciona, pode tentar primeiro o Manjaro, já que o mesmo tem uma instalação bem simples.
 
 Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Arch Linux/Manjaro basta digitar:
 
 
-```
+```bash
 sudo pacman -Sy
 ```
 
 ou
 
-```
+```bash
 sudo pacman -Syyu
 ```
 
@@ -1565,7 +1730,7 @@ O "pacman" é o gerenciador de pacotes do Arch/Manjaro, e o "-S" é para instala
 
 Para verificar se tem alguma atualização no Arch, basta digitar:
 
-```
+```bash
 sudo pacman -Qu
 ```
 
@@ -1574,7 +1739,6 @@ sudo pacman -Qu
 
 ***
 <p id = "snap">
-
 <img src = "img/snapcraft.png" width = "600" alt = "Snap">
 
 Site do <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>.
@@ -1611,13 +1775,13 @@ Diferente do Snappy, o Flatpak foi desenvolvido para ser descentralizado, permit
 ### Java
 Para instalar o Java no Ubuntu e derivados basta digitar:
 
-```
+```bash
 sudo apt-get install openjdk-11-jdk
 ```
 
 Caso você queira instalar outra versão do Java, basta substituir o "11" pelo número da versão que deseja, exemplo:
 
-```
+```bash
 sudo apt-get install openjdk-8-jdk
 ```
 
@@ -1625,7 +1789,7 @@ sudo apt-get install openjdk-8-jdk
 
 Para instalar o php no Ubuntu é mais simples ainda do que o Java, basta apenas digitar:
 
-```
+```bash
 sudo apt-get install php
 ```
 
@@ -1633,19 +1797,19 @@ sudo apt-get install php
 
 Caso o python 3 não venha como padrão no Ubuntu e sim o Python 2, para instalá-lo é bem simples também, basta digitar:
 
-```
+```bash
 sudo apt-get install python3
 ```
 
 E para colocar ele como padrão para debugar o código, basta digitar:
 
-```
+```bash
 sudo rm /usr/bin/python
 ```
 
 Que ele vai remover o python 2 do link do Path, e depois digitar:
 
-```
+```bash
 sudo ln -s python3 /usr/bin/python
 ```
 
@@ -1659,7 +1823,7 @@ Para instalar o node no Ubuntu ou Fedora basta seguir o link para a instalação
 
 Se você está aprendendo TypeScript e quer instlar ele, depois de ter instalado o NodeJs, basta digitar:
 
-```
+```bash
 sudo npm install -g typescript 
 ```
 
@@ -1667,16 +1831,17 @@ O "-g" serve para instalar ele de forma global no seu Sistema, sendo assim, não
 
 Para rodar o TypeScritp para saber se o código está funcionando corretamente, tem uma forma que é pelo Node igual com o JavaScript, só que não diretamente com o mesmo Node que o JavaScript usa, e sim com o Typescript Node, para instalá-lo é bem simples:
 
-```
+```bash
 sudo npm install -g ts-node
 ```
 
 Para importar bibiliotecas do TypeScript basta instalar o typescript-require:
 
-```
+```bash
 sudo npm install -g typescript-require
 ```
 e
-```
+```bash
 sudo npm install -g @types/node 
 ```
+
