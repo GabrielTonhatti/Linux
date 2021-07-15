@@ -1278,7 +1278,7 @@ sudo apt install screenfetch
 ```
 </p>
 
-## <p id = "libreoffice"> LibreOffice
+## <p id = "libreoffice"> Libre Office
 
 <img src = "img/libreoffice-2.png" alt = "LibreOffice">
 
@@ -1340,6 +1340,7 @@ Ele vai remover o editor de imagens Gimp. Bem fácil não é?
 <p id = "arquivos.">
 E caso você tenha se perguntado, "E para instalar o Google Chrome?" ou o Discord, ou qualquer outro programa famoso que não está nessa lista, é bem simples, porque alguns programas não fica junto de outros programas do gerenciador de pacotes do Ubuntu/Debian, e para instalar esse programas é bem simples, digamos que você queira instalar o Google Chrome, o mais querido navegador de todos(e ao mesmo tempo "odiado" por usar muita memória RAM), para isso basta você pesquisar no navegador que veio como padrão no Ubuntu/Debian(normalmente é o FireFox), "download Chrome" ou "Download Google Chrome", e vai aparecer alguns links de opções para você entrar e baixar, assim como você faria no Windows.
 <img src = "img/google.png" alt = "Google Chrome">
+
 
 Clicando na página "Navegador da Web Google Chrome", vai entrar na seguinte tela:
 
@@ -1648,7 +1649,7 @@ sudo dnf install inkscape
 sudo dnf install steam
 ```
 
-## Discord
+## <p id = "discord" > Discord
 
 <img src = "img/discord.jpg">
 
@@ -1709,11 +1710,21 @@ DefaultSession=gnome-xorg.desktop
 
 Depois de ter substituído o conteúdo, clique em salvar, ou aperte "Ctrl + S" para salvar o arquivo, de pode fechar o gedit, depois disso basta reiniciar o computador e já vai estar funcionando o compartilhamento de tela perfeitamente.
 
-## Blender
+</p>
+
+## <p id = "blender" > Blender
 
 <img src = "img/blender.webp">
 
 Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
+
+Diferente do Ubuntu que precisa baixar o Blender do site oficial so que como um "executável", ou instalar pelo <a href = "#blender-snap"> snap </a> ou pelo <a href = "#blender-flatpak">flatpak</a>, o Fedora já tem o blender dentro dos pacotes do RPM Fusion, e para instalar é bem simples, basta digitar:
+
+``` bash
+sudo dnf install blender
+```
+
+</p>
 
 ## <a href = "#lutris"> Lutris </a>
 
@@ -1746,6 +1757,26 @@ sudo dnf install screenfetch
 ```
 
 O pacote Libre Office já vem instalado  por padrão no Fedora.
+
+Para instalar o Google Chrome ou qualquer programa que tenha a extensão ".rpm", basta fazer o mesmo citado na <a href = "arquivo."> instação </a> feita no Ubuntu, só que ao invés de baixar o ".deb" baixe o ".rmp", e para instalar ele basta digitar:
+
+```bash
+sudo dnf install google-chrome-stable_current_amd64.rpm
+```
+
+Você pode fazer isso para qualquer arquivo ".rpm", basta colocar o nome completo do arquivo no lugar do "google-chrome-stable_current_amd64.rpm".
+
+E para remover um programa do Fedora, basta digitar:
+
+```bash
+sudo dnf remove nomedoprograma
+```
+
+Exemplo:
+
+```bash
+sudo dnf remove google-chrome
+```
 
 </p>
 
@@ -1789,6 +1820,219 @@ Para verificar se tem alguma atualização no Arch, basta digitar:
 sudo pacman -Qu
 ```
 
+# Agora vamos colocar aqui uma lista de alguns programas que você possa se interessar:
+
+Para não ficar repetitivo a explicações de alguns programas que colocamos no Ubuntu ou Fedora também, vou apenas colocar o nome do programa e o comando para instalar, e depois uma linkagem para se você quiser saber sobre o programa, basta clicar no nome.
+
+## <a href = "#vlc"> VLC </a>
+
+```bash
+sudo pacman -S vlc
+```
+
+## <a href = "#audacious"> Audacious </a>
+
+```bash
+sudo pacman -S audacious
+```
+
+## <a href = "#qbittorrent"> qBittorrent </a>
+
+```bash
+sudo pacman -S qbittorrent
+```
+
+## <a href = "#flameshot"> Flameshot </a>
+
+```bash
+sudo pacman -S flameshot
+```
+
+## <a href = "#gParted"> GParted </a>
+
+```bash
+sudo pacman -S gparted
+```
+
+## <a href = "#obs-stido"> Obs Studio </a>
+
+```bash
+sudo pacman -S obs-studio
+```
+
+## <a href = "#alacarte"> Alacarte </a>
+
+```bash
+sudo pacman -S alacarte
+```
+
+## <a href = "#gimp"> Gimp </a>
+
+```bash
+sudo pacman -S gimp
+```
+
+## <a href = "#krita"> Krita </a>
+
+```bash
+sudo pacman -S krita
+```
+
+## <a href = "#inkscape"> Inkscape </a>
+
+```bash
+sudo pacman -S inkscape
+```
+
+## <a href = "#steam"> Steam </a>
+
+```bash
+sudo pacman -S steam
+```
+
+No Manjaro provável que vai instalar a Steam normalmente, mas caso não de certo no Arch Linux, tente instalar pelo <a href = "#steam-flatpak"> Flatpak </a>.  
+
+## <a href = "#discord"> Discord </a>
+
+```bash
+sudo pacman -S discord
+```
+
+Assim como no Fedora, você pode instalar o Discord direto pelos pacotes do Arch/Manjaro com o pacman, sem precisar ir no site baixá-lo.
+
+Caso a interface gráfica do Arch que você instalou seja a mesma que a do Fedora, e o compartilhamento de tela não funcionar, basta fazer o mesmo procedimento já explicado na parte da instalação do Discord no Fedora que vai funcionar perfeitamente. 
+
+## <a href = "#blender"> Blender </a>
+
+```bash
+sudo pacman -S blender
+```
+
+O blender você também pode instalar direto pelos pacotes do Arch/Manjaro com o pacman, sem precisar ir no site baixá-lo.
+
+## <a href = "#lutris"> Lutris </a>
+
+```bash
+sudo pacman -S lutris
+```
+
+## <a href = "#ranger"> Ranger </a>
+
+```bash
+sudo pacman -S ranger
+```
+
+## <a href = "#ncdu"> NCDU </a>
+
+```bash
+sudo pacman -S ncdu
+```
+
+## <a href = "#neofetch"> Neofetch </a>
+
+```bash
+sudo pacman -S neofetch
+```
+
+## <a href = "#screenfetch"> Screenfetch </a>
+
+```bash
+sudo pacman -S screenfetch
+```
+
+## <a href = "#libreoffice"> Libre Office </a>
+
+Para instalar o pacote Libre Office no Arch/Manjaro, basta digitar:
+
+```bash
+sudo pacman -S libreoffice
+```
+
+Para instalar o Google Chrome no Arch/Manjaro é de uma forma diferente das outras distros, pois não tem uma extensão para os arquivos como o ".deb" para Debian e derivados, ou ".rpm" para o Fedora e outras distros que usam o ".rpm", você mesmo tem que criar os pacotes, mas é bem simples, basta você ir no site oficial do <a href = "https://archlinux.org/">Arch Linux</a> e ir na opção de "AUR".
+
+<img src = "img/AUR.png" alt = "Site Arch Linux">
+
+Quando entrar na aba do <b>AUR</b> basta digitar o nome do pacote/programa que você deseja instalar, no nosso caso do exemplo é o Google Chrome.
+
+<img src = "img/chrome-aur.png" alt = "Chrome AUR">
+
+Já na próxima tela, basta procurar o link "google-chrome".
+
+<img src = "img/instalacao-chrome-aur.png" alt = "Chrome AUR">
+
+Depois disso, vamos precisar clonar o repósitorio do GitHub, e para isso vamos precisar instalar o git:
+
+```bash
+sudo pacman -S git
+```
+
+Depois de ter instalado o git, vamos pegar o link que está nessa página:
+
+<img src = "img/clonando-chrome-repo.png" alt = "Chrome AUR">
+
+Basta copiar esse link, e digitar:
+
+```bash
+git clone https://aur.archlinux.org/google-chrome.git
+```
+
+### Obs: Preferencia que você esteja na pasta "/home/usuario", exemplo: "/home/gabriel", para clonar a pasta diretamente na sua pasta principal de usuário, e não apagar a pasta depois.
+
+Depois de ter clonado o repositório, ele vai gerar essa nova pasta no seus arquivos:
+
+ <img src = "img/terminal-chrome.png" alt = "Chrome AUR">
+
+Depois disso, vamos entrar na basta "google-chrome", basta digitar:
+
+```bash
+cd google-chrome
+```
+
+Feito isso, vamos ver oque tem dentro da pasta, digite:
+
+```bash
+ls
+```
+
+Dentro da pasta vai ter os seguintes arquivos:
+
+<img src = "img/google-chrome-aur.png" alt = "Chrome AUR">
+
+Antes de instalarmos o Google Chrome, precisamos instalar o "base-devel", que é ele que nos permite criar os pacotes:
+
+```bash
+sudo pacman -S base-devel
+```
+
+Depois disso vamos rodar o comando "makepkg" para ele criar os pacotes do Google Chrome:
+
+```bash
+makepkg -s
+```
+
+Feito isso ele vai criar alguns arquivos:
+
+<img src = "img/pacote-chrome.png" alt = "Chrome AUR">
+
+E o que vamos instalar vai ser o "google-chrome-91.0.4472.114-1-x86_64.pkg.tar.zst", para isso basta digitar:
+
+```bash
+sudo pacman -U google-chrome-91.0.4472.114-1-x86_64.pkg.tar.zst
+```
+
+Feito isso, o Google Chrome vai ter sido instalado, e você pode fazer isso para qualquer outro pacote AUR que você quiser instalar.
+
+## VS Code
+
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
+
+Para quem é desenvolvedor ele é um dos melhores editores de código, e para instalar ele no Arch basta entrar no AUR do <a href = "https://aur.archlinux.org/packages/visual-studio-code-bin/">VS Code</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
+
+## Microsoft Teams
+
+Microsoft Teams é uma plataforma unificada de comunicação e colaboração que combina bate-papo, videoconferências, armazenamento de arquivos e integração de aplicativos no local de trabalho.
+
+Para instalar ele no Arch Linux, basta  entrar no AUR do <a href = "https://aur.archlinux.org/packages/teams/">Teams</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
 
 </p>
 
@@ -1803,6 +2047,70 @@ Snappy é um software de implantação e um sistema de gerenciamento de pacotes 
 Pacotes de software "snap" são auto-contidos e o funcionam por toda uma gama de distribuições Linux. Essa é uma abordagem diferente do pacote Linux tradicional, como o APT ou o RPM, que exigem pacotes especificamente adaptados para cada distribuição de Linux. Isso adiciona atraso entre o desenvolvimento de aplicações e de sua implementação para os usuários finais.
 
 Snaps não possuem dependências de nenhuma loja de aplicativos, podem ser obtidos a partir de qualquer fonte e pode ser utilizado para implantação de software upstream. Quando snaps são implantados no Ubuntu e em outras versões de Linux, a loja de aplicativos do Ubuntu é utilizada como padrão de back-end, mas outras lojas podem ser ativados.
+
+# Instalação
+
+Antes de usar o snap para instalar algum aplicativo, precisamos instalar o snap na distro em que você está usando.
+
+## Ubuntu
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install snapd
+```
+
+## Linux Mint
+
+Por padrão no Linux Mint o Snap vem "bloqueado", e para instalar o Snap remover esse "bloquador" basta digitar:
+
+```bash
+sudo rm /etc/apt/preferences.d/nosnap.pref
+```
+
+Depois atualizar o sistema:
+
+```bash
+sudo apt update
+```
+
+E por último instalar o snap:
+
+```bash
+sudo apt install snapd
+```
+
+Depois de ter instalado precisa reiniciar o computador. E para testar se funcionou basta digitar:
+
+```bash
+ snap install hello-world
+```
+
+```bash
+ hello-world
+```
+
+Se ele retornar "Hello World!", é porque está funcionando.
+
+## Fedora
+
+```bash
+sudo dnf install snapd
+```
+
+Faça logout e login novamente ou reinicie o sistema para garantir que os caminhos do snap sejam atualizados corretamente.
+
+Para ativar o suporte de snap clássico, digite o seguinte para criar um link simbólico entre /var/lib/snapd/snap e /snap:
+
+```bash
+ sudo ln -s /var/lib/snapd/snap /snap
+```
+
+Faça logout e login novamente ou reinicie o sistema para garantir que os caminhos do snap sejam atualizados corretamente.
+
+Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, mas caso você queira conhecer mais aplicativos, basta acessar o <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>, e escolher os aplicativos que deseja instalar, junto vai ter a opção de instalar pelo terminal ou pelo própria lojinha do Linux.
 
 </p>
 
