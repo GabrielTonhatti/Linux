@@ -2026,7 +2026,7 @@ Feito isso, o Google Chrome vai ter sido instalado, e você pode fazer isso para
 
 <img src = "img/vs-code.png" alt = "VS Code">
 
-O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
 
 <video src="img/vs-code.mp4" type="video/mp4" autoplay loop controls muted>
   Your browser does not support the video tag.
@@ -2278,7 +2278,9 @@ Para instalar o Visual Studio Code via snap, basta digitar:
 sudo snap install code --classic
 ```
 
+De sempre preferência por instalar os aplicativos direto do site oficial, use o snap apenas se não tiver a versão do aplicativo para a distro que você estiver usando.
 
+Para mais aplicativos snap, acesse o site oficial do <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>.
 
 </p>
 
@@ -2296,6 +2298,68 @@ Aplicações usando Flatpak necessitam de autorização prévia do usuário para
 
 Diferente do Snappy, o Flatpak foi desenvolvido para ser descentralizado, permitindo adicionar diferentes fontes de programas. Uma fonte popular de aplicativos no formato Flatpak é o Flathub. Atualmente, alguns programas populares disponíveis inclui Mozilla Firefox, GIMP, Inkscape, LibreOffice, Pitivi, KDE Applications, e alguns não oficiais como Chromium, Blender, Spotify, Skype, Discord, e Steam.
 
+# Instalação
+
+Antes de usar o flatpak para instalar algum aplicativo, precisamos instalar o flatapk na distro em que você está usando.
+
+## Ubuntu
+
+```bash
+sudo apt flatpak
+```
+
+Caso de algum erro, e não instale o flatpak, tenta a seguna maneira:
+
+```bash
+ sudo add-apt-repository ppa:alexlarsson/flatpak
+```
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install flatpak
+```
+
+Depois de ter instalado o flatpak, instale o plugin Software Flatpak, ele serve para o aplicativo de software torna possível instalar aplicativos sem a necessidade da linha de comando. Para instalar, execute:
+
+```bash
+sudo apt install gnome-software-plugin-flatpak
+```
+
+### Nota: o aplicativo de software é distribuído como um Snap desde o Ubuntu 20.04 e não oferece suporte à instalação gráfica de aplicativos Flatpak. A instalação do plugin Flatpak também instalará uma versão deb do Software e resultará na instalação de dois aplicativos de software ao mesmo tempo.
+
+### Adicione o repositório Flathub
+
+Flathub é o melhor lugar para obter aplicativos Flatpak. Para habilitá-lo, execute:
+
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+Depois disso, basta reiniciar o computador.
+
+## Fedora
+
+O Flatpak é instalado por padrão na estação de trabalho Fedora. Para começar, tudo que você precisa fazer é habilitar o Flathub, que é a melhor maneira de obter aplicativos Flatpak. 
+
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+## Arch Linux
+
+Para instalar o Flatpak no Arch é bem simples, basta digitar:
+
+```bash
+sudo pacman -S flatpak
+
+```
+
+Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, mas caso você queira conhecer mais aplicativos, basta acessar o <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>, e escolher os aplicativos que deseja instalar, junto vai ter a opção de instalar pelo terminal ou pelo própria lojinha do Linux.
+
+# 
 
 </p>
 
