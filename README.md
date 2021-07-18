@@ -2359,7 +2359,283 @@ sudo pacman -S flatpak
 
 Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, mas caso você queira conhecer mais aplicativos, basta acessar o <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>, e escolher os aplicativos que deseja instalar, junto vai ter a opção de instalar pelo terminal ou pelo própria lojinha do Linux.
 
-# 
+# Aplicativos Flatpak
+
+##  Hydrapaper
+
+<img src = "img/hydrapaper.png" alt = "Hydrapaper">
+
+Quem utiliza mais de um monitor no Linux talvez já se deparou com a impossibilidade de utilizar papéis de parede distintos em cada desktop. Essa limitação do Gnome-Shell pode ser contornada com um simples programa.
+
+O HydraPaper é um gerenciador de papéis de parede com suporte multi-monitor para o GNOME. Através dele a utilização de diferentes wallpapers em cada monitor será uma realidade. Para ser sincero, o HydraPaper utiliza uma biblioteca Python chamada Pillow e mescla ambas imagens, configurando-as como um único wallpaper com a opção “Estender” habilitada. Parece uma gambiarra que contorna o “problema”, mas sejamos honestos, "o mundo é dos mais espertos".
+
+Mais sobre o <a href = "https://diolinux.com.br/editorial/papeis-de-parede-diferentes-em-cada-monitor.html">Hydrapaper</a>.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub org.gabmus.hydrapaper
+```
+
+## Figma
+
+<img src = "img/figma.png" alt = "Figma">
+
+Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop para GNU/Linux, macOS e Windows.
+
+Ele é uma alternativa ao Adobe Xd para quem usa Linux, e ainda pode ser acessado pela Web, sem precisar instalar nenhum programa.
+
+Site Oficial: <a href = "https://www.figma.com/files/recent?fuid=979871240670454319"> Figma.com</a>.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub org.gabmus.hydrapaper
+```
+
+## Gromit
+
+<img src = "img/gromit.webp" alt = "Gromit">
+
+[Gromit-MPX (GRaphics Over Miscellaneous Things)](https://github.com/bk138/gromit-mpx#gromit-mpx) é uma ferramenta de [anotação](https://www.edivaldobrito.com.br/krita-no-linux-via-snap/) de tela que funciona em qualquer ambiente de trabalho Unix, sob X11 e Wayland.
+
+Sua principal funcionalidade é nos ajudar nas apresentações.
+
+Normalmente, teríamos que mover o ponteiro do mouse ao redor do ponto de interesse até que, com sorte, todos percebam. Com o Gromit-MPX, podemos desenhar em qualquer lugar da tela, destacando um botão ou área em que queremos focar a atenção.
+
+Gromit-MPX é um utilitário para fazer anotações em toda a área de trabalho e nas janelas exibidas.
+
+A ferramenta de anotação original é o Gromit e também usa a função Multi-Pointer X.org. Esta ferramenta é um software gratuito e de código aberto.
+
+O programa é executado em segundo plano e é ativado sob demanda, o que nos permite desenhar em todos os aplicativos que estão sendo executados na área de trabalho.
+
+O desenho fica na tela o tempo que quisermos. Caso não gostemos do desenho, com o botão direito do mouse, podemos deletar o que não gostamos.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub net.christianbeier.Gromit-MPX
+```
+
+## PDF Arranger
+
+<img src = "img/pdfarranger.png" alt = "PDF Arranger">
+
+Se você precisa fazer alterações em arquivos PDF com facilidade, conheça e veja como instalar o incrível utilitário PDFArranger no Linux.
+
+[PDFArranger](https://github.com/jeromerobert/pdfarranger) é uma pequena ferramenta que permite dividir, mesclar, girar e reorganizar um ou mais arquivos PDF no Linux.
+
+Ele é um pequeno aplicativo python-gtk, que ajuda o usuário a mesclar ou dividir documentos PDF e rodar, cortar e reorganizar suas páginas através de uma interface gráfica interativa e intuitiva.
+
+O PDFArranger é na verdade um fork do projeto PDF-Shuffler, já que este último não foi desenvolvido nos últimos anos.
+
+O PDFArranger é uma tentativa humilde de tornar este projeto um pouco mais atraente, mesmo que até o ícone de ambos os projetos seja o mesmo.
+
+Tenha em mente que o PDFArranger não é um visualizador de PDF. Você não pode clicar duas vezes em um PDF e ler seu conteúdo.
+
+Portanto, use seu leitor de PDF habitual para lê-los, anote os detalhes e use o PDFArranger de acordo com suas necessidades. Você precisará saber os números de página exatos que deseja cortar ou mesclar.
+
+Você pode arrastar e soltar arquivos PDF no aplicativo PDFArranger em execução ou clicar no botão de menu para abrir o arquivo desejado com o PDFArranger.
+
+Nos mostrará o documento, página por página. Isso levará algum tempo e uso da CPU ao abrir o arquivo. Mas esse consumo é reduzido ao mínimo quando o arquivo é totalmente aberto.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.github.jeromerobert.pdfarranger
+```
+
+## Apostrophe
+
+<img src = "img/apostrophe.png" alt = "Apostrophe">
+
+**Apostrophe** é um editor de Markdown sem distrações baseado em GTK, criado originalmente por Wolf Vollprecht e mantido por Manuel Genovés. ... Esse editor usa o pandoc como back-end para markdown parsing e oferece uma interface de usuário muito limpa e elegante. A visualização em linha facilita a escrita do Markdown.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe
+```
+
+## Typora
+
+<img src = "img/typora.png" alt = "Typora">
+
+[Typora](https://typora.io/) é um editor de markdown mínimalista, fornecendo novas maneiras de ler e escrever markdown. Atualmente está em beta. Ele é um software comercial (não de código aberto), mas é gratuito durante a versão beta.
+
+O Typora no GitHub oferece suporte à colaboração entre seu desenvolvedor, Abner Lee, e sua comunidade de usuários, fornecendo um local para relatar problemas de maneira transparente, coletar feedback e discutir a direção futura.
+
+Ele também fornece recursos de código aberto para personalização de temas pelo usuário.
+
+O editor de markdown do Typora é uma excelente ferramenta para escrever markdown.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub io.typora.Typora
+```
+
+## Unity
+
+<img src = "img/unity.png" alt = "Unity">
+
+**Unity Hub** permite encontrar, baixar e gerenciar mais facilmente suas instalações do **Unity** Editor e visualizar todos os projetos **Unity**. Além disso, o **Unity Hub** ajuda você a descobrir novas funções que facilitam a inicialização - como por exemplo Templates.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.unity.UnityHub
+```
+
+## GPU Viewer
+
+<img src = "img/gpu-viewer.webp" alt = "GPU Viewer">
+
+**GPU**-**Viewer** é um aplicativo que permite capturar todos os detalhes importantes de glxinfo, vulkaninfo e clinfo em uma interface gráfica. Na prática, ele é um front-end para glxinfo, vulkaninfo, clinfo e es2_info. O projeto está sendo desenvolvido usando python 3 pygobject com o GTK3.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub io.github.arunsivaramanneo.GPUViewer
+```
+
+##  GTKStressTesting
+
+<img src = "img/gtk-stress.jpg" alt = "GTK Stress">
+
+**GtkStressTesting**, ou GST, é um utilitário de sistema GTK projetado para enfatizar e monitorar vários componentes de hardware, como CPU e RAM. Com ele você pode executar diferentes testes de estresse de CPU e memória e benchmark de núcleo único e múltiplo.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.leinardi.gst
+```
+
+## Bottles
+
+<img src = "img/bottles.png" alt = "Bottles">
+
+Se você quer executar aplicativos e jogos do Windows no Linux, conheça e veja como instalar a interface Wine Bottles no Linux via Flatpak.
+
+O [Bottles](https://usebottles.com/) é uma ferramenta moderna que aprimora e simplifica a execução de software Windows no Linux!
+
+Seu sistema de instalação de dependência integrado permite fácil acesso a um amplo nível de compatibilidade de software. Ele também possui um gerenciador de download para baixar os componentes oficiais: runner ([wine](https://www.edivaldobrito.com.br/versao-mais-recente-do-wine-no-ubuntu/), proton), dxvk, dependências, etc.
+
+Além disso, recursos como controle de versão de garrafa permitem que você mantenha seu trabalho seguro e restaure-o mais tarde!
+
+Bottles possui as seguintes características:
+
+- Crie suas garrafas (Bottles) usando ambientes pré-configurados ou crie seus próprios
+- Execute todos os executáveis (.exe/.msi) em suas garrafas, diretamente do menu de contexto de seu gerenciador de arquivos
+- Detecção automatizada de aplicativos instalados em suas garrafas
+- Adicione variáveis de ambiente facilmente
+- Substituir DLLs diretamente das preferências de garrafa
+- Mudança de corredor em tempo real para qualquer garrafa
+- Várias otimizações para melhor desempenho de jogos (esync, fsync, dxvk, cache, compilador de sombreador, descarregamento … e muito mais).
+- Instalação automática e gerenciamento de corredores Wine e Proton
+- Reparo automático de garrafas em caso de quebra
+- Instalador de dependências integradas baseado em um repositório de driver de comunidade
+- Gerenciador de tarefas integrado para processos de vinho
+- Fácil acesso ao ProtonDB e WineHQ para suporte
+- As configurações atualizam o sistema nas versões das garrafas
+- Backup e importação de garrafas
+- Importe facilmente o wineprefix de outros gerentes
+- Controle de versão de garrafas (experimental)
+- .. e muito mais que você pode encontrar instalando o Bottles!
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.usebottles.bottles
+```
+
+## Color Peek
+
+<img src = "img/color-peek.jpg" alt = "Color Peek">
+
+Se você precisa descobri as cores que estão na tela do PC, conheça e veja como instalar o seletor de cores Color Picker no Linux via Flatpak.
+
+Sempre quis saber o valor dessa cor em sua tela? O Seletor de cores [Color Picker](https://hjdskes.nl/projects/gcolor3/) permite que você escolha a cor de qualquer pixel da tela. Também oferece uma paleta, para que você possa misturar e combinar facilmente algumas cores.
+
+Quando você encontrar a combinação perfeita de cores, naturalmente deseja salvá-las. O Color Picker permite que você salve e recupere cores de maneira conveniente.
+
+Color Picker é uma caixa de diálogo de seleção de cores escrita em GTK 3. É muito parecida com Gcolor2, mas usa a versão GTK mais recente e outras modernizações para se integrar melhor ao seu desktop moderno.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub nl.hjdskes.gcolor3
+```
+
+## Font Finder
+
+<img src = "img/font-finder.png" alt = "Font Finder">
+
+**Font Finder** é um aplicativo gratuito de código aberto para **Linux** que permite filtrar, classificar e instalar fontes do imenso arquivo do Google **Fonts**.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub io.github.mmstick.FontFinder
+```
+
+## Minder
+
+<img src = "img/minder.png" alt = "Minder">
+
+Se você quer organizar suas ideias na tela do PC, conheça e veja como instalar o app de mapeamento mental minder no Linux via Flatpak.
+
+ O minder é um aplicativo de mapeamento mental criado especialmente para o sistema operacional elementaryOS, mas que você pode usar em qualquer sistema Linux com suporte ao formato Flatpak.
+
+Use o poder do mapeamento mental para dar vida às suas idéias.
+
+- Crie rapidamente mapas mentais visuais usando o teclado e o layout automático.
+- Escolha entre várias opções de layout de árvore.
+- Adicione notas, tarefas e imagens aos seus nós.
+- Adicione conexões nó a nó com texto e notas opcionais.
+- Estilize nós, links e conexões para adicionar mais significado e melhorar a legibilidade.
+- Pesquisa rápida de títulos e notas de nó e conexão, incluindo opções de filtragem.
+- Aumente o zoom ou ative o modo de foco para focar em certas idéias ou diminua o zoom para ver a foto maior.
+- Entre no modo de foco para melhor visualizar e entender partes do mapa.
+- Ilimitado desfazer/refazer qualquer alteração.
+- Salva automaticamente em segundo plano.
+- Ramificações de nós coloridos.
+- Abra vários mapas mentais com o uso de guias.
+- Tema incorporado e personalizável.
+- Animações lindos.
+- Importe dos formatos OPML, FreeMind, Freeplane, PlainText (formatado), Outliner e Portable Minder.
+- Exporte para os formatos CSV, FreeMind, Freeplane, JPEG, BMP, SVG, Markdown, Mermaid, OPML, Org-Mode, Outliner, PDF, PNG, Portable Minder, PlainText e yEd.
+- Use o suporte a impressora.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.github.phase1geo.minder
+```
+
+## Peek
+
+<img src = "img/peek.jpg" alt = "Minder">
+
+Se você precisa gravar uma seleção de sua tela para uma imagem GIF animada. Veja como instalar o Peek Animated GIF recorder no Linux.
+
+[O Peek](https://github.com/phw/peek) é um utilitário de código aberto para Linux que oferece uma janela simples, que pode ser redimensionada para selecionar uma área de tela, e gravar imagens GIF animadas curtas.
+
+O Peek foi construído para o caso de uso específico de áreas de tela de gravação, e para mostrar facilmente os recursos de interface de seus próprios aplicativos ou para mostrar um bug nos relatórios de erros.
+
+Com Peek você simplesmente coloca a janela Peek sobre a área que deseja gravar e pressione “Record” (gravar).
+
+Peek está otimizado para gerar GIFs animados, mas você também pode gravar diretamente para WebM ou MP4, se você preferir.
+
+Peek não é um aplicativo de screencast de propósito geral com recursos estendidos, mas enfoca a única tarefa de criar pequenas e silenciosas cenas de tela de uma área da tela, para criar animações GIF ou vídeos silenciosos WebM ou MP4.
+
+Ele é executado no X11 ou dentro de uma sessão GNOME Shell Wayland usando o XWayland. O suporte para mais desktops do Wayland poderá ser adicionado no futuro.
+
+Para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub com.uploadedlobster.peek
+```
 
 </p>
 
