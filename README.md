@@ -2640,9 +2640,13 @@ flatpak install flathub com.uploadedlobster.peek
 </p>
 
 ***
-## Instalando linguagens de programação
 
-### Java
+# Instalando linguagens de programação
+
+## Java
+
+### Ubuntu
+
 Para instalar o Java no Ubuntu e derivados basta digitar:
 
 ```bash
@@ -2655,7 +2659,27 @@ Caso você queira instalar outra versão do Java, basta substituir o "11" pelo n
 sudo apt-get install openjdk-8-jdk
 ```
 
-### php
+### Fedora
+
+Para instalar o Java no Fedora basta digitar:
+
+```bash
+sudo dnf install java-11-openjdk.x86_64
+```
+
+Ou para instalar a ultima versão basta digitar:
+
+```bash
+sudo dnf install java-latest-openjdk.x86_64
+```
+
+### Arch Linux
+
+
+
+## PHP
+
+### Ubuntu
 
 Para instalar o php no Ubuntu é mais simples ainda do que o Java, basta apenas digitar:
 
@@ -2663,7 +2687,25 @@ Para instalar o php no Ubuntu é mais simples ainda do que o Java, basta apenas 
 sudo apt-get install php
 ```
 
-### Python 3
+### Fedora
+
+Para instalar o php no Fedora é mais simples ainda do que o Java, basta apenas digitar:
+
+```bash
+sudo dnf install php
+```
+
+### Arch Linux
+
+Para instalar o php no Arch Linux é mais simples ainda do que o Java, basta apenas digitar:
+
+```bash
+sudo pacman -S php
+```
+
+## Python 3
+
+### Ubuntu
 
 Caso o python 3 não venha como padrão no Ubuntu e sim o Python 2, para instalá-lo é bem simples também, basta digitar:
 
@@ -2685,11 +2727,49 @@ sudo ln -s python3 /usr/bin/python
 
 Que ele vai criar um novo link no Path apontando para o Pythn 3.
 
-### NodeJs
+### Fedora
 
-Para instalar o node no Ubuntu ou Fedora basta seguir o link para a instalação do  <a href="https://github.com/nodesource/distributions/blob/master/README.md"> NodeJs</a>, que vai ter um README no github com todas as distros e como instalar via package manager.
+Para instalar o Python 3 no Fedora basta digitar:
 
-### TypeScript
+```bash
+sudo dnf install python
+```
+
+### Arch Linux
+
+Para instalar o Python 3 no Arch Linux basta digitar:
+
+```bash
+sudo pacman -S python
+```
+
+## NodeJs
+
+Para instalar o node no Ubuntu ou Fedora basta seguir o link para a instalação do <a href="https://github.com/nodesource/distributions/blob/master/README.md"> NodeJs</a>, que vai ter um README no github com todas as distros e como instalar via package manager.
+
+Ou se quiser instalar a última versão:
+
+### Ubuntu
+
+```bash
+sudo apt-get install nodejs
+```
+
+### Fedora
+
+```bash
+sudo dnf install nodejs
+```
+
+### Arch Linux
+
+```bash
+sudo pacman -S  nodejs npm
+```
+
+Tanto no Ubuntu quanto no Fedora, o npm já vem instalado junto com o NodeJs, no caso do Arch Linux tem que instalar os dois, pois não instala o npm junto do NodeJs.
+
+## TypeScript
 
 Se você está aprendendo TypeScript e quer instlar ele, depois de ter instalado o NodeJs, basta digitar:
 
@@ -2705,7 +2785,7 @@ Para rodar o TypeScritp para saber se o código está funcionando corretamente, 
 sudo npm install -g ts-node
 ```
 
-Para importar bibiliotecas do TypeScript basta instalar o typescript-require:
+Para importar bibliotecas do TypeScript basta instalar o typescript-require:
 
 ```bash
 sudo npm install -g typescript-require
