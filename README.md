@@ -2374,7 +2374,7 @@ Mais sobre o <a href = "https://diolinux.com.br/editorial/papeis-de-parede-difer
 Para instalá-lo basta digitar:
 
 ```bash
-flatpak install flathub com.valvesoftware.Steam
+flatpak install flathub org.gabmus.hydrapaper
 ```
 
 ## <p id = "steam-flatpak"> <a href = "#steam"> Steam </a>
@@ -2382,7 +2382,7 @@ flatpak install flathub com.valvesoftware.Steam
 Para instalá-lo basta digitar:
 
 ```bash
-flatpak install flathub org.gabmus.hydrapaper
+flatpak install flathub com.valvesoftware.Steam
 ```
 
 </p>
@@ -2400,7 +2400,7 @@ Site Oficial: <a href = "https://www.figma.com/files/recent?fuid=979871240670454
 Para instalá-lo basta digitar:
 
 ```bash
-flatpak install flathub org.gabmus.hydrapaper
+flatpak install flathub io.github.Figma_Linux.figma_linux
 ```
 
 ## Gromit
