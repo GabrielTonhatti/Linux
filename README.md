@@ -2647,6 +2647,30 @@ Para instalá-lo basta digitar:
 flatpak install flathub com.uploadedlobster.peek
 ```
 
+## <p id ="blender-flatpak"> Blender
+
+O Blender  tem a sua versão via flatpak, e para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub org.blender.Blender
+```
+
+</p>
+
+## Spotify
+
+<img src = "img/spotify.jpg" alt = "Minder">
+
+Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia. 
+
+Para instalá-lo via Flatpak basta digitar:
+
+```bash
+flatpak install flathub com.spotify.Client
+```
+
+
+
 </p>
 
 ***
