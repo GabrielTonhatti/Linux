@@ -1108,7 +1108,32 @@ sudo apt install gparted
 ```
 </p>
 
+<p id = "font-manager">
+
+## Font Manager
+
+O software de gerenciamento de fontes é um utilitário que os usuários de computador usam para procurar e visualizar fontes e geralmente para instalar e desinstalar fontes. Além disso, dependendo dos recursos do programa de gerenciamento de fontes individuais, os usuários também podem: ativar e desativar fontes.
+
+<img src="img/font-manager.png">
+
+A versão mais recente do font manager(0.8) tem suporte ao Google Fontes, que facilita muito na hora de instalar uma fonte pelo Google Fontes, pois é so escolher a opção do Google, com o símbolo do "G", e colocar o nome da fonte que deseja instalar.
+
+Para instalar a versão mais recente do fonte manager no Ubuntu, você pode usar o PPA  para instalar a versão mais recente no Ubuntu 20.04 LTS e superior:
+
+```bash
+sudo add-apt-repository ppa:font-manager/staging
+```
+
+```bash
+sudo apt install font-manager
+```
+
+Depois de instalado, basta iniciar o aplicativo no menu. A primeira vez que você executa o aplicativo, pode levar alguns segundos para detectar e exibir suas fontes, especialmente se você tiver muitas instaladas.
+
+</p>
+
 ## <p id = "obs-studio"> Obs Studio
+
 <img src = "img/obs.jpg" alt = "Obs Studio">
 
 O OBS é uma suíte de software gratuita e de código aberto para gravação e transmissão ao vivo. Escrito em C e C ++, o OBS fornece captura de fonte e dispositivo em tempo real, composição de cena, codificação, gravação e transmissão. ... O áudio pode ser codificado usando os codecs MP3 ou AAC.
@@ -1133,6 +1158,18 @@ Para instalar basta digitar:
 sudo apt install alacarte
 ```
 </p>
+
+## <p id = "blender" > Blender
+
+<img src = "img/blender.webp" alt = "blender">
+
+Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
+
+Para instalá-lo basta digitar:
+
+```bash
+sudo apt install blender
+```
 
 ## <p id = "gimp"> Gimp
 
@@ -1601,6 +1638,12 @@ sudo dnf install audacious
 sudo dnf install qbittorrent
 ```
 
+## <a href="#font-manager">Font Manager</a>
+
+``` bash
+sudo dnf install font-manager
+```
+
 ## <a href = "#flameshot"> Flameshot </a>
 
 ```bash
@@ -1712,13 +1755,7 @@ Depois de ter substituído o conteúdo, clique em salvar, ou aperte "Ctrl + S" p
 
 </p>
 
-## <p id = "blender" > Blender
-
-<img src = "img/blender.webp" alt = "blender">
-
-Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
-
-Diferente do Ubuntu que precisa baixar o Blender do site oficial so que como um "executável", ou instalar pelo <a href = "#blender-snap"> snap </a> ou pelo <a href = "#blender-flatpak">flatpak</a>, o Fedora já tem o blender dentro dos pacotes do RPM Fusion, e para instalar é bem simples, basta digitar:
+## <a href=#blender> Blender</a>
 
 ``` bash
 sudo dnf install blender
@@ -2047,6 +2084,12 @@ Microsoft Teams é uma plataforma unificada de comunicação e colaboração que
 Para instalar ele no Arch Linux, basta  entrar no AUR do <a href = "https://aur.archlinux.org/packages/teams/">Teams</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
 
 </p>
+
+## <a href = "#font-manager">Font Manager</a>
+
+Pacote AUR:
+
+<a href = "https://aur.archlinux.org/packages/font-manager/">Font Manager AUR</a>.
 
 </p>
 
@@ -2776,6 +2819,12 @@ Para instalar o Python 3 no Arch Linux basta digitar:
 ```bash
 sudo pacman -S python
 ```
+
+## .NET
+
+Para instalar o .NET no linux, tem a explicação pelo próprio site da microsoft, basta seguir o tutorial escolhendo a distro que você está usando:
+
+<a href = "https://docs.microsoft.com/pt-br/dotnet/core/install/linux">Instação .NET</a>.
 
 ## NodeJs
 
