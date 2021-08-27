@@ -2736,6 +2736,8 @@ flatpak install flathub com.spotify.Client
 
 ## Java
 
+Site oficial de Download do <a href = "https://www.oracle.com/java/technologies/">Java</a>, basta acessar o site, escolher a versão quer você deseja instalar e escolher o Sistema Operacional que você está usando. Ou se preferir instalar por outra versão direto pelo terminal no Ubuntu ou Fedora:
+
 ### Ubuntu
 
 Para instalar o Java no Ubuntu e derivados basta digitar:
