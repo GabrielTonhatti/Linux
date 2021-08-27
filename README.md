@@ -1358,6 +1358,20 @@ Ou basta colocar o nome de qual você quer remover no lugar do "impress".
 
 </p>
 
+<p id = "onlyoffice">
+
+## OnlyOffice
+
+"OnlyOffice", estilizado como "ONLYOFFICE", é uma suíte de escritório de código aberto desenvolvida pela Ascensio System SIA, uma empresa com sede em Riga, Letônia. Ele é uma ótima alternativa do Microsoft Office, e tem tanto para Linux, Windows e MacOS, e para instalar ele basta acessar o site oficial e baixar a versão de acordo com a sua distro Linux:
+
+<a href="https://www.onlyoffice.com/pt/desktop.aspx">OnlyOffice</a>.
+
+<img src = "img/onlyoffice.png" alt = "OnlyOffice">
+
+
+
+</p>
+
 ## Remover programas
 
 Para remover qualquer um dos programas que listamos anteriormente(exceto o LibreOffice que já está explicado como remover algum dos pacotes offices), é bem simples também, basta digitar:
