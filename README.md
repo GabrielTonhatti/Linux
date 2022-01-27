@@ -2768,7 +2768,11 @@ sudo dnf install java-latest-openjdk.x86_64
 
 ### Arch Linux
 
+Para instalar o Java no Arch Linux basta digitar:
 
+```bash
+sudo pacman -S jdk11-openjdk
+```
 
 ## PHP
 
