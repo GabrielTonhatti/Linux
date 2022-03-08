@@ -2303,6 +2303,23 @@ Para intalá-lo via snap, basta digitar:
 sudo snap install gitkraken --classic
 ```
 
+## <p id = "rdm" > Redis Desktop Manager (RDM) 
+
+Redis Desktop Manager, ou RDM é uma ferramenta de gerenciamento de interface de usuário multiplataforma para Redis. Esta ferramenta oferece uma GUI fácil de usar para acessar seu Redis ® DB e realizar algumas operações básicas: visualizar chaves como uma árvore, chaves CRUD, executar comandos via shell.
+
+
+<img src="./img/redis.png"/>
+
+<img src="./img/rdm.png"/>
+
+Para intalá-lo via snap, basta digitar:
+
+```bash
+sudo snap install redis-desktop-manager
+```
+
+</p>
+
 ## <a href = "#discord"> Discord </a>
 
 O Discord também tem a sua versão no snap, e para instalá-lo basta digitar:
@@ -2726,9 +2743,43 @@ Para instalá-lo via Flatpak basta digitar:
 flatpak install flathub com.spotify.Client
 ```
 
+</p>
 
+## <a href ="#rdm"> Redis Desktop Manager (RDM) </a>
+
+O Redis Desktop Manager (RDM) tem a sua versão via flatpak, e para instalá-lo basta digitar:
+
+```bash
+flatpak install flathub app.resp.RESP
+```
 
 </p>
+
+## CopyQ
+
+CopyQ monitora a área de transferência do sistema e salva seu conteúdo em abas personalizadas. A área de transferência salva pode ser posteriormente copiada e colada diretamente em qualquer aplicativo.
+
+Site oficial: <a href="https://hluk.github.io/CopyQ/">CopyQ</a>
+
+<img src="./img/copy.png">
+
+Instalar no ubuntu via PPA:
+
+```bash
+sudo add-apt-repository ppa:hluk/copyq
+```
+```bash
+sudo apt update
+```
+```bash
+sudo apt install copyq
+```
+
+Instalar via Flatpak:
+
+```bash
+flatpak install flathub com.github.hluk.copyq
+```
 
 ***
 
