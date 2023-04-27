@@ -1,9 +1,8 @@
-Comandos Linux
-==============
+# Comandos Linux
 
-<img src = "img/Linux-Logo.png" alt = "Linux">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/Linux-Logo.png" alt = "Linux">
 
-+ obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre Linux. 😁
+- obs: Algumas imagens e descrições foi usado como base do site <a href = "https://diolinux.com.br/"> Diolinux</a>, que é o meu site favorito sobre Linux. 😁
 
 <a href = "#ubuntu"> Ubuntu </a>
 <a href = "#fedora"> Fedora </a>
@@ -11,8 +10,10 @@ Comandos Linux
 <a href = "#snap"> Snap </a>
 <a href = "#flatpak"> Flatpak </a>
 
-***
+---
+
 ## Mudar a senha do root:
+
 Se você tentou usar o comando "su", para entrar no modo superuser, e deu que a senha do root está errada, tem como mudar a senha dele, é bem simples, para mudar a senha do root, primeiros usaremo o comando:
 
 ```bash
@@ -189,7 +190,6 @@ Ele vai excluir permanentemente o arquivo/pasta, então tome cuidado quando for 
 
 O comando "nano" é um editor de arquivos pelo terminal, ele serve para você editar o arquivo pelo próprio terminal sem ter que abrir algum outro programa de edição de texto, exemplo:
 
-
 ```bash
 nano nomedoarquivo.extensao
 ```
@@ -227,7 +227,6 @@ Ele vai mover todos os arquivos e pastas digitados para o diretório "Imagens".
 ## CP
 
 O comando "cp" é parecido com o comando "mv", a diferença que ele é para copiar e não para mover, mas caso você copie para um diretório que tenha algum arquivo/pasta com o mesmo nome, ele também vai sobrescrever com o "mv" faz. Para usá-lo basta digitar:
-
 
 ```bash
 cp nomedoarquivo caminhoparaondequermover
@@ -315,7 +314,7 @@ Para instalar o formato .gz e .bz2 no Arch Linux, basta digitar:
 sudo pacman -S gzip bzip2
 ```
 
-Ele vai instalar  os dois pacotes juntos, o gzip e o bzip já vem como padrão no Ubuntu e Fedora, e para qualquer outro programa que você queira instalar, você pode instalar vários de uma vez só, basta digitar o comando de gerenciador de pacotes da distro, no caso do Ubuntu o apt, o Fedora o dnf, e o Arch Linux o pacman, e install com o nome dos pacotes separados por espaço, no caso do Arch é um pouco diferente, no lugar de "install", é "-S", que seria referente a "install", das outras distros,  exemnplos:
+Ele vai instalar os dois pacotes juntos, o gzip e o bzip já vem como padrão no Ubuntu e Fedora, e para qualquer outro programa que você queira instalar, você pode instalar vários de uma vez só, basta digitar o comando de gerenciador de pacotes da distro, no caso do Ubuntu o apt, o Fedora o dnf, e o Arch Linux o pacman, e install com o nome dos pacotes separados por espaço, no caso do Arch é um pouco diferente, no lugar de "install", é "-S", que seria referente a "install", das outras distros, exemnplos:
 
 Ubuntu:
 
@@ -355,7 +354,7 @@ Sendo o "nomedoarquivo.zip" o arquivo .zip que sera gerado, e o "nomedapasta/" �
 zip -r fontes.zip Fontes/
 ```
 
-O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar oque é aquele arquivo ".zip". 
+O nome do arquivo ".zip" você pode colocar o nome que quiser para identificar oque é aquele arquivo ".zip".
 
 Se você quer compactar vários arquivos ou pastas dentro de apenas um arquivo .zip, basta digitar:
 
@@ -384,6 +383,7 @@ zip -P zipando -r  fontes.zip Fontes/
 ```
 
 E na hora que você ou outra pessoa for descompactar, vai pedir essa senha que você colocou, no meu caso a senha foi "zipando".
+
 ### Descompactar:
 
 Para descompactar um arquivo ".zip" é mais simples ainda do que compactar, basta digitar:
@@ -427,6 +427,7 @@ E ele vai mostrar todos os arquivos que tem dentro do arquivo.zip.
 ## Formato .rar
 
 Assim como o formato ".zip" é bastante conhecido, o formato ".rar" provávelmente é mais conhecido ainda, pois a maioria das pessoas usam o famoso Winrar.
+
 ### Compactar:
 
 Para compactar é bem simples, basta digitar:
@@ -610,7 +611,7 @@ tar -cz Fontes/ > fontes.tar.gz
 ou
 
 ```bash
-tar -zcvf arquivo.tar.gz nomedapasta/ 
+tar -zcvf arquivo.tar.gz nomedapasta/
 ```
 
 Exemplo
@@ -755,7 +756,7 @@ Para descompactar um arquivo .bz2 é bem simples, basta digitar:
 bunzip nomedoarquivo.bz2
 ```
 
-Ou 
+Ou
 
 ```bash
 bunzip2 nomedoarquivo.bz2
@@ -855,7 +856,7 @@ E ele vai mostrar todos os arquivos que tem dentro do arquivo.tar.bz2.
 
 ## 7-Zip
 
-7-Zip é um compactador de arquivos open-source para o sistema operacional Microsoft Windows e Linux. O programa, desenvolvido por Igor Pavlov, é distribuído sobre a licença GNU LGPL, e compete diretamente com os programas de código-fechado WinZip e WinRAR. 
+7-Zip é um compactador de arquivos open-source para o sistema operacional Microsoft Windows e Linux. O programa, desenvolvido por Igor Pavlov, é distribuído sobre a licença GNU LGPL, e compete diretamente com os programas de código-fechado WinZip e WinRAR.
 
 Com ele você pode usar para compactar para qualquer formato listado anteriormente, e até mesmo para o formato .7z.
 
@@ -915,11 +916,11 @@ Ou
 
 A desvantagem de descompactar usando o 7-Zip, é que ele não vai descompactar da mesma forma que os outros comandos, criando uma pasta com o mesmo nome da pasta que tinha sido compactada ou o mesmo nome do arquivo so que sem o ".extensao", ele vai descompactar tudo que tem dentro do arquivo na pasta atual que você está. Mesmo que você compacte uma pasta ou arquivo com o 7-Zip, se você usar o formato de decompactação padrão da extensão que você escolheu, ele vai descompactar normal criando uma pasta para descompactar tudo, diferente do 7-Zip.
 
-****
+---
 
 <p id = "ubuntu">
 
-<img src = "img/Ubuntu_logoib.svg" width = "200" alt = "Ubuntu"> <img src = "img/logo-mint.png" width = "200" alt = "Linux Mint"> <img src = "img/logo-debian.png" width = "200" alt = "Debian"> 
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/Ubuntu_logoib.svg" width = "200" alt = "Ubuntu"> <img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/logo-mint.png" width = "200" alt = "Linux Mint"> <img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/logo-debian.png" width = "200" alt = "Debian">
 
 Ubuntu é um sistema operacional (pt-BR) ou sistema operativo (pt-PT) de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo (LTS). É desenvolvido pela Canonical Ltd.
 
@@ -960,10 +961,12 @@ apt list --upgradable
 ```
 
 E ele vai listar os programas que precisam ser atualizados, se aparecer apenas "Listining...Done", é porque não tem atualização, mas se aparecer um tanto de programas(provávelmente escritos em verde), é so rodar o comandos citados anteriormente para atualizar o sistema.
+
 # Agora vamos colocar aqui uma lista de alguns programas que você possa se interessar:
 
 ## <p id = "playonlinux"> Playonlinux
-<img src = "img/playonlinux-no-linux.webp" alt = "Gufw">
+
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/playonlinux-no-linux.webp" alt = "Gufw">
 
 O playonlinux é um programa para instalar programas do Windows no Linux, ele é bastante famoso, pois da pra usar alguns programas do windows no próprio linux, mas as vezes o programa que você ques instalar pode não funcionar, então não fique bravo caso não funcione, porque não é um programa que funciona e instalar qualquer programa do Windows perfeitamente como se fosse no próprio Windows. Para instalar o playonlinux digite:
 
@@ -972,33 +975,36 @@ sudo apt-get install playonlinux wine winbind p7zip-full
 ```
 
 Ele vai instalar o playonlinux junto com o wine, que é o o programa que simula a virtualização do Windows no Linux.
+
 </p>
 
-
 ## <p id = "codecs"> Codecs Multimídia
-<img src = "img/codecs.jpg" alt = "Codecs Multimídia">
 
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/codecs.jpg" alt = "Codecs Multimídia">
 
 Por questões de legislação, o Ubuntu não pode incluir determinados codecs multimídia, como os de MP3, para poder ser distribuído em alguns países, entre outros formatos. Qualquer pessoa que já formatou o computador com Windows sabe que tem que instalar alguns codecs para que todos os tipos de arquivos rodem no sistema, no Windows é bem comum utilizar o pack “K-Lite”, no Ubuntu, temos o Ubuntu Restricted Extras, ele está na Central de Programas, mas também pode ser baixado pelo terminal:
 
 ```bash
 sudo apt install ubuntu-restricted-extra
 ```
+
 </p>
 
 ## <p id = "unity-tweak"> Unity Tweak Tool
 
-<img src = "img/unity+tweak+tool.png" alt = "Unity Tweak Tool">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/unity+tweak+tool.png" alt = "Unity Tweak Tool">
 
 O Unity Tweak Tool é uma das melhores ferramentas para fazer ajustes na interface Unity (se não for a melhor), com ele você conseguirá, inclusive, mover facilmente a barra lateral do Unity para a parte de baixo da tela, que é uma das novidades dessa versão. Para instalar o Unity Tweak Tool digite o comando:
 
 ```bash
 sudo apt install unity-tweak-tool
 ```
+
 </p>
 
 ## <p id = "gufw"> Gufw
-<img src = "img/informe-gufw.jpg" alt = "Gufw">
+
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/informe-gufw.jpg" alt = "Gufw">
 
 Gufw é o firewall padrão do Ubuntu, Linux. Atua com interface gráfica para o Uncomplicated Firewall (ufw), que roda nas camadas mais básicas do Linux. Sem muitos mistérios e de fácil configuração, o Gufw permite que usuários criem regras, gerenciem perfis de uso para a ferramenta, liguem ou desliguem o firewall, tenham acessos a logs e monitorem o comportamento de aplicativos em tempo real, observando que portas cada um deles acessam para se comunicar com a Internet.
 
@@ -1009,10 +1015,12 @@ Para instalar o gufw basta digitar:
 ```bash
 sudo apt install gufw
 ```
+
 </p>
 
 ## <p id = "synaptic"> Synaptic
-<img src = "img/synaptic-no-ubuntu.webp" alt = "Synaptic">
+
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/synaptic-no-ubuntu.webp" alt = "Synaptic">
 
 O Synaptic é um programa de computador com uma interface gráfica amigável desenvolvido em GTK+ para o sistema de gerenciamento de pacotes APT, utilizado no Debian GNU/Linux e em outras distribuições que utilizam o APT.
 
@@ -1026,7 +1034,7 @@ sudo apt install synaptic
 
 ## <p id = "vlc"> VLC
 
-<img src = "img/vlc-header.jpg" alt = "VLC">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/vlc-header.jpg" alt = "VLC">
 
 O VLC é um reprodutor de Vídeo e Áudio, sendo usado tanto para reproduzir músicas quanto vídeos.
 
@@ -1040,7 +1048,7 @@ sudo apt install vlc
 
 ## <p id = "audacious"> Audacious
 
-<img src = "img/audacious.jpg" alt = "audacious">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/audacious.jpg" alt = "audacious">
 
 Audacious é um tocador de mídia livre com foco em baixa utilização de recursos, alta qualidade de áudio e suporte a uma ampla variedade de formatos. É desenvolvido primariamente para sistemas POSIX como Linux e unix-like, com suporte limitado ao Microsoft Windows.
 
@@ -1054,21 +1062,22 @@ sudo apt install audacious
 
 ## <p id = "qbittorrent"> qBittorrent
 
-<img src = "img/qbittorrent.jpg" alt = "qbittorrent">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/qbittorrent.jpg" alt = "qbittorrent">
 
 qBittorrent é um aplicativo cliente P2P multiplataforma, gratuito e de código aberto para a rede BitTorrent. O programa utiliza a biblioteca libtorrent-rasterbar para comunicação em rede. qBittorrent está escrito na linguagem de programação C++, também utiliza a biblioteca Qt.
 
-Para quem usa o utorrent mesmo no linux, pode usar o qBittorrent no linux. 
+Para quem usa o utorrent mesmo no linux, pode usar o qBittorrent no linux.
 Para instalar ele, basta digitar:
 
 ```bash
 sudo apt install qbittorrent
 ```
+
 </p>
 
 ## <p id = "flameshot"> Flameshot
 
-<img src = "img/flameshot.webp" alt = "Flameshot">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/flameshot.webp" alt = "Flameshot">
 
 Conheça o melhor app de captura de telas para Linux. Acredite, capturar telas no Linux vai ser uma tarefa simples com esta ferramenta open source. Flameshot possui um conjunto útil de ferramentas de marcação e seleção, incluindo desenho à mão livre, linhas, setas, caixas, círculos, realces, desfoque.
 
@@ -1091,7 +1100,8 @@ Se você quiser também entrar nas configurações do flameshot, basta digitar:
 ```bash
 flameshot config
 ```
-<img src = "img/flameshot-config.png" alt = "Flameshot">
+
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/flameshot-config.png" alt = "Flameshot">
 
 Ele vai abrir essa tela de configurção do flameshot.
 
@@ -1099,13 +1109,14 @@ Ele vai abrir essa tela de configurção do flameshot.
 
 ## <p id = "gParted"> GParted
 
-<img src = "img/gparted-interface-grafica.png" alt = "GParted">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gparted-interface-grafica.png" alt = "GParted">
 
 GParted (ou Gnome Partition Editor) é o aplicativo GNOME para edição de partições. ... É usado para criar espaço para novos sistemas operacionais (operativos em Portugal), reorganizar o uso do disco rígido, copiar dados e "espelhar" uma partição em outra.
 
 ```bash
 sudo apt install gparted
 ```
+
 </p>
 
 <p id = "font-manager">
@@ -1114,11 +1125,11 @@ sudo apt install gparted
 
 O software de gerenciamento de fontes é um utilitário que os usuários de computador usam para procurar e visualizar fontes e geralmente para instalar e desinstalar fontes. Além disso, dependendo dos recursos do programa de gerenciamento de fontes individuais, os usuários também podem: ativar e desativar fontes.
 
-<img src="img/font-manager.png">
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/font-manager.png">
 
 A versão mais recente do font manager(0.8) tem suporte ao Google Fontes, que facilita muito na hora de instalar uma fonte pelo Google Fontes, pois é so escolher a opção do Google, com o símbolo do "G", e colocar o nome da fonte que deseja instalar.
 
-Para instalar a versão mais recente do fonte manager no Ubuntu, você pode usar o PPA  para instalar a versão mais recente no Ubuntu 20.04 LTS e superior:
+Para instalar a versão mais recente do fonte manager no Ubuntu, você pode usar o PPA para instalar a versão mais recente no Ubuntu 20.04 LTS e superior:
 
 ```bash
 sudo add-apt-repository ppa:font-manager/staging
@@ -1134,7 +1145,7 @@ Depois de instalado, basta iniciar o aplicativo no menu. A primeira vez que voc�
 
 ## <p id = "obs-studio"> Obs Studio
 
-<img src = "img/obs.jpg" alt = "Obs Studio">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/obs.jpg" alt = "Obs Studio">
 
 O OBS é uma suíte de software gratuita e de código aberto para gravação e transmissão ao vivo. Escrito em C e C ++, o OBS fornece captura de fonte e dispositivo em tempo real, composição de cena, codificação, gravação e transmissão. ... O áudio pode ser codificado usando os codecs MP3 ou AAC.
 
@@ -1143,10 +1154,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install obs-studio
 ```
+
 </p>
 
 ## <p id = "alacarte"> Alacarte
-<img src = "img/alacarte.png" alt = "Alacarte">
+
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/alacarte.png" alt = "Alacarte">
 
 Talvez você não conhece o nome Alacarte ( que é o nome real do programa ) mas conheça descrição dele, editor de Menu Principal.
 
@@ -1157,11 +1170,12 @@ Para instalar basta digitar:
 ```bash
 sudo apt install alacarte
 ```
+
 </p>
 
 ## <p id = "blender" > Blender
 
-<img src = "img/blender.webp" alt = "blender">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/blender.webp" alt = "blender">
 
 Blender, também conhecido como blender3d, é um programa de computador de código aberto, desenvolvido pela Blender Foundation, para modelagem, animação, texturização, composição, renderização, e edição de vídeo. Está disponível sob a GNU GPL, versão 2 ou posterior.
 
@@ -1173,7 +1187,7 @@ sudo apt install blender
 
 ## <p id = "gimp"> Gimp
 
-<img src = "img/gimp.jpg" alt = "Gimp">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gimp.jpg" alt = "Gimp">
 
 GIMP é um programa de edição e criação de imagens para Windows, Mac e Linux. Ele é uma boa alternativa gratuita ao Photoshop e conta com uma série de ferramentas e recursos, como pincéis e efeitos para fotografias. O editor ganhou interface única, permitindo ao usuário abrir várias janelas distintas.
 
@@ -1182,11 +1196,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install gimp
 ```
+
 </p>
 
 ## <p id = "krita"> Krita
 
-<img src = "img/krita.jpg" alt = "Krita">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/krita.jpg" alt = "Krita">
 
 Krita é uma ferramenta de criação de ilustrações, concept art, histórias em quadrinhos, pinturas digitais, animações, possibilitando também ser usado como um programa de retoques e manipulação de fotografia, conversor de formatos, suportando vários modelos de cores e pintura HDR. Ele é também uma alternativa ao Gimp, mas você pode usar os dois se quiser.
 
@@ -1195,11 +1210,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install krita
 ```
+
 </p>
 
 ## <p id = "inkscape"> Inkscape
 
-<img src = "img/inkscape.png" alt = "Inkscape">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/inkscape.png" alt = "Inkscape">
 
 Inkscape é um software livre para editoração eletrônica de imagens e documentos vetoriais, com base numa versão mais avançada do antigo Sodipodi no qual teve origem. Trata-se assim de um fork considerado de sucesso.
 
@@ -1208,15 +1224,16 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install inkscape
 ```
+
 </p>
 
 ## <p id = "steam"> Steam
 
-<img src = "img/steam.png" alt = "Steam">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/steam.png" alt = "Steam">
 
 Steam é um software de gestão de direitos digitais criado pela Valve Corporation ou Valve L.L.C., de plataformas digitais como jogos e aplicativos de programação e fornece serviços facilitados como atualização automática de jogos, e preços acessíveis aos usuários.
 
-Sabia que tem Steam para Linux? Isso mesmo. A famosa Steam também está neste sistema. Para quem dizia que não haviam jogos para Linux, estavam enganados. 
+Sabia que tem Steam para Linux? Isso mesmo. A famosa Steam também está neste sistema. Para quem dizia que não haviam jogos para Linux, estavam enganados.
 
 Para instalá-lo basta digitar:
 
@@ -1230,7 +1247,7 @@ Mas infelizmente tem poucos jogos nativos para Linux comparado com o que tem par
 
 ## <p id = "lutris"> Lutris
 
-<img src = "img/lutris.png" alt = "lutris">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/lutris.png" alt = "lutris">
 
 Lutris é um gestor de jogos livre e de código aberto para sistemas operacionais baseados em Linux, desenvolvido e mantido por Mathieu Comandon e pela comunidade,listado sob a Licença Pública Geral GNU. O Lutris possibilita a instalação de diversos jogos a partir de seu site, com um único clique, e também se integra ao site do Steam. Scripts de instalação estão disponíveis para alguns jogos difíceis de ser executados na plataforma, que rodam por meio da camada WINE, como o popular League of Legends. Jogos adquiridos por meio da GOG e da Humble Bundle podem ser adicionados por meio de seus próprios lançadores no Lutris. Os jogos são executados em suas respectivas plataformas, como WINE, Steam e emuladores, e podem ser iniciados com a mediação do aplicativo Lutris. Mais de 20 emuladores são suportados, incluindo DOSbox, ScummVM, Atari 800, Snes9x, Dolphin, PCSX2 e PPSSPP.
 
@@ -1239,11 +1256,13 @@ Para instalá-lo primeiramente adicione o PPA do Lutris no seu Ubuntu com o coma
 ```bash
 sudo add-apt-repository ppa:lutris-team/lutris
 ```
+
 Agora atualize os repositórios da sua distro com o comando abaixo:
 
 ```bash
 sudo apt-get update
 ```
+
 E por último, instale o Lutris com o comando:
 
 ```bash
@@ -1254,7 +1273,7 @@ sudo apt-get install lutris
 
 ## <p id = "winff"> Winff
 
-<img src = "img/winff-screenshot.jpg" alt = "Winff">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/winff-screenshot.jpg" alt = "Winff">
 
 WinFF possibilita que os usuários interajam com FFmpeg utilizando os botões , menus, campos de formulários e listas em vez de usar a linha de comando. A tela padrão permite aos usuários criar uma lista de arquivos para a conversão e para especificar configurações diferentes para cada arquivo. WinFF pode reproduzir arquivos em fila e visualizar as configurações de conversão diferentes , lançando ffplay , um media player baseado em FFmpeg que vem com o programa. WinFF pode transcodificar entre qualquer um dos formatos de vídeo na biblioteca libavformat multimídia, incluindo MPEG, H.261 cru, H.263 e H.264 , PMP , AVI e MOV. WinFF está disponível para Windows e Linux.
 
@@ -1263,22 +1282,24 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install winff
 ```
+
 </p>
 
 ## <p id = "ranger"> Ranger
 
-<img src = "img/ranger_code.png" alt = "Ranger">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/ranger_code.png" alt = "Ranger">
 
 O Ranger é um gestor de arquivos de linha de comando (CLI), escrito em Python. O programa possui todas as funções presentes nos gestores mais usados, como o Nautilus, no Ubuntu.
 
 ```bash
 sudo apt install ranger
 ```
+
 </p>
 
 ## <p id = "ncdu"> NCDU
 
-<img src = "img/ncdu2.png" alt = "NCDU">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/ncdu2.png" alt = "NCDU">
 
 Ncdu é uma utilitário de comando de linha, que ajudará a avaliar o espaço em disco no UNIX e distribuições LINUX. Ncdu é um analisador de uso de disco com uma interface ncurses que pode ser utilizada principalmente em terminais texto.
 
@@ -1287,11 +1308,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install ncdu
 ```
+
 </p>
 
 ## <p id = "neofetch"> Neofetch
 
-<img src = "img/neofetch1.jpg" alt = "Neofetch">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/neofetch1.jpg" alt = "Neofetch">
 
 Neofetch é uma ferramenta desenvolvida para criar protetores de tela de console que mostram informações sobre o sistema, hardware e software.
 
@@ -1300,11 +1322,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install neofetch
 ```
+
 </p>
 
 ## <p id = "screenfetch"> Screenfetch
 
-<img src = "img/screenfetch.png" alt = "Screenfetch">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/screenfetch.png" alt = "Screenfetch">
 
 screenFetch: Informações do sistema e algumas firulas via terminal. screenFetch é um script que desenha a logo da sua distribuição em formato ASCII no terminal, trazendo também as informações básicas do computador, como por exemplo, sistema operacional, Kernel, processador, memoria ram e etc.
 
@@ -1313,12 +1336,12 @@ Para instalá-lo basta digitar:
 ```bash
 sudo apt install screenfetch
 ```
+
 </p>
 
 ## <p id = "libreoffice"> Libre Office
 
-<img src = "img/libreoffice-2.png" alt = "LibreOffice">
-
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/libreoffice-2.png" alt = "LibreOffice">
 
 O LibreOffice é um pacote de programas para uso profissional ou pessoal. O serviço traz opções para criar e editar textos, tabelas, apresentações, desenhos, fórmulas matemáticas e até organizar um banco de dados. Ele é uma alternativa do Microsoft Office, e é gratuito.
 
@@ -1366,9 +1389,7 @@ Ou basta colocar o nome de qual você quer remover no lugar do "impress".
 
 <a href="https://www.onlyoffice.com/pt/desktop.aspx">OnlyOffice</a>.
 
-<img src = "img/onlyoffice.png" alt = "OnlyOffice">
-
-
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/onlyoffice.png" alt = "OnlyOffice">
 
 </p>
 
@@ -1390,20 +1411,19 @@ Ele vai remover o editor de imagens Gimp. Bem fácil não é?
 
 <p id = "arquivos.">
 E caso você tenha se perguntado, "E para instalar o Google Chrome?" ou o Discord, ou qualquer outro programa famoso que não está nessa lista, é bem simples, porque alguns programas não fica junto de outros programas do gerenciador de pacotes do Ubuntu/Debian, e para instalar esse programas é bem simples, digamos que você queira instalar o Google Chrome, o mais querido navegador de todos(e ao mesmo tempo "odiado" por usar muita memória RAM), para isso basta você pesquisar no navegador que veio como padrão no Ubuntu/Debian(normalmente é o FireFox), "download Chrome" ou "Download Google Chrome", e vai aparecer alguns links de opções para você entrar e baixar, assim como você faria no Windows.
-<img src = "img/google.png" alt = "Google Chrome">
-
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/google.png" alt = "Google Chrome">
 
 Clicando na página "Navegador da Web Google Chrome", vai entrar na seguinte tela:
 
-<img src = "img/chrome.jpeg" alt = "Google Chrome">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/chrome.jpeg" alt = "Google Chrome">
 
 Igual no Windows mesmo, clicando no botão de "Fazer o download do Google Chrome", vai aparecer outra janela pedindo pra você escolher o formato da extensão do arquivo:
 
-<img src = "img/download-chrome.png" alt = "Google Chrome">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/download-chrome.png" alt = "Google Chrome">
 
 Se você estiver usando o Ubuntu, Debian, Linux Mint ou qualquer outra distro baseada no Ubuntu ou Debian, sempre baixe o formato ".deb", que é o padrão de extensão para distros baseadas no Debian, depois de ter baixado, ele vai gerar um arquivo como esse:
 
-<img src = "img/instalacao-chrome.png" alt = "Terminal">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/instalacao-chrome.png" alt = "Terminal">
 
 Os arquivos ".rpm" são para as distros que usam o RPMFusion como gerenciador de arquivos e programas, como o Fedora, RedHat, OpenSuse, etc.
 
@@ -1434,7 +1454,6 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
 E depois que o comando terminar de rodar, ele vai ter instalado o Google Chrome, depois disso é só abrir e usar ele como qualquer outro programa, e você pode fazer isso pra instalar o Discord, ou qualquer outro programa com a extensão ".deb".
-
 
 E se você quiser remover algum programa com a extensão ".deb" que você tenha instalado, basta digitar:
 
@@ -1525,6 +1544,7 @@ sudo dpkg –configure -a
 ```bash
 sudo apt-get update
 ```
+
 ### Conclusão
 
 Espero que uma dessas correções tenham funcionado para você e que o sistema volte a trabalhar normalmente. Lembre-se que a melhor maneira de lidar com uma situação totalmente é tentar voltar ao que era antes.
@@ -1544,12 +1564,13 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 
 Vai aparecer uma lista com todos os terminais instalados, e basta selecionar qual você quer.
+
 </p>
 
-***
+---
 
 <p id = "fedora">
-<img src = "img/fedora.png" width = "300" alt = "fedora">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/fedora.png" width = "300" alt = "fedora">
 
 Fedora (conhecido como Fedora Core antes da versão 7) é um sistema operacional (pt-BR) ou sistema operativo (pt-PT) Linux. O sistema operacional Fedora Linux é software livre e de código aberto, e os programas disponíveis dentro de seu repositório de programas também são programas livres que aderem a uma licença livre.
 
@@ -1568,6 +1589,7 @@ Assim como o "apt" é o gerenciador de pacotes do Ubuntu, o "dnf" é o gerenciad
 ```bash
 dnf check-update
 ```
+
 ou
 
 ```bash
@@ -1594,19 +1616,19 @@ Softwares redistribuíveis que não sejam de código aberto, o que inclui softwa
 
 Para instalar o RPM Fusion, basta entrar no site oficial do <a href = "https://rpmfusion.org/Configuration"> RPMFusion.org </a> para fazer o download do RMPFUsion Free e NonFree. Basta você baixar os arquivos "RPM Fusion free for Fedora 34" e "RPM Fusion nonfree for Fedora 34", no caso o "34" é a versão atual do Fedora atualmente, então quando for baixar, baixe a versão atual do seu Fedora.
 
-<img src = "img/rpmfusion.png" alt = "RPM Fusion">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/rpmfusion.png" alt = "RPM Fusion">
 
 Ele vai baixar arquivos como esse:
 
-<img src = "img/RPM-terminal.png" alt = "RPM Fusion">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/RPM-terminal.png" alt = "RPM Fusion">
 
 Para instalar basta digitar:
 
-```  bash
+```bash
 sudo dnf install rpmfusion-free-release-34.noarch.rpm
 ```
 
- E
+E
 
 ```bash
 sudo dnf install rpmfusion-nonfree-release-34.noarch.rpm
@@ -1624,7 +1646,7 @@ Ele vai instalar os dois juntos o RPM Fusion Free e o RPM Fusion NonFree. Depois
 
 Para não ficar repetitivo a explicações de alguns programas que colocamos no Ubuntu também, vou apenas colocar o nome do programa e o comando para instalar, e depois uma linkagem para se você quiser saber sobre o programa, basta clicar no nome.
 
-## <a href = "#playonlinux">  Playonlinux </a>
+## <a href = "#playonlinux"> Playonlinux </a>
 
 Para instalar o playonlinux no Fedora, basta digitar:
 
@@ -1654,7 +1676,7 @@ sudo dnf install qbittorrent
 
 ## <a href="#font-manager">Font Manager</a>
 
-``` bash
+```bash
 sudo dnf install font-manager
 ```
 
@@ -1708,13 +1730,13 @@ sudo dnf install steam
 
 ## <p id = "discord" > Discord
 
-<img src = "img/discord.jpg" alt = "discord">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/discord.jpg" alt = "discord">
 
 Discord é um aplicativo de voz sobre IP proprietário e gratuito, projetado inicialmente para comunidades de jogos. O aplicativo Discord está disponível para os sistemas operacionais Microsoft Windows, MacOS, Android, iOS, Linux e em navegadores da Web.
 
 Diferente do Ubuntu que precisa baixar o Discord do site oficial com a extensão ".deb", o Fedora já não tem uma versão ".rpm" do Discord, e para instalar é bem simples, basta digitar:
 
-``` bash
+```bash
 sudo dnf install discord
 ```
 
@@ -1771,7 +1793,7 @@ Depois de ter substituído o conteúdo, clique em salvar, ou aperte "Ctrl + S" p
 
 ## <a href=#blender> Blender</a>
 
-``` bash
+```bash
 sudo dnf install blender
 ```
 
@@ -1789,7 +1811,7 @@ sudo dnf install lutris
 sudo dnf install ranger
 ```
 
-## <a href = "#ncdu"> NCDU </a>
+## <a href = "#ncdu"> NCDU </a>
 
 ```bash
 sudo dnf install ncdu
@@ -1807,7 +1829,7 @@ sudo dnf install neofetch
 sudo dnf install screenfetch
 ```
 
-O pacote Libre Office já vem instalado  por padrão no Fedora.
+O pacote Libre Office já vem instalado por padrão no Fedora.
 
 Para instalar o Google Chrome ou qualquer programa que tenha a extensão ".rpm", basta fazer o mesmo citado na <a href = "arquivo."> instação </a> feita no Ubuntu, só que ao invés de baixar o ".deb" baixe o ".rmp", e para instalar ele basta digitar:
 
@@ -1831,9 +1853,10 @@ sudo dnf remove google-chrome
 
 </p>
 
-***
+---
+
 <p id = "arch-linux">
-<img src = "img/arch-linux.png" width = "250" alt = "Arch Linux"> <img src = "img/manjaro.png" width = "250" alt = "Manjaro">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/arch-linux.png" width = "250" alt = "Arch Linux"> <img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/manjaro.png" width = "250" alt = "Manjaro">
 
 Arch Linux, ou Arch é uma distribuição Linux para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, como Windows e MacOS. Além de ser composto predominantemente por software livre e de código aberto, ele envolve contribuições da comunidade.
 
@@ -1843,12 +1866,11 @@ O Arch Linux usa o modelo rolling release. Com esse sistema, os usuários podem 
 
 Usuários da distribuição podem criar facilmente seus próprios pacotes compatíveis com o pacman usando ferramentas como o "Arch Build System", funcionalidade esta que ajudou a sustentar o AUR, um repositório de pacotes criados por usuários que complementam os repositórios oficiais.
 
-O Arch seria uma distro Linux mais "Hardcore" digamos, pois para você instalar ele, você mesmo tem que "criar" o sistema, instalar tudo por linhas de comando, não é que nem outras distros como o Ubuntu ou Fedora ou muitas outras que tem uns instalador pronto, que você apenas define coisas básicas do sistema como região, idioma, teclado, nome de usuário e so clicar em instalar, você mesmo tem que reparticionar o disco até mesmo chegara instalar a interface gráfica dele. No caso do Manjaro Linux que tem umas instalação simples como as outras distros, e é baseado no kernel do Arch, usando o mesmo gerenciador de pacotes o "pacman", então se você quer instalar o Arch Linux, o recomendado  é que você tenha um pouco de conhecimento em Linux, pode começar por qualquer distro como o Ubuntu, Linux Mint, Debian, Fedora, popOS, entre outros. O mais recomendado para quem está entrando no mundo Linux é que comece pela distro Ubuntu ou Linux Mint, ou qualquer outra distro baseada no Ubuntu, pois terá uma interface mais "amigável", com fácil aprendizado.
+O Arch seria uma distro Linux mais "Hardcore" digamos, pois para você instalar ele, você mesmo tem que "criar" o sistema, instalar tudo por linhas de comando, não é que nem outras distros como o Ubuntu ou Fedora ou muitas outras que tem uns instalador pronto, que você apenas define coisas básicas do sistema como região, idioma, teclado, nome de usuário e so clicar em instalar, você mesmo tem que reparticionar o disco até mesmo chegara instalar a interface gráfica dele. No caso do Manjaro Linux que tem umas instalação simples como as outras distros, e é baseado no kernel do Arch, usando o mesmo gerenciador de pacotes o "pacman", então se você quer instalar o Arch Linux, o recomendado é que você tenha um pouco de conhecimento em Linux, pode começar por qualquer distro como o Ubuntu, Linux Mint, Debian, Fedora, popOS, entre outros. O mais recomendado para quem está entrando no mundo Linux é que comece pela distro Ubuntu ou Linux Mint, ou qualquer outra distro baseada no Ubuntu, pois terá uma interface mais "amigável", com fácil aprendizado.
 
 E se você quer ir por mundo do Arch, mas não quer ir sem saber nada de como funciona, pode tentar primeiro o Manjaro, já que o mesmo tem uma instalação bem simples.
 
 Da mesma forma que no Ubuntu/Debian ou qualquer outra distro Linux, devemos sempre atualizar o sistema antes de instalar qualquer programa, e para atualizar o Arch Linux/Manjaro basta digitar:
-
 
 ```bash
 sudo pacman -Sy
@@ -1861,7 +1883,6 @@ sudo pacman -Syyu
 ```
 
 Para fazer sincronização total com os pacotes e fontes do Arch, e atualizar tudo que precisar.
-
 
 O "pacman" é o gerenciador de pacotes do Arch/Manjaro, e o "-S" é para instalar algum pacote, e o "-Sy" para sincronizar com as fontes de instalação do Arch e verificar se tem alguma atualização, se tiver atualização, ele vai perguntar se você deseja atualizar ou não o sistema como no Ubuntu ou Fedora.
 
@@ -1941,9 +1962,9 @@ sudo pacman -S inkscape
 sudo pacman -S steam
 ```
 
-No Manjaro provável que vai instalar a Steam normalmente, mas caso não de certo no Arch Linux, tente instalar pelo <a href = "#steam-flatpak"> Flatpak </a>.  
+No Manjaro provável que vai instalar a Steam normalmente, mas caso não de certo no Arch Linux, tente instalar pelo <a href = "#steam-flatpak"> Flatpak </a>.
 
-## <a href = "#discord"> Discord </a>
+## <a href = "#discord"> Discord </a>
 
 ```bash
 sudo pacman -S discord
@@ -1951,9 +1972,9 @@ sudo pacman -S discord
 
 Assim como no Fedora, você pode instalar o Discord direto pelos pacotes do Arch/Manjaro com o pacman, sem precisar ir no site baixá-lo.
 
-Caso a interface gráfica do Arch que você instalou seja a mesma que a do Fedora, e o compartilhamento de tela não funcionar, basta fazer o mesmo procedimento já explicado na parte da instalação do Discord no Fedora que vai funcionar perfeitamente. 
+Caso a interface gráfica do Arch que você instalou seja a mesma que a do Fedora, e o compartilhamento de tela não funcionar, basta fazer o mesmo procedimento já explicado na parte da instalação do Discord no Fedora que vai funcionar perfeitamente.
 
-## <a href = "#blender"> Blender </a>
+## <a href = "#blender"> Blender </a>
 
 ```bash
 sudo pacman -S blender
@@ -1973,7 +1994,7 @@ sudo pacman -S lutris
 sudo pacman -S ranger
 ```
 
-## <a href = "#ncdu"> NCDU </a>
+## <a href = "#ncdu"> NCDU </a>
 
 ```bash
 sudo pacman -S ncdu
@@ -1991,7 +2012,7 @@ sudo pacman -S neofetch
 sudo pacman -S screenfetch
 ```
 
-## <a href = "#libreoffice"> Libre Office </a>
+## <a href = "#libreoffice"> Libre Office </a>
 
 Para instalar o pacote Libre Office no Arch/Manjaro, basta digitar:
 
@@ -2001,15 +2022,15 @@ sudo pacman -S libreoffice
 
 Para instalar o Google Chrome no Arch/Manjaro é de uma forma diferente das outras distros, pois não tem uma extensão para os arquivos como o ".deb" para Debian e derivados, ou ".rpm" para o Fedora e outras distros que usam o ".rpm", você mesmo tem que criar os pacotes, mas é bem simples, basta você ir no site oficial do <a href = "https://archlinux.org/">Arch Linux</a> e ir na opção de "AUR".
 
-<img src = "img/AUR.png" alt = "Site Arch Linux">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/AUR.png" alt = "Site Arch Linux">
 
 Quando entrar na aba do <b>AUR</b> basta digitar o nome do pacote/programa que você deseja instalar, no nosso caso do exemplo é o Google Chrome.
 
-<img src = "img/chrome-aur.png" alt = "Chrome AUR">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/chrome-aur.png" alt = "Chrome AUR">
 
 Já na próxima tela, basta procurar o link "google-chrome".
 
-<img src = "img/instalacao-chrome-aur.png" alt = "Chrome AUR">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/instalacao-chrome-aur.png" alt = "Chrome AUR">
 
 Depois disso, vamos precisar clonar o repósitorio do GitHub, e para isso vamos precisar instalar o git:
 
@@ -2019,7 +2040,7 @@ sudo pacman -S git
 
 Depois de ter instalado o git, vamos pegar o link que está nessa página:
 
-<img src = "img/clonando-chrome-repo.png" alt = "Chrome AUR">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/clonando-chrome-repo.png" alt = "Chrome AUR">
 
 Basta copiar esse link, e digitar:
 
@@ -2031,7 +2052,7 @@ git clone https://aur.archlinux.org/google-chrome.git
 
 Depois de ter clonado o repositório, ele vai gerar essa nova pasta no seus arquivos:
 
- <img src = "img/terminal-chrome.png" alt = "Chrome AUR">
+ <img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/terminal-chrome.png" alt = "Chrome AUR">
 
 Depois disso, vamos entrar na basta "google-chrome", basta digitar:
 
@@ -2047,7 +2068,7 @@ ls
 
 Dentro da pasta vai ter os seguintes arquivos:
 
-<img src = "img/google-chrome-aur.png" alt = "Chrome AUR">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/google-chrome-aur.png" alt = "Chrome AUR">
 
 Antes de instalarmos o Google Chrome, precisamos instalar o "base-devel", que é ele que nos permite criar os pacotes:
 
@@ -2063,7 +2084,7 @@ makepkg -s
 
 Feito isso ele vai criar alguns arquivos:
 
-<img src = "img/pacote-chrome.png" alt = "Chrome AUR">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/pacote-chrome.png" alt = "Chrome AUR">
 
 E o que vamos instalar vai ser o "google-chrome-91.0.4472.114-1-x86_64.pkg.tar.zst", para isso basta digitar:
 
@@ -2075,11 +2096,11 @@ Feito isso, o Google Chrome vai ter sido instalado, e você pode fazer isso para
 
 ## <p id = "vscode"> VS Code
 
-<img src = "img/vs-code.png" alt = "VS Code">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/vs-code.png" alt = "VS Code">
 
 O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
 
-<video src="img/vs-code.mp4" type="video/mp4" autoplay loop controls muted>
+<video src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/vs-code.mp4" type="video/mp4" autoplay loop controls muted>
   Your browser does not support the video tag.
 </video>
 
@@ -2091,11 +2112,11 @@ Para quem é desenvolvedor ele é um dos melhores editores de código, e para in
 
 ## <p id = "teams"> Microsoft Teams
 
-<img src = "img/teams.png" alt = "Microsoft Teams">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/teams.png" alt = "Microsoft Teams">
 
 Microsoft Teams é uma plataforma unificada de comunicação e colaboração que combina bate-papo, videoconferências, armazenamento de arquivos e integração de aplicativos no local de trabalho.
 
-Para instalar ele no Arch Linux, basta  entrar no AUR do <a href = "https://aur.archlinux.org/packages/teams/">Teams</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
+Para instalar ele no Arch Linux, basta entrar no AUR do <a href = "https://aur.archlinux.org/packages/teams/">Teams</a> e fazer o mesmo que foi feito para instalar o Google Chrome.
 
 </p>
 
@@ -2107,9 +2128,10 @@ Pacote AUR:
 
 </p>
 
-***
+---
+
 <p id = "snap">
-<img src = "img/snapcraft.png" width = "600" alt = "Snap">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/snapcraft.png" width = "600" alt = "Snap">
 
 Site do <a href = "https://snapcraft.io/" target = "_blank"> Snapcraft</a>.
 
@@ -2237,9 +2259,9 @@ Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, 
 
 ## Bashtop
 
-<img src = "img/bashtop-menu-config.webp" alt = "Bashtop">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/bashtop-menu-config.webp" alt = "Bashtop">
 
-<img src = "img/bashtop.png" alt = "Bashtop">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/bashtop.png" alt = "Bashtop">
 
 O [Bashtop](https://github.com/aristocratos/bashtop) é um monitor de recursos escrito em **Bash** para Linux. Ele mostra o **uso** e **estatísticas da CPU** (incluindo temperatura), **memória**, **discos**, **rede** e **processos**.
 
@@ -2267,7 +2289,7 @@ Para sair dele basta apertar a tecla "q", ou apertar "Esc" ou "m" que vai abrir 
 
 ## HTOP
 
-<img src = "img/htop.png" alt = "Htop">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/htop.png" alt = "Htop">
 
 O **Htop** é um avançado sistema interativo visualizador de processos. Escrito para **Linux**, o **Htop** mostra uma lista frequentemente atualizada de processos que rodam no computador, e utiliza-se de cores para facilitar a leitura de informações sobre o processador, swap, status da memória entre outros.
 
@@ -2287,7 +2309,7 @@ Para sair dele basta apertar a tecla "q".
 
 ## GitKraken
 
-<img src = "img/gitkraken.png" alt = "GitKraken">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gitkraken.png" alt = "GitKraken">
 
 Site oficial <a href = "https://www.gitkraken.com/">gitkraken.com </a>.
 
@@ -2303,14 +2325,13 @@ Para intalá-lo via snap, basta digitar:
 sudo snap install gitkraken --classic
 ```
 
-## <p id = "rdm" > Redis Desktop Manager (RDM) 
+## <p id = "rdm" > Redis Desktop Manager (RDM)
 
 Redis Desktop Manager, ou RDM é uma ferramenta de gerenciamento de interface de usuário multiplataforma para Redis. Esta ferramenta oferece uma GUI fácil de usar para acessar seu Redis ® DB e realizar algumas operações básicas: visualizar chaves como uma árvore, chaves CRUD, executar comandos via shell.
 
+<img src="./https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/redis.png"/>
 
-<img src="./img/redis.png"/>
-
-<img src="./img/rdm.png"/>
+<img src="./https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/rdm.png"/>
 
 Para intalá-lo via snap, basta digitar:
 
@@ -2358,9 +2379,10 @@ Para mais aplicativos snap, acesse o site oficial do <a href = "https://snapcraf
 
 </p>
 
-***
+---
+
 <p id = "flatpak">
-<img src = "img/flathub-logo.png" width = "400" alt = "Flatpak">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/flathub-logo.png" width = "400" alt = "Flatpak">
 
 Site do <a href = "https://flathub.org/home" target = "_blank"> Flathub</a>.
 
@@ -2416,7 +2438,7 @@ Depois disso, basta reiniciar o computador.
 
 ## Fedora
 
-O Flatpak é instalado por padrão na estação de trabalho Fedora. Para começar, tudo que você precisa fazer é habilitar o Flathub, que é a melhor maneira de obter aplicativos Flatpak. 
+O Flatpak é instalado por padrão na estação de trabalho Fedora. Para começar, tudo que você precisa fazer é habilitar o Flathub, que é a melhor maneira de obter aplicativos Flatpak.
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -2435,9 +2457,9 @@ Vou colocar uma lista de alguns aplicativos que podem ser instalados pelo snap, 
 
 # Aplicativos Flatpak
 
-##  Hydrapaper
+## Hydrapaper
 
-<img src = "img/hydrapaper.png" alt = "Hydrapaper">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/hydrapaper.png" alt = "Hydrapaper">
 
 Quem utiliza mais de um monitor no Linux talvez já se deparou com a impossibilidade de utilizar papéis de parede distintos em cada desktop. Essa limitação do Gnome-Shell pode ser contornada com um simples programa.
 
@@ -2463,7 +2485,7 @@ flatpak install flathub com.valvesoftware.Steam
 
 ## Figma
 
-<img src = "img/figma.png" alt = "Figma">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/figma.png" alt = "Figma">
 
 Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop para GNU/Linux, macOS e Windows.
 
@@ -2479,7 +2501,7 @@ flatpak install flathub io.github.Figma_Linux.figma_linux
 
 ## Gromit
 
-<img src = "img/gromit.webp" alt = "Gromit">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gromit.webp" alt = "Gromit">
 
 [Gromit-MPX (GRaphics Over Miscellaneous Things)](https://github.com/bk138/gromit-mpx#gromit-mpx) é uma ferramenta de [anotação](https://www.edivaldobrito.com.br/krita-no-linux-via-snap/) de tela que funciona em qualquer ambiente de trabalho Unix, sob X11 e Wayland.
 
@@ -2503,7 +2525,7 @@ flatpak install flathub net.christianbeier.Gromit-MPX
 
 ## PDF Arranger
 
-<img src = "img/pdfarranger.png" alt = "PDF Arranger">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/pdfarranger.png" alt = "PDF Arranger">
 
 Se você precisa fazer alterações em arquivos PDF com facilidade, conheça e veja como instalar o incrível utilitário PDFArranger no Linux.
 
@@ -2531,7 +2553,7 @@ flatpak install flathub com.github.jeromerobert.pdfarranger
 
 ## Apostrophe
 
-<img src = "img/apostrophe.png" alt = "Apostrophe">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/apostrophe.png" alt = "Apostrophe">
 
 **Apostrophe** é um editor de Markdown sem distrações baseado em GTK, criado originalmente por Wolf Vollprecht e mantido por Manuel Genovés. ... Esse editor usa o pandoc como back-end para markdown parsing e oferece uma interface de usuário muito limpa e elegante. A visualização em linha facilita a escrita do Markdown.
 
@@ -2543,7 +2565,7 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe
 
 ## Typora
 
-<img src = "img/typora.png" alt = "Typora">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/typora.png" alt = "Typora">
 
 [Typora](https://typora.io/) é um editor de markdown mínimalista, fornecendo novas maneiras de ler e escrever markdown. Atualmente está em beta. Ele é um software comercial (não de código aberto), mas é gratuito durante a versão beta.
 
@@ -2561,7 +2583,7 @@ flatpak install flathub io.typora.Typora
 
 ## Unity
 
-<img src = "img/unity.png" alt = "Unity">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/unity.png" alt = "Unity">
 
 **Unity Hub** permite encontrar, baixar e gerenciar mais facilmente suas instalações do **Unity** Editor e visualizar todos os projetos **Unity**. Além disso, o **Unity Hub** ajuda você a descobrir novas funções que facilitam a inicialização - como por exemplo Templates.
 
@@ -2573,7 +2595,7 @@ flatpak install flathub com.unity.UnityHub
 
 ## GPU Viewer
 
-<img src = "img/gpu-viewer.webp" alt = "GPU Viewer">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gpu-viewer.webp" alt = "GPU Viewer">
 
 **GPU**-**Viewer** é um aplicativo que permite capturar todos os detalhes importantes de glxinfo, vulkaninfo e clinfo em uma interface gráfica. Na prática, ele é um front-end para glxinfo, vulkaninfo, clinfo e es2_info. O projeto está sendo desenvolvido usando python 3 pygobject com o GTK3.
 
@@ -2583,9 +2605,9 @@ Para instalá-lo basta digitar:
 flatpak install flathub io.github.arunsivaramanneo.GPUViewer
 ```
 
-##  GTKStressTesting
+## GTKStressTesting
 
-<img src = "img/gtk-stress.jpg" alt = "GTK Stress">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/gtk-stress.jpg" alt = "GTK Stress">
 
 **GtkStressTesting**, ou GST, é um utilitário de sistema GTK projetado para enfatizar e monitorar vários componentes de hardware, como CPU e RAM. Com ele você pode executar diferentes testes de estresse de CPU e memória e benchmark de núcleo único e múltiplo.
 
@@ -2597,7 +2619,7 @@ flatpak install flathub com.leinardi.gst
 
 ## Bottles
 
-<img src = "img/bottles.png" alt = "Bottles">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/bottles.png" alt = "Bottles">
 
 Se você quer executar aplicativos e jogos do Windows no Linux, conheça e veja como instalar a interface Wine Bottles no Linux via Flatpak.
 
@@ -2635,7 +2657,7 @@ flatpak install flathub com.usebottles.bottles
 
 ## Color Peek
 
-<img src = "img/color-peek.jpg" alt = "Color Peek">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/color-peek.jpg" alt = "Color Peek">
 
 Se você precisa descobri as cores que estão na tela do PC, conheça e veja como instalar o seletor de cores Color Picker no Linux via Flatpak.
 
@@ -2653,7 +2675,7 @@ flatpak install flathub nl.hjdskes.gcolor3
 
 ## Font Finder
 
-<img src = "img/font-finder.png" alt = "Font Finder">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/font-finder.png" alt = "Font Finder">
 
 **Font Finder** é um aplicativo gratuito de código aberto para **Linux** que permite filtrar, classificar e instalar fontes do imenso arquivo do Google **Fonts**.
 
@@ -2665,11 +2687,11 @@ flatpak install flathub io.github.mmstick.FontFinder
 
 ## Minder
 
-<img src = "img/minder.png" alt = "Minder">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/minder.png" alt = "Minder">
 
 Se você quer organizar suas ideias na tela do PC, conheça e veja como instalar o app de mapeamento mental minder no Linux via Flatpak.
 
- O minder é um aplicativo de mapeamento mental criado especialmente para o sistema operacional elementaryOS, mas que você pode usar em qualquer sistema Linux com suporte ao formato Flatpak.
+O minder é um aplicativo de mapeamento mental criado especialmente para o sistema operacional elementaryOS, mas que você pode usar em qualquer sistema Linux com suporte ao formato Flatpak.
 
 Use o poder do mapeamento mental para dar vida às suas idéias.
 
@@ -2699,7 +2721,7 @@ flatpak install flathub com.github.phase1geo.minder
 
 ## Peek
 
-<img src = "img/peek.jpg" alt = "Minder">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/peek.jpg" alt = "Minder">
 
 Se você precisa gravar uma seleção de sua tela para uma imagem GIF animada. Veja como instalar o Peek Animated GIF recorder no Linux.
 
@@ -2723,7 +2745,7 @@ flatpak install flathub com.uploadedlobster.peek
 
 ## <p id ="blender-flatpak"> Blender
 
-O Blender  tem a sua versão via flatpak, e para instalá-lo basta digitar:
+O Blender tem a sua versão via flatpak, e para instalá-lo basta digitar:
 
 ```bash
 flatpak install flathub org.blender.Blender
@@ -2733,9 +2755,9 @@ flatpak install flathub org.blender.Blender
 
 ## Spotify
 
-<img src = "img/spotify.jpg" alt = "Minder">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/spotify.jpg" alt = "Minder">
 
-Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia. 
+Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia.
 
 Para instalá-lo via Flatpak basta digitar:
 
@@ -2761,16 +2783,18 @@ CopyQ monitora a área de transferência do sistema e salva seu conteúdo em aba
 
 Site oficial: <a href="https://hluk.github.io/CopyQ/">CopyQ</a>
 
-<img src="./img/copy.png">
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/copy.png">
 
 Instalar no ubuntu via PPA:
 
 ```bash
 sudo add-apt-repository ppa:hluk/copyq
 ```
+
 ```bash
 sudo apt update
 ```
+
 ```bash
 sudo apt install copyq
 ```
@@ -2781,7 +2805,7 @@ Instalar via Flatpak:
 flatpak install flathub com.github.hluk.copyq
 ```
 
-***
+---
 
 # Instalando linguagens de programação
 
@@ -2823,32 +2847,6 @@ Para instalar o Java no Arch Linux basta digitar:
 
 ```bash
 sudo pacman -S jdk11-openjdk
-```
-
-## PHP
-
-### Ubuntu
-
-Para instalar o php no Ubuntu é mais simples ainda do que o Java, basta apenas digitar:
-
-```bash
-sudo apt-get install php
-```
-
-### Fedora
-
-Para instalar o php no Fedora é mais simples ainda do que o Java, basta apenas digitar:
-
-```bash
-sudo dnf install php
-```
-
-### Arch Linux
-
-Para instalar o php no Arch Linux é mais simples ainda do que o Java, basta apenas digitar:
-
-```bash
-sudo pacman -S php
 ```
 
 ## Python 3
@@ -2895,7 +2893,7 @@ sudo pacman -S python
 
 Para instalar o .NET no linux, tem a explicação pelo próprio site da microsoft, basta seguir o tutorial escolhendo a distro que você está usando:
 
-<a href = "https://docs.microsoft.com/pt-br/dotnet/core/install/linux">Instação .NET</a>.
+<a href = "https://docs.microsoft.com/pt-br/dotnet/core/install/linux">Instação .NET</a>.
 
 ## NodeJs
 
@@ -2928,7 +2926,7 @@ Tanto no Ubuntu quanto no Fedora, o npm já vem instalado junto com o NodeJs, no
 Se você está aprendendo TypeScript e quer instlar ele, depois de ter instalado o NodeJs, basta digitar:
 
 ```bash
-sudo npm install -g typescript 
+sudo npm install -g typescript
 ```
 
 O "-g" serve para instalar ele de forma global no seu Sistema, sendo assim, não vai precisar ficar instlando ele toda vez que for criar uma pasta nova.
@@ -2944,8 +2942,207 @@ Para importar bibliotecas do TypeScript basta instalar o typescript-require:
 ```bash
 sudo npm install -g typescript-require
 ```
+
 e
+
 ```bash
-sudo npm install -g @types/node 
+sudo npm install -g @types/node
 ```
 
+## Criar atalhos de programas
+
+Créditos ao <a href="https://dev.to/ishakantony/how-to-install-oracle-sql-developer-on-ubuntu-20-04-3jpd">ishakantony</a> por ter feito o post sobre como instalar o SQL Developer no Linux, e que me ajudou a criar esse post.
+
+Alguns programas não instalam e criam o programa "executável" no linux como o Postman por exemplo. E para criar um atalho para ele e outros programas, basta seguir os passos abaixo:
+
+### Postman
+
+O Postman é uma plataforma de API para desenvolvedores projetarem, construírem, testarem e iterarem suas APIs.
+
+Site oficial: <a href="https://www.postman.com/">Postman</a>
+
+Após ter feito o download do Postman para Linux, ele vai baixar um arquivo .zip, que após descompactar teremos o arquivo "Postman", que é o executável do programa que vai ficar dentro da pasta "Postman/app":
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/postman-files.png">
+
+Você pode descompactar ele na pasta atual e depois mover para a pasta "/opt" que é onde vamos deixar os programas "personalizados", ou pode descompactar ele diretamente na pasta "/opt", para isso basta digitar:
+
+```bash
+  sudo tar -xvf postman-linux-x64.tar.gz -C /opt
+```
+
+Como vamos estar descompactando para a pasta "/opt", precisamos usar o comando "sudo" para ter permissão de descompactar na pasta "/opt", e o "-C" é para descompactar diretamente na pasta "/opt".
+
+Caso você não tenha descompactado diretamente na pasta "/opt", basta mover a pasta para lá, para isso basta digitar:
+
+```bash
+  sudo mv Postman /opt
+```
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/postman-opt.png">
+
+Após mover o arquivo para a pasta "/opt", vamos criar um atalho para ele, para isso basta digitar:
+
+```bash
+  sudo ln -s /opt/Postman/app/Postman /usr/local/bin/postman
+```
+
+A razão pela qual colocamos nosso link dentro /usr/local/biné para que ele esteja disponível globalmente.
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/postman-link.png">
+
+Após ter executado o comando acima, basta digitar "postman" no terminal que ele vai abrir o programa.
+
+Agora para criarmos um atalho de desktop vamos criar uma "application" para o Postman, para isso basta digitar:
+
+```bash
+  sudo nano /usr/share/applications/postman.desktop
+```
+
+Ou
+
+```bash
+  sudo vim /usr/share/applications/postman.desktop
+```
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/postman-vim.png">
+
+E após isso basta colar o seguinte conteúdo:
+
+```vim
+[Desktop Entry]
+Name=Postman
+Comment=Postman
+GenericName=Postman
+Exec=/usr/local/bin/postman
+Icon=/opt/Postman/app/icons/icon_128x128.png
+Type=Application
+StartupNotify=true
+Categories=Utility;Postman;Development;API;
+```
+
+O "Exec" é o caminho do executável do Postman, que no caso é o link que criamos anteriormente, e o "Icon" é o caminho do ícone do Postman, que fica dentro da pasta "/opt/Postman/app/icons/icon_128x128.png".
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/postman-desktop.png">
+
+Após isso basta procurar por "Postman" nos seus programas que ele vai aparecer e você vai conseguir abrir ele normalmente como qualquer outro programa.
+
+### Oracle SQL Developer
+
+Oracle SQL Developer é um ambiente de desenvolvimento integrado para trabalhar com SQL em bancos de dados Oracle.
+
+Site oficial: <a href="https://docs.oracle.com/en/database/oracle/sql-developer/index.html">Oracle SQL Developer</a>
+
+O processo para criar um atalho para o Oracle SQL Developer é bem parecido com o do Postman, mas com algumas diferenças.
+
+Após baixar o Oracle SQL Developer para Linux, ele vai baixar um arquivo .zip, que após descompactar teremos o arquivo "sqldeveloper.sh", que é o executável do programa que vai ficar dentro da pasta "sqldeveloper":
+
+```bash
+  sudo unzip sqldeveloper-23.1.0.097.1607-no-jre.zip -d /opt
+```
+
+O nome do arquivo pode variar de acordo com a versão que você baixar.
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/sqldeveloper-files.png">
+
+Agora vamos criar um atalho para ele, para isso basta digitar:
+
+```bash
+  sudo ln -s /opt/sqldeveloper/sqldeveloper.sh /usr/local/bin/sqldeveloper
+```
+
+No caso do Oracle SQL Developer, ao tentar executar o comando "sqldeveloper" após criar o link simbólico, ele vai dar um erro dizendo que o caminho não é um diretório.
+O erro aconteceu porque ele está tentando executar uma sintaxe interna sqldeveloper.shque usa o caminho relativo para navegar no diretório. Para corrigir esse problema, o que precisamos fazer é editar o sqldeveloper.shpara executar o binário sqldeveloper.
+Abra sqldeveloper.shcom seu editor de texto. No meu caso vou usar vim. Lembre-se de usar sudoporque este arquivo pertence a root. O conteúdo do seu arquivo deve estar assim agora:
+
+```bash
+#!/bin/bash
+cd "`dirname $0`"/sqldeveloper/bin && bash sqldeveloper $*
+```
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/sqldeveloper-nano.png">
+
+Vamos dizer a este script para executar o binário sqldeveloper diretamente sem navegar para outro diretório usando este comando /opt/sqldeveloper/sqldeveloper/bin/sqldeveloper $\*, seu arquivo deve ficar assim agora:
+
+```bash
+#!/bin/bash
+/opt/sqldeveloper/sqldeveloper/bin/sqldeveloper $*
+```
+
+<img src="https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/sqldeveloper-nano2.png">
+
+Após isso, salve o arquivo e tente executar o comando "sqldeveloper" novamente, e ele vai abrir o programa.
+
+Agora para criar o atalho de desktop, vamos criar uma "application" para o Oracle SQL Developer, para isso basta digitar:
+
+```bash
+  sudo nano /usr/share/applications/sqldeveloper.desktop
+```
+
+Ou
+
+```bash
+  sudo vim /usr/share/applications/sqldeveloper.desktop
+```
+
+E cole o seguinte conteúdo:
+
+```vim
+[Desktop Entry]
+Name=Oracle SQL Developer
+Comment=SQL Developer from Oracle
+GenericName=SQL Tool
+Exec=/usr/local/bin/sqldeveloper
+Icon=/opt/sqldeveloper/icon2.jpg
+Type=Application
+StartupNotify=true
+Categories=Utility;Oracle;Development;SQL;
+```
+
+No caso do icon, você pode usar o que quiser, eu usei um que achei na internet.
+
+### Spring Tool Suite
+
+O Spring Tools 4 é a próxima geração de ferramentas Spring para o seu ambiente de codificação favorito. Em grande parte reconstruído a partir do zero, ele fornece suporte de classe mundial para o desenvolvimento de aplicativos empresariais baseados em Spring, quer você prefira Eclipse, Visual Studio Code ou Theia IDE.
+
+Site oficial: <a href="https://spring.io/tools">Spring Tool Suite</a>
+
+O processo para criar um atalho para o Spring Tool Suite é bem parecido com o do Postman e do SQL Developer.
+
+```bash
+  sudo tar -xvf spring-tool-suite-4-4.18.0.RELEASE-e4.27.0-linux.gtk.x86_64.tar.gz -C /opt
+```
+
+O nome do arquivo pode variar de acordo com a versão que você baixar.
+
+Agora vamos criar um atalho para ele, para isso basta digitar:
+
+```bash
+  sudo ln -s /opt/spring-tool-suite/SpringToolSuite4 /usr/local/bin/SpringToolSuite4
+```
+
+Agora para criar o atalho de desktop, vamos criar uma "application" para o Spring Tool Suite, para isso basta digitar:
+
+```bash
+  sudo nano /usr/share/applications/SpringToolSuite4.desktop
+```
+
+Ou
+
+```bash
+  sudo vim /usr/share/applications/SpringToolSuite4.desktop
+```
+
+E cole o seguinte conteúdo:
+
+```vim
+[Desktop Entry]
+Name=Sprint Tool Suite
+Comment=Sprint Tool Suite
+GenericName=Sprint Tool Suite
+Exec=/usr/local/bin/SpringToolSuite4
+Icon=/opt/spring-tool-suite/icon.xpm
+Type=Application
+StartupNotify=true
+Categories=Utility;Spring;Eclipse;Development;
+```
