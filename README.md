@@ -990,9 +990,47 @@ sudo apt install ubuntu-restricted-extra
 
 </p>
 
+## <p id = "Gnome-Tweak-Tool"> Gnome Tweak Tool
+
+<img src = "https://diolinux.com.br/wp-content/uploads/2018/02/diolinux-gnome-tweak-tools-1140x694.png" alt = "Tweak Tool">
+
+O GNOME Tweak Tool turbina o seu GNOME, um dos mais completos e populares do mundo Open Source, parte de muitas das principais distribuições Linux, como Red Hat, Fedora, Debian e Ubuntu.
+
+Com um ecossistema tão completo e complexo, é interessante ter uma ferramenta que permita que você faça ajustes no seu comportamento de forma simples, é exatamente esse o objetivo do GNOME Tweak Tool, também chamado de Gnome Tweaks ou “Ajustes” em português, disponível nos repositórios das principais distros.
+
+Para mais informações acesse: [GNOME Tweak Tool: aprenda a personalizar seu sistema Linux](https://diolinux.com.br/gnome/gnome-tweak-tool-gnome-tweaks-no-ubuntu.html)
+
+Para instalar o Gnome Tweak Tool digite o comando:
+
+```bash
+sudo apt install gnome-tweak-tool
+```
+
+ou:
+
+```bash
+sudo apt install gnome-tweaks
+```
+
+</p>
+
+## <p id = "Gnome-Extensions"> Gnome Extensions
+
+Site Oficial: [Gnome Extensions](https://extensions.gnome.org/)
+
+O GNOME Extensions é um site que permite você instalar diversas extensões para personalizar o seu linux, mas para isso precisa de algumas dependências, para instalar as dependências basta digitar:
+
+```bash
+sudo apt install chrome-gnome-shell gnome-shell-extensions
+```
+
+</p>
+
+</p>
+
 ## <p id = "unity-tweak"> Unity Tweak Tool
 
-<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/unity+tweak+tool.png" alt = "Unity Tweak Tool">
+<img src = "https://github-gist-gabrieltonhatti.s3.sa-east-1.amazonaws.com/linux/unity%2Btweak%2Btool.png" alt = "Unity Tweak Tool">
 
 O Unity Tweak Tool é uma das melhores ferramentas para fazer ajustes na interface Unity (se não for a melhor), com ele você conseguirá, inclusive, mover facilmente a barra lateral do Unity para a parte de baixo da tela, que é uma das novidades dessa versão. Para instalar o Unity Tweak Tool digite o comando:
 
